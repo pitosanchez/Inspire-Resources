@@ -1,0 +1,71 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff; /* Light blue background */
+  color: #333;
+  font-size: 1.2rem;
+}
+
+/* Header */
+header {
+  background-color: #ffffff; /* White header */
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #0073e6; /* Darker blue */
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+section {
+  background: #fff;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #0073e6;
+}
+
+/* Links */
+a {
+  display: block;
+  margin: 5px 0;
+  color: #0073e6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* YouTube Video Styling */
+iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  display: block;
+  margin: 10px auto;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #ffcc00; /* Yellowish color */
+  padding: 10px;
+  margin-top: 20px;
+  font-weight: bold;
+}

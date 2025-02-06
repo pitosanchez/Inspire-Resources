@@ -1,72 +1,40 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #e31870fa;
 }
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   font-family: Arial, sans-serif;
   background-color: #97c6f0ab;
-  font-size: 2rem;
+  font-size: clamp(1rem, 2vw, 2rem); /* Responsive text scaling */
 }
 
-header {
-  background-color: #ffffff;
-  text-align: center;
-  padding: 20px;
-}
-
-h1 {
-  color: #301af9;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  margin-bottom: 2rem;
-}
-
-h2 {
-  color: #0073e6;
-}
-
-.waterman {
+/* Responsive Header */
+.header {
   display: flex;
-  padding: 10px;
-  gap: 2rem;
-}
-
-.unos {
-  display: flex;
-  justify-content: space-around;
-  padding: 10px;
-  gap: 2rem;
-}
-
-.nkf {
-  color: rgb(234, 107, 61);
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-iframe {
-  width: 100%;
-  max-width: 560px;
-  height: 315px;
-  display: block;
-  margin: 10px auto;
-}
-
-footer {
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  min-height: 10rem; /* Minimum height for smaller screens */
+  padding: 1rem 5%; /* Adds responsiveness to padding */
+  font-weight: 700;
+  color: blue;
   text-align: center;
-  background: #ffcc00;
-  padding: 10px;
-  margin-top: 20px;
-  font-weight: bold;
+  width: 100%; /* Ensures it stretches fully */
 }
 
-@media (max-width: 768px) {
-  .waterman {
-    flex-direction: column;
-  }
+/* Responsive h1 */
+.header h1 {
+  margin: 0;
+  font-size: clamp(1.5rem, 4vw, 3rem); /* Scales dynamically with viewport */
+  text-align: center;
+  max-width: 90%; /* Prevents text from stretching too wide */
 }

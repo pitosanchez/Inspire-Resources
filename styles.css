@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,29 +13,135 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  font-family: Arial, sans-serif;
   background-color: #97c6f0ab;
-  font-size: clamp(1rem, 2vw, 2rem); /* Responsive text scaling */
+  font-size: 16px;
 }
 
-/* Responsive Header */
+/* Header Section */
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: white;
-  min-height: 10rem; /* Minimum height for smaller screens */
-  padding: 1rem 5%; /* Adds responsiveness to padding */
+  min-height: 10rem;
+  /* padding: 1rem 5%; */
   font-weight: 700;
   color: blue;
   text-align: center;
-  width: 100%; /* Ensures it stretches fully */
+  width: 100%;
 }
 
-/* Responsive h1 */
+.draft {
+  color: red;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 2rem;
+  line-height: 2;
+  color: #333;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.paragraph {
+  font-size: 1.5rem;
+}
+
 .header h1 {
   margin: 0;
-  font-size: clamp(1.5rem, 4vw, 3rem); /* Scales dynamically with viewport */
+  font-size: 2.5rem;
   text-align: center;
-  max-width: 90%; /* Prevents text from stretching too wide */
+  max-width: 90%;
+}
+
+/* Main Section */
+
+.explore,
+h1 {
+  color: blue;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.waterman,
+.unos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+.waterman div,
+.unos div {
+  flex: 1;
+  text-align: center;
+}
+
+.waterman img,
+.unos img {
+  max-width: 100%;
+  height: auto;
+}
+
+.nkf {
+  display: flex;
+  color: blue;
+  font-size: 3rem;
+  justify-content: center;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.utube {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.utube iframe {
+  width: 560px;
+  height: 315px;
+  max-width: 100%;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: orange;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .waterman,
+  .unos,
+  .utube .hrsa {
+    flex-direction: column;
+  }
+
+  .waterman div,
+  .unos div {
+    margin: 1rem 0;
+  }
+
+  .header h1 {
+    font-size: 3rem;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  img {
+    max-width: 90%;
+  }
 }

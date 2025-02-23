@@ -1,10 +1,12 @@
 /* Global Styles */
+
 @import url("https://use.typekit.net/xjq2ixs.css");
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   list-style: none;
   text-decoration: none;
 }
@@ -29,19 +31,19 @@ body {
   background-color: white;
   color: blue;
   box-shadow: 0 4px 4px grey;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 50%;
   max-width: 75rem;
   height: auto;
 }
 
-/* Navigation */
+/* Navigation: placed at the bottom and spread evenly */
 .nav {
   position: absolute;
   bottom: 0;
@@ -60,11 +62,14 @@ body {
   padding: 0.5rem;
 }
 
+.nav a:visited {
+  color: blue;
+}
+
 .nav a:hover {
   color: rgb(0, 166, 255);
 }
 
-/* Heading */
 .heading {
   margin: 2rem auto;
   width: fit-content;
@@ -74,6 +79,7 @@ body {
   font-style: normal;
   font-size: 3rem;
   font-weight: 800;
+  /* background-image: url("/images/bg.webp"); */
   background-size: 20rem;
   background-position: center;
   background-repeat: no-repeat;
@@ -107,6 +113,7 @@ ul {
   max-width: 800px;
   margin: 0 auto;
   padding: 0;
+  list-style-type: none;
 }
 
 ul li {
@@ -117,19 +124,16 @@ ul li {
   font-size: 1.1rem;
 }
 
-/* Section Layout */
 .section {
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 1rem;
-  flex-wrap: wrap;
 }
 
 .section div {
   flex: 1;
   text-align: center;
-  max-width: 500px;
 }
 
 .section img {
@@ -149,14 +153,14 @@ ul li {
   margin-bottom: 2rem;
 }
 
-/* Iframe */
+/* Set iframe sizes for media sections */
 .section iframe {
   width: 560px;
   height: 315px;
   max-width: 100%;
 }
 
-/* Footer */
+/* Footer Section */
 footer {
   text-align: center;
   padding: 1rem;
@@ -165,36 +169,36 @@ footer {
 
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
-  .header {
+  .section {
+    flex-direction: column;
+  }
+
+  .section div {
+    margin: 1rem 0;
+  }
+
+  .header h1 {
+    font-size: 3rem;
+  }
+
+  iframe {
+    width: 100%;
     height: auto;
-    text-align: center;
+  }
+
+  img {
+    max-width: 90%;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   .logo {
     width: 80%;
     max-width: 40rem;
-  }
-
-  .nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 1rem;
-  }
-
-  .nav a {
-    font-size: 1rem;
-  }
-
-  .section {
-    flex-direction: column;
-    gap: 1.5rem;
-    text-align: center;
-  }
-
-  .section div {
-    max-width: 100%;
   }
 
   .paragraph,
@@ -206,14 +210,5 @@ footer {
   ul li {
     font-size: 1rem;
     padding: 8px;
-  }
-
-  iframe {
-    width: 100%;
-    height: auto;
-  }
-
-  img {
-    max-width: 90%;
   }
 }

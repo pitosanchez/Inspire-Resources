@@ -1,9 +1,10 @@
 /* Global Styles */
+@import url("https://use.typekit.net/xjq2ixs.css");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   list-style: none;
   text-decoration: none;
 }
@@ -28,19 +29,19 @@ body {
   background-color: white;
   color: blue;
   box-shadow: 0 4px 4px grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 50%;
   max-width: 75rem;
   height: auto;
 }
 
-/* Navigation: placed at the bottom and spread evenly */
+/* Navigation */
 .nav {
   position: absolute;
   bottom: 0;
@@ -59,18 +60,23 @@ body {
   padding: 0.5rem;
 }
 
-.nav a:visited {
-  color: blue;
-}
-
 .nav a:hover {
   color: rgb(0, 166, 255);
 }
 
-.about-heading {
-  margin-left: auto;
-  margin-right: auto;
+/* Heading */
+.heading {
+  margin: 2rem auto;
   width: fit-content;
+  color: whitesmoke;
+  -webkit-text-stroke: 2px black;
+  font-family: "noka", sans-serif;
+  font-style: normal;
+  font-size: 3rem;
+  font-weight: 800;
+  background-size: 20rem;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Intro Section */
@@ -83,45 +89,53 @@ body {
 }
 
 .paragraph {
-  font-size: 18px;
-  text-align: justify;
-  margin-bottom: 1rem;
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto 1.5rem auto;
+  line-height: 1.6;
+  font-size: 1.1rem;
 }
 
-/* Main Section Headings */
-.explore,
-h1 {
-  color: blue;
-  font-size: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+h2 {
+  text-align: center;
+  color: #0073e6;
+  margin-top: 2rem;
 }
 
-/* Flex container styles for waterman, unos, utube, nldac, and hrsa */
-.waterman,
-.unos,
-.utube,
-.nldac,
-.hrsa {
+ul {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+ul li {
+  background: #e7f0ff;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+/* Section Layout */
+.section {
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
-.waterman div,
-.unos div,
-.utube div,
-.nldac div,
-.hrsa div {
+.section div {
   flex: 1;
   text-align: center;
+  max-width: 500px;
 }
 
-.waterman img,
-.unos img {
-  max-width: 100%;
+.section img {
+  max-width: 80%;
   height: auto;
+  border: 5px solid rgb(252, 146, 53);
 }
 
 .nkf {
@@ -135,15 +149,14 @@ h1 {
   margin-bottom: 2rem;
 }
 
-/* Set iframe sizes for media sections */
-.utube iframe,
-.hrsa iframe {
+/* Iframe */
+.section iframe {
   width: 560px;
   height: 315px;
   max-width: 100%;
 }
 
-/* Footer Section */
+/* Footer */
 footer {
   text-align: center;
   padding: 1rem;
@@ -152,24 +165,47 @@ footer {
 
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
-  .waterman,
-  .unos,
-  .utube,
-  .nldac,
-  .hrsa {
+  .header {
+    height: auto;
+    text-align: center;
+  }
+
+  .logo {
+    width: 80%;
+    max-width: 40rem;
+  }
+
+  .nav {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
   }
 
-  .waterman div,
-  .unos div,
-  .utube div,
-  .nldac div,
-  .hrsa div {
-    margin: 1rem 0;
+  .nav a {
+    font-size: 1rem;
   }
 
-  .header h1 {
-    font-size: 3rem;
+  .section {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .section div {
+    max-width: 100%;
+  }
+
+  .paragraph,
+  ul {
+    width: 95%;
+    font-size: 1rem;
+  }
+
+  ul li {
+    font-size: 1rem;
+    padding: 8px;
   }
 
   iframe {
@@ -179,16 +215,5 @@ footer {
 
   img {
     max-width: 90%;
-  }
-
-  nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .logo {
-    width: 80%;
-    max-width: 40rem;
   }
 }

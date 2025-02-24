@@ -12,7 +12,7 @@
 }
 
 html {
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   scroll-behavior: smooth;
 }
 
@@ -67,15 +67,20 @@ body {
   color: rgb(0, 166, 255);
 }
 
+.nav a.active {
+  color: #0073e6;
+  border-bottom: 2px sold blue;
+}
+
 .heading {
   text-align: center;
   margin: 2rem auto;
   width: fit-content;
-  color: rgb(238, 56, 56);
-  -webkit-text-stroke: 2px black;
-  font-family: "noka", sans-serif;
+  color: #0073e6;
+  -webkit-text-stroke: 1px rgb(33, 204, 33);
+  font-family: "DM Serif Text", serif;
   font-style: normal;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 800;
 }
 
@@ -89,17 +94,27 @@ body {
 }
 
 .paragraph {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   width: 80%;
   max-width: 900px;
   margin: 0 auto 1.5rem auto;
   line-height: 1.6;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 h2 {
+  font-size: 2rem;
   text-align: center;
   color: #0073e6;
-  margin-top: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  /* text-decoration: underline; */
+}
+
+.exclamation {
+  color: red;
 }
 
 ul {
@@ -137,7 +152,7 @@ ul li {
 }
 
 .frames {
-  width: 60%;
+  width: 70%;
   height: auto;
   margin: auto;
 }

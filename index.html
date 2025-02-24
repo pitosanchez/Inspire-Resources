@@ -6,6 +6,12 @@
     <title>Inspire</title>
     <link rel="stylesheet" href="styles.css" />
     <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header">
@@ -13,12 +19,12 @@
       <nav class="nav">
         <a href="#home">Home</a>
         <a href="#about">About</a>
-        <a href="#resources">Participant Resources</a>
+        <a href="#resources">Resources</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
     <main>
-      <section class="intro">
+      <section id="about" class="intro">
         <h1 class="heading">ABOUT</h1>
         <br />
 
@@ -103,7 +109,9 @@
             </li>
           </ul>
 
-          <h2>You Are Not Alone</h2>
+          <h2 class="not-alone">
+            You Are Not Alone<strong class="exclamation">!</strong>
+          </h2>
 
           <p class="paragraph">
             We understand that the journey to a kidney transplant can feel
@@ -120,8 +128,8 @@
         </section>
       </section>
 
-      <section class="section">
-        <h1 class="heading">Explore Transplant</h1>
+      <section id="resources" class="section">
+        <h1 class="heading">Patient Resources</h1>
         <a
           class="frames"
           href="https://exploretransplant.org/for-family-friends/become-a-living-donor/"
@@ -130,7 +138,7 @@
           <img src="/images/exploretrans.webp" alt="Explore Transplant" />
         </a>
 
-        <h1 class="heading">Living Donor Tool Kit</h1>
+        <h2>Living Donor Tool Kit</h2>
         <a
           class="frames"
           href="https://www.livingdonortoolkit.com/"
@@ -141,7 +149,7 @@
       </section>
 
       <section class="section">
-        <h1 class="heading">Transplant Living</h1>
+        <h2>Transplant Living</h2>
         <a
           class="frames"
           href="https://transplantliving.org/kidney/about-living-donor-transplant/"
@@ -150,7 +158,7 @@
           <img src="/images/unos.webp" alt=""
         /></a>
 
-        <h1 class="heading">Living Donor Resources</h1>
+        <h2>Living Donor Resources</h2>
         <a
           class="frames"
           href="hhttps://www.livingdonorassistance.org/Resources/Additional-Resources"
@@ -161,7 +169,7 @@
       </section>
 
       <section class="section">
-        <h1 class="heading">National Kidney Foundation</h1>
+        <h2>National Kidney Foundation</h2>
 
         <a
           class="frames"
@@ -190,7 +198,7 @@
 
       <!-- Updated HRSA section with inner divs -->
       <section class="section">
-        <h1 class="heading">HRSA Animated Video Series</h1>
+        <h2>HRSA Animated Video Series</h2>
         <div class="media-container">
           <iframe
             width="560"
@@ -211,7 +219,7 @@
       </section>
     </main>
     <footer>
-      <p>&copy; 2024 INSPIRE</p>
+      <p>&copy; 2025 INSPIRE</p>
     </footer>
   </body>
 </html>

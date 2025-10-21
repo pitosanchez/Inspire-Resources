@@ -107,7 +107,7 @@ body {
 }
 
 .logo {
-  height: 50px;
+  height: 70px;
   width: auto;
   transition: transform 0.2s ease;
 }
@@ -187,16 +187,6 @@ body {
   margin: 0 auto;
 }
 
-/* Typography Hierarchy Level 1 - Eyebrow (Smallest) */
-.hero-eyebrow {
-  font-size: var(--text-sm);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--primary-blue);
-  margin-bottom: var(--space-sm);
-}
-
 /* Hero Brand - INSPIRE Title (Dominant) */
 .hero-brand {
   font-family: "DM Serif Text", serif;
@@ -204,17 +194,19 @@ body {
   font-weight: 800;
   line-height: 1;
   letter-spacing: 0.02em;
-  background: linear-gradient(
-    135deg,
-    var(--primary-blue) 0%,
-    var(--accent-orange) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: var(--space-lg);
+  color: var(--primary-blue);
+  margin-bottom: var(--space-sm);
   text-transform: uppercase;
   animation: fadeInUp 0.8s ease-out;
+}
+
+/* Typography Hierarchy Level 1 - Eyebrow (Below INSPIRE) */
+.hero-eyebrow {
+  font-size: var(--text-lg);
+  font-weight: 500;
+  font-style: italic;
+  color: var(--text-medium);
+  margin-bottom: var(--space-xl);
 }
 
 @keyframes fadeInUp {
@@ -677,7 +669,7 @@ body {
 }
 
 .footer-logo {
-  height: 40px;
+  height: 60px;
   width: auto;
   filter: brightness(0) invert(1);
 }
@@ -764,7 +756,11 @@ body {
 
 @media (max-width: 480px) {
   .logo {
-    height: 40px;
+    height: 55px;
+  }
+
+  .footer-logo {
+    height: 50px;
   }
 
   .nav-link.cta-button {

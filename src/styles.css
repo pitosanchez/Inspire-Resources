@@ -768,3 +768,526 @@ body {
     font-size: var(--text-xs);
   }
 }
+
+/* ========================================
+   SCROLL PROGRESS INDICATOR
+   Subtle visual feedback for narrative flow
+   ======================================== */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary-blue) 0%, var(--accent-green) 100%);
+  transform-origin: left;
+  transform: scaleX(0);
+  z-index: 9999;
+  opacity: 0.9;
+  transition: transform 0.1s ease-out;
+}
+
+/* ========================================
+   LANGUAGE SWITCHER
+   Honoring multilingual access with grace
+   ======================================== */
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  background: var(--bg-light);
+  padding: var(--space-xs);
+  border-radius: 24px;
+  border: 1px solid var(--border-light);
+  transition: all 0.3s ease;
+}
+
+.lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 18px;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--text-medium);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.lang-btn:hover {
+  background: var(--bg-white);
+  color: var(--primary-blue);
+  transform: translateY(-1px);
+}
+
+.lang-btn.active {
+  background: var(--primary-blue);
+  color: var(--bg-white);
+  box-shadow: 0 2px 8px rgba(0, 102, 204, 0.25);
+}
+
+.lang-flag {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.lang-divider {
+  color: var(--text-light);
+  opacity: 0.5;
+}
+
+/* ========================================
+   CKD EDUCATION SECTION
+   Educational clarity with visual warmth
+   ======================================== */
+.ckd-education {
+  background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 50%, #f0fff4 100%);
+  padding: var(--space-3xl) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.ckd-education::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0, 102, 204, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.stages-container {
+  margin-top: var(--space-2xl);
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  padding: var(--space-2xl);
+  border: 1px solid rgba(0, 102, 204, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.04);
+}
+
+.stages-title {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--text-dark);
+  text-align: center;
+  margin-bottom: var(--space-xl);
+  font-family: 'DM Serif Text', serif;
+}
+
+.stages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-xl);
+}
+
+.stage-card {
+  background: var(--bg-white);
+  border-radius: 16px;
+  padding: var(--space-lg);
+  text-align: center;
+  border: 2px solid transparent;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transform-style: preserve-3d;
+}
+
+.stage-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.stage-card:hover::before {
+  transform: scaleX(1);
+}
+
+.stage-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.stage-card.stage-1 { color: #10b981; border-color: rgba(16, 185, 129, 0.2); }
+.stage-card.stage-2 { color: #3b82f6; border-color: rgba(59, 130, 246, 0.2); }
+.stage-card.stage-3 { color: #f59e0b; border-color: rgba(245, 158, 11, 0.2); }
+.stage-card.stage-4 { color: #ef4444; border-color: rgba(239, 68, 68, 0.2); }
+.stage-card.stage-5 { color: #7c3aed; border-color: rgba(124, 58, 237, 0.2); }
+
+.stage-number {
+  font-size: var(--text-4xl);
+  font-weight: 900;
+  color: currentColor;
+  margin-bottom: var(--space-sm);
+  font-family: 'Inter', sans-serif;
+  line-height: 1;
+}
+
+.stage-title {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: var(--space-xs);
+}
+
+.stage-egfr {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: currentColor;
+  margin-bottom: var(--space-sm);
+  padding: 4px 12px;
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 12px;
+  display: inline-block;
+}
+
+.stage-description {
+  font-size: var(--text-sm);
+  color: var(--text-medium);
+  line-height: 1.6;
+}
+
+/* ========================================
+   KIDNEY DISEASES SECTION
+   Organized knowledge, accessible clarity
+   ======================================== */
+.kidney-diseases {
+  background: var(--bg-white);
+  padding: var(--space-3xl) 0;
+}
+
+.disease-categories {
+  margin-top: var(--space-2xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3xl);
+}
+
+.disease-category {
+  background: var(--bg-light);
+  border-radius: 20px;
+  padding: var(--space-2xl);
+  border: 1px solid var(--border-light);
+}
+
+.category-title {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  margin-bottom: var(--space-xl);
+  padding-bottom: var(--space-md);
+  border-bottom: 3px solid currentColor;
+  display: inline-block;
+  font-family: 'DM Serif Text', serif;
+}
+
+.category-title.common {
+  color: #0066cc;
+}
+
+.category-title.rare {
+  color: #7c3aed;
+}
+
+.disease-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-xl);
+}
+
+.disease-card {
+  background: var(--bg-white);
+  border-radius: 12px;
+  padding: var(--space-lg);
+  border: 1px solid var(--border-light);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: default;
+}
+
+.disease-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border-color: var(--primary-blue);
+}
+
+.disease-name {
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: var(--space-sm);
+  line-height: 1.3;
+}
+
+.disease-description {
+  font-size: var(--text-sm);
+  color: var(--text-medium);
+  line-height: 1.6;
+}
+
+.disease-cta {
+  margin-top: var(--space-2xl);
+  text-align: center;
+  padding: var(--space-xl);
+  background: linear-gradient(135deg, #f0f7ff 0%, #f0fff4 100%);
+  border-radius: 16px;
+}
+
+.disease-cta-text {
+  font-size: var(--text-base);
+  color: var(--text-dark);
+}
+
+.disease-cta-text a {
+  color: var(--primary-blue);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid var(--primary-blue);
+  transition: all 0.3s ease;
+}
+
+.disease-cta-text a:hover {
+  color: var(--primary-blue-dark);
+  border-bottom-color: transparent;
+}
+
+/* ========================================
+   SPANISH RESOURCES SECTION
+   Cultural inclusivity with visual respect
+   ======================================== */
+.spanish-section {
+  background: linear-gradient(135deg, #fff7ed 0%, #ffffff 50%, #fef3c7 100%);
+  padding: var(--space-3xl) 0;
+  position: relative;
+}
+
+.category-header-spanish {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-2xl);
+  padding: var(--space-xl);
+  background: var(--bg-white);
+  border-radius: 20px;
+  border: 2px solid #f59e0b;
+  box-shadow: 0 8px 24px rgba(245, 158, 11, 0.1);
+}
+
+.category-icon {
+  font-size: 48px;
+  line-height: 1;
+}
+
+.spanish-category-title {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: #ea580c;
+  font-family: 'DM Serif Text', serif;
+  margin-bottom: var(--space-xs);
+}
+
+.spanish-category-description {
+  font-size: var(--text-base);
+  color: var(--text-medium);
+  line-height: 1.6;
+}
+
+.spanish-subsection {
+  margin-bottom: var(--space-3xl);
+}
+
+.spanish-category-badge {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xl);
+  padding: var(--space-md) var(--space-lg);
+  background: var(--bg-white);
+  border-radius: 16px;
+  border: 1px solid #f59e0b;
+  display: inline-flex;
+}
+
+.badge-icon {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.spanish-video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-xl);
+}
+
+.spanish-video-card {
+  background: var(--bg-white);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.spanish-video-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.spanish-video-card iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+}
+
+.video-content {
+  padding: var(--space-lg);
+}
+
+.video-title {
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: var(--space-xs);
+}
+
+.video-description {
+  font-size: var(--text-sm);
+  color: var(--text-medium);
+  line-height: 1.6;
+}
+
+.spanish-pdf-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-xl);
+}
+
+.spanish-pdf-card {
+  background: var(--bg-white);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.spanish-pdf-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.pdf-image {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  background: var(--bg-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pdf-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pdf-content {
+  padding: var(--space-lg);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.pdf-title {
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: var(--space-sm);
+}
+
+.pdf-description {
+  font-size: var(--text-sm);
+  color: var(--text-medium);
+  line-height: 1.6;
+  margin-bottom: var(--space-md);
+  flex: 1;
+}
+
+.pdf-download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-sm) var(--space-lg);
+  background: #f59e0b;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: var(--text-sm);
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.pdf-download-btn:hover {
+  background: #ea580c;
+  transform: translateX(4px);
+}
+
+/* FindHelp logo background */
+.findhelp-logo-bg {
+  background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg);
+}
+
+.findhelp-logo-bg img {
+  max-height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* ========================================
+   RESPONSIVE REFINEMENTS
+   Mobile-first, human-centered
+   ======================================== */
+@media (max-width: 768px) {
+  .language-switcher {
+    order: 3;
+    margin-top: var(--space-sm);
+  }
+
+  .stages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .disease-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .spanish-video-grid,
+  .spanish-pdf-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-header-spanish {
+    flex-direction: column;
+    text-align: center;
+  }
+}

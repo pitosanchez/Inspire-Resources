@@ -3,223 +3,784 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inspire</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script defer src="script.js"></script>
+    <title>Inspire - Kidney Transplant Resources</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script defer src="src/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   </head>
   <body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Sticky Header with Z-pattern (logo left, nav right) -->
     <header class="header">
-      <img src="/images/inspire.svg" alt="Inspire Logo" class="logo" />
-      <nav class="nav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#resources">Resources</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <div class="header-container">
+        <img src="/images/inspire.svg" alt="Inspire Logo" class="logo" />
+        <nav class="nav">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#ckd-education" class="nav-link">CKD Info</a>
+          <a href="#kidney-diseases" class="nav-link">Kidney Diseases</a>
+          <a href="#resources" class="nav-link">Resources</a>
+          <a href="#spanish-resources" class="nav-link">Recursos en Español</a>
+          <div class="language-switcher">
+            <button
+              class="lang-btn active"
+              data-lang="en"
+              aria-label="Switch to English"
+            >
+              <span class="lang-flag">🇺🇸</span>
+              <span class="lang-text">EN</span>
+            </button>
+            <span class="lang-divider">|</span>
+            <button
+              class="lang-btn"
+              data-lang="es"
+              aria-label="Switch to Spanish"
+            >
+              <span class="lang-flag">🇲🇽</span>
+              <span class="lang-text">ES</span>
+            </button>
+          </div>
+          <a href="#contact" class="nav-link cta-button">Get Help</a>
+        </nav>
+      </div>
     </header>
+
     <main>
-      <section id="about" class="intro">
-        <h1 class="heading">ABOUT</h1>
-        <br />
-
-        <section>
-          <p class="paragraph">
-            At <strong>Inspire Kidney Transplant Resources</strong>, we believe
-            that <strong>everyone</strong> deserves a fair chance at receiving a
-            life-saving kidney transplant. However, we also recognize that many
-            people, especially those from
-            <strong>Black, Brown, and underserved communities</strong>, face
-            serious obstacles when trying to access kidney care.
-          </p>
-
-          <p class="paragraph">
-            These barriers include
-            <strong
-              >racial bias in healthcare, financial struggles, lack of reliable
-              transportation, food and housing insecurity, and limited access to
-              medical information.</strong
-            >
-            Many people are not given the same opportunities to get evaluated
-            for a transplant because of these challenges. This is
-            <strong>not fair</strong>, and we are here to change that.
-          </p>
-
-          <p class="paragraph">
-            Our goal is to provide
-            <strong
-              >easy-to-understand education, one-on-one patient support, and
-              strong community partnerships</strong
-            >
-            to help break down these barriers. By doing this, we empower people
-            with the tools and knowledge they need to navigate the complicated
-            transplant process with confidence.
-          </p>
-
-          <h2>How We Help</h2>
-
-          <p class="paragraph">
-            We work with
-            <strong
-              >trusted doctors, hospitals, and community organizations</strong
-            >
-            to design programs that make kidney transplant access more
-            <strong>fair and equal</strong> for everyone. One of our most
-            important programs is the
-            <strong>Community Health Worker (CHW) initiative</strong>.
-          </p>
-
-          <p class="paragraph">
-            Our CHWs are trained professionals who help
-            <strong
-              >patients and families understand their transplant options,
-              connect them with doctors, and provide support every step of the
-              way</strong
-            >. They assist with:
-          </p>
-
-          <ul class="paragraph">
-            <li>
-              ✅ <strong>Screening for barriers</strong> – helping patients
-              figure out what challenges they may face in getting a transplant.
-            </li>
-            <li>
-              ✅ <strong>Connecting to resources</strong> – making sure patients
-              can access food programs, affordable housing, and financial aid.
-            </li>
-            <li>
-              ✅ <strong>Navigating the healthcare system</strong> – guiding
-              patients through medical paperwork, transplant referrals, and
-              insurance issues.
-            </li>
-            <li>
-              ✅ <strong>Fighting provider bias</strong> – identifying unfair
-              treatment in healthcare and advocating for equal opportunities.
-            </li>
-            <li>
-              ✅
-              <strong>Helping with transportation & medication access</strong> –
-              ensuring patients can get to doctor appointments and afford
-              necessary medications.
-            </li>
-          </ul>
-
-          <h2 class="not-alone">
-            You Are Not Alone<strong class="exclamation">!</strong>
+      <!-- Hero Section with clear visual hierarchy -->
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <h1 class="hero-brand">INSPIRE</h1>
+          <p class="hero-eyebrow">Empowering Communities</p>
+          <h2 class="hero-title">
+            Everyone Deserves a Fair Chance at a
+            <span class="highlight">Life-Saving</span> Kidney Transplant
           </h2>
-
-          <p class="paragraph">
-            We understand that the journey to a kidney transplant can feel
-            <strong>overwhelming</strong>, but you
-            <strong>do not have to go through it alone</strong>. Whether you
-            need guidance, resources, or just someone to answer your questions,
-            <strong>we are here to help.</strong>
+          <p class="hero-subtitle">
+            Breaking down barriers for underserved communities through
+            education, support, and advocacy.
           </p>
-
-          <p class="paragraph">
-            <strong>Explore our resources today</strong> to learn more about how
-            we can support you on your path to a healthier future.
-          </p>
-        </section>
-      </section>
-
-      <section id="resources" class="section">
-        <h1 class="heading">Patient Resources</h1>
-        <a
-          class="frames"
-          href="https://exploretransplant.org/for-family-friends/become-a-living-donor/"
-          target="_blank"
-        >
-          <img src="/images/exploretrans.webp" alt="Explore Transplant" />
-        </a>
-
-        <h2>Living Donor Tool Kit</h2>
-        <a
-          class="frames"
-          href="https://www.livingdonortoolkit.com/"
-          target="_blank"
-        >
-          <img src="/images/ldtk.webp" alt="Living Donor Toolkit" />
-        </a>
-      </section>
-
-      <section class="section">
-        <h2>Transplant Living</h2>
-        <a
-          class="frames"
-          href="https://transplantliving.org/kidney/about-living-donor-transplant/"
-          target="_blank"
-        >
-          <img src="/images/unos.webp" alt=""
-        /></a>
-
-        <h2>Living Donor Resources</h2>
-        <a
-          class="frames"
-          href="hhttps://www.livingdonorassistance.org/Resources/Additional-Resources"
-          target="_blank"
-        >
-          <img src="/images/nldac.webp" alt=""
-        /></a>
-      </section>
-
-      <section class="section">
-        <h2>National Kidney Foundation</h2>
-
-        <a
-          class="frames"
-          href="https://www.kidney.org/news-stories/living-kidney-donor-experience-pre-and-post-transplant-surgery"
-          target="_blank"
-          >Finding a Living Donor
-        </a>
-        <div class="media-container">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/-f5yuW9bmtY"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
-
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/BJZ-kleYz40"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
+          <div class="hero-cta">
+            <a href="#resources" class="btn btn-primary">Explore Resources</a>
+            <a href="#about" class="btn btn-secondary">Learn More</a>
+          </div>
         </div>
       </section>
 
-      <!-- Updated HRSA section with inner divs -->
-      <section class="section">
-        <h2>HRSA Animated Video Series</h2>
-        <div class="media-container">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/YiHd7YCTnr0"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
+      <!-- Mission Statement with strong contrast -->
+      <section class="mission">
+        <div class="container">
+          <div class="mission-content">
+            <h2 class="section-title">Our Mission</h2>
+            <p class="mission-text large">
+              We provide
+              <strong
+                >easy-to-understand education, one-on-one patient support, and
+                strong community partnerships</strong
+              >
+              to empower people with the tools and knowledge they need to
+              navigate the transplant process with confidence.
+            </p>
+          </div>
+        </div>
+      </section>
 
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/akqYQ3Tc8j8"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
+      <!-- About Section with F-pattern layout -->
+      <section id="about" class="about">
+        <div class="container">
+          <span class="section-label">About Us</span>
+          <h2 class="section-title">Breaking Down Barriers to Care</h2>
+
+          <div class="about-grid">
+            <div class="about-text">
+              <p class="body-text">
+                At <strong>Inspire Kidney Transplant Resources</strong>, we
+                recognize that many people, especially those from
+                <strong>Black, Brown, and underserved communities</strong>, face
+                serious obstacles when trying to access kidney care.
+              </p>
+
+              <p class="body-text">
+                These barriers include
+                <strong
+                  >racial bias in healthcare, financial struggles, lack of
+                  reliable transportation, food and housing insecurity, and
+                  limited access to medical information.</strong
+                >
+                This is not fair, and we are here to change that.
+              </p>
+            </div>
+
+            <div class="stat-card highlight-card">
+              <p class="stat-number">5</p>
+              <p class="stat-label">Key Support Areas</p>
+            </div>
+          </div>
+
+          <!-- How We Help Section -->
+          <div class="help-section">
+            <h3 class="subsection-title">How We Help</h3>
+            <p class="body-text">
+              We work with
+              <strong
+                >trusted doctors, hospitals, and community organizations</strong
+              >
+              to design programs that make kidney transplant access more
+              <strong>fair and equal</strong> for everyone. Our
+              <strong>Community Health Worker (CHW) initiative</strong> provides
+              personalized support every step of the way.
+            </p>
+
+            <div class="services-grid">
+              <div class="service-card">
+                <div class="service-icon">🔍</div>
+                <h4 class="service-title">Screening for Barriers</h4>
+                <p class="service-description">
+                  Helping patients identify challenges they may face in getting
+                  a transplant
+                </p>
+              </div>
+
+              <div class="service-card">
+                <div class="service-icon">🤝</div>
+                <h4 class="service-title">Connecting to Resources</h4>
+                <p class="service-description">
+                  Access to food programs, affordable housing, and financial aid
+                </p>
+              </div>
+
+              <div class="service-card">
+                <div class="service-icon">🗺️</div>
+                <h4 class="service-title">Healthcare Navigation</h4>
+                <p class="service-description">
+                  Guiding through paperwork, transplant referrals, and insurance
+                </p>
+              </div>
+
+              <div class="service-card">
+                <div class="service-icon">⚖️</div>
+                <h4 class="service-title">Fighting Provider Bias</h4>
+                <p class="service-description">
+                  Identifying unfair treatment and advocating for equal
+                  opportunities
+                </p>
+              </div>
+
+              <div class="service-card">
+                <div class="service-icon">🚗</div>
+                <h4 class="service-title">Transportation & Medication</h4>
+                <p class="service-description">
+                  Ensuring access to appointments and affordable medications
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Encouragement Section -->
+          <div class="encouragement">
+            <h3 class="encouragement-title">
+              You Are Not Alone<span class="exclamation">!</span>
+            </h3>
+            <p class="body-text center">
+              We understand that the journey to a kidney transplant can feel
+              overwhelming, but you
+              <strong>do not have to go through it alone</strong>. Whether you
+              need guidance, resources, or just someone to answer your
+              questions,
+              <strong>we are here to help.</strong>
+            </p>
+            <div class="encouragement-cta">
+              <a href="#resources" class="btn btn-primary">Get Started Today</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CKD Education Section -->
+      <section id="ckd-education" class="ckd-education">
+        <div class="container">
+          <span class="section-label">Knowledge is Power</span>
+          <h2 class="section-title">What is Chronic Kidney Disease?</h2>
+          <p class="section-intro">
+            Chronic Kidney Disease (CKD) is a condition where your kidneys
+            gradually lose function over time. Understanding CKD is the first
+            step in protecting your kidney health and making informed decisions
+            about your care.
+          </p>
+
+          <!-- 5 Stages of CKD -->
+          <div class="stages-container">
+            <h3 class="stages-title">The 5 Stages of CKD</h3>
+            <div class="stages-grid">
+              <div class="stage-card stage-1">
+                <div class="stage-number">1</div>
+                <h4 class="stage-title">Stage 1</h4>
+                <div class="stage-egfr">eGFR: 90+</div>
+                <p class="stage-description">
+                  Kidney damage with normal or high eGFR. Usually no symptoms.
+                </p>
+              </div>
+
+              <div class="stage-card stage-2">
+                <div class="stage-number">2</div>
+                <h4 class="stage-title">Stage 2</h4>
+                <div class="stage-egfr">eGFR: 60-89</div>
+                <p class="stage-description">
+                  Mild loss of kidney function. May have mild symptoms.
+                </p>
+              </div>
+
+              <div class="stage-card stage-3">
+                <div class="stage-number">3</div>
+                <h4 class="stage-title">Stage 3</h4>
+                <div class="stage-egfr">eGFR: 30-59</div>
+                <p class="stage-description">
+                  Moderate loss of kidney function. Symptoms may become more
+                  noticeable.
+                </p>
+              </div>
+
+              <div class="stage-card stage-4">
+                <div class="stage-number">4</div>
+                <h4 class="stage-title">Stage 4</h4>
+                <div class="stage-egfr">eGFR: 15-29</div>
+                <p class="stage-description">
+                  Severe loss of kidney function. Planning for treatment options
+                  begins.
+                </p>
+              </div>
+
+              <div class="stage-card stage-5">
+                <div class="stage-number">5</div>
+                <h4 class="stage-title">Stage 5</h4>
+                <div class="stage-egfr">eGFR: &lt;15</div>
+                <p class="stage-description">
+                  Kidney failure. Dialysis or transplant needed to survive.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Types of Kidney Diseases Section -->
+      <section id="kidney-diseases" class="kidney-diseases">
+        <div class="container">
+          <span class="section-label">Understanding Kidney Health</span>
+          <h2 class="section-title">Types of Kidney Disease</h2>
+          <p class="section-intro">
+            There are many different types of kidney disease. Each type has
+            unique causes, symptoms, and treatments. Understanding your specific
+            condition is an important step in managing your health.
+          </p>
+
+          <div class="disease-categories">
+            <div class="disease-category">
+              <h3 class="category-title common">Common Kidney Diseases</h3>
+              <div class="disease-grid">
+                <div class="disease-card">
+                  <h4 class="disease-name">Chronic Kidney Disease (CKD)</h4>
+                  <p class="disease-description">
+                    Long-term loss of kidney function, often caused by diabetes
+                    or high blood pressure.
+                  </p>
+                </div>
+
+                <div class="disease-card">
+                  <h4 class="disease-name">Diabetic Nephropathy</h4>
+                  <p class="disease-description">
+                    Kidney damage caused by diabetes, affecting the kidney's
+                    filtering ability.
+                  </p>
+                </div>
+
+                <div class="disease-card">
+                  <h4 class="disease-name">Polycystic Kidney Disease (PKD)</h4>
+                  <p class="disease-description">
+                    Genetic disorder causing fluid-filled cysts to grow in the
+                    kidneys.
+                  </p>
+                </div>
+
+                <div class="disease-card">
+                  <h4 class="disease-name">Glomerulonephritis</h4>
+                  <p class="disease-description">
+                    Inflammation of the kidney's filtering units (glomeruli).
+                  </p>
+                </div>
+
+                <div class="disease-card">
+                  <h4 class="disease-name">Kidney Stones</h4>
+                  <p class="disease-description">
+                    Hard deposits of minerals and salts that form inside the
+                    kidneys.
+                  </p>
+                </div>
+
+                <div class="disease-card">
+                  <h4 class="disease-name">Urinary Tract Infections (UTI)</h4>
+                  <p class="disease-description">
+                    Infections that can affect the kidneys if left untreated.
+                  </p>
+                </div>
+
+                <div class="disease-card">
+                  <h4 class="disease-name">Hypertensive Nephropathy</h4>
+                  <p class="disease-description">
+                    Kidney damage caused by chronic high blood pressure.
+                  </p>
+                </div>
+
+                <div class="disease-card">
+                  <h4 class="disease-name">Acute Kidney Injury (AKI)</h4>
+                  <p class="disease-description">
+                    Sudden loss of kidney function, often reversible with
+                    treatment.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="disease-category">
+              <h3 class="category-title rare">Rare Kidney Diseases</h3>
+              <div class="disease-grid">
+                <div class="disease-card">
+                  <h4 class="disease-name">IgA Nephropathy</h4>
+                  <p class="disease-description">
+                    Immune system disorder causing IgA protein buildup in the
+                    kidneys.
+                  </p>
+                </div>
+
+                <div class="disease-card">
+                  <h4 class="disease-name">Alport Syndrome</h4>
+                  <p class="disease-description">
+                    Genetic condition affecting kidney function, hearing, and
+                    vision.
+                  </p>
+                </div>
+
+                <div class="disease-card">
+                  <h4 class="disease-name">Fabry Disease</h4>
+                  <p class="disease-description">
+                    Rare genetic disorder causing fat buildup in kidney cells.
+                  </p>
+                </div>
+
+                <div class="disease-card">
+                  <h4 class="disease-name">Membranous Nephropathy</h4>
+                  <p class="disease-description">
+                    Immune disorder causing kidney membrane thickening.
+                  </p>
+                </div>
+
+                <div class="disease-card">
+                  <h4 class="disease-name">
+                    Focal Segmental Glomerulosclerosis (FSGS)
+                  </h4>
+                  <p class="disease-description">
+                    Scarring of the kidney's filtering units.
+                  </p>
+                </div>
+
+                <div class="disease-card">
+                  <h4 class="disease-name">Nephrotic Syndrome</h4>
+                  <p class="disease-description">
+                    Kidney disorder causing excess protein loss in urine.
+                  </p>
+                </div>
+
+                <div class="disease-card">
+                  <h4 class="disease-name">Renal Artery Stenosis</h4>
+                  <p class="disease-description">
+                    Narrowing of arteries that carry blood to the kidneys.
+                  </p>
+                </div>
+
+                <div class="disease-card">
+                  <h4 class="disease-name">Lupus Nephritis</h4>
+                  <p class="disease-description">
+                    Kidney inflammation caused by lupus autoimmune disease.
+                  </p>
+                </div>
+
+                <div class="disease-card">
+                  <h4 class="disease-name">Minimal Change Disease</h4>
+                  <p class="disease-description">
+                    Kidney disorder causing protein leakage, common in children.
+                  </p>
+                </div>
+
+                <div class="disease-card">
+                  <h4 class="disease-name">Goodpasture Syndrome</h4>
+                  <p class="disease-description">
+                    Rare autoimmune disease affecting kidneys and lungs.
+                  </p>
+                </div>
+
+                <div class="disease-card">
+                  <h4 class="disease-name">Interstitial Nephritis</h4>
+                  <p class="disease-description">
+                    Inflammation of kidney tubules and surrounding structures.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="disease-cta">
+            <p class="disease-cta-text">
+              Want to learn more? Visit the
+              <a
+                href="https://www.kidneyfund.org/all-about-kidneys/types-kidney-diseases"
+                target="_blank"
+                rel="noopener noreferrer"
+                >American Kidney Fund</a
+              >
+              for detailed information.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Resources Section with card-based layout -->
+      <section id="resources" class="resources">
+        <div class="container">
+          <span class="section-label">Resources</span>
+          <h2 class="section-title">Patient Resources & Education</h2>
+          <p class="section-intro">
+            Explore our curated collection of trusted resources to help you
+            understand and navigate the kidney transplant process.
+          </p>
+
+          <div class="resource-grid">
+            <!-- External Resource Cards -->
+            <a
+              href="https://exploretransplant.org/for-family-friends/become-a-living-donor/"
+              target="_blank"
+              class="resource-card"
+            >
+              <div class="resource-image">
+                <img src="/images/exploretrans.webp" alt="Explore Transplant" />
+              </div>
+              <div class="resource-content">
+                <h3 class="resource-title">Explore Transplant</h3>
+                <p class="resource-description">
+                  Comprehensive guide for becoming a living donor
+                </p>
+                <span class="resource-link">Learn More →</span>
+              </div>
+            </a>
+
+            <a
+              href="https://www.livingdonortoolkit.com/"
+              target="_blank"
+              class="resource-card"
+            >
+              <div class="resource-image">
+                <img src="/images/ldtk.webp" alt="Living Donor Toolkit" />
+              </div>
+              <div class="resource-content">
+                <h3 class="resource-title">Living Donor Toolkit</h3>
+                <p class="resource-description">
+                  Essential tools and information for living donors
+                </p>
+                <span class="resource-link">Learn More →</span>
+              </div>
+            </a>
+
+            <a
+              href="https://transplantliving.org/kidney/about-living-donor-transplant/"
+              target="_blank"
+              class="resource-card"
+            >
+              <div class="resource-image">
+                <img src="/images/unos.webp" alt="Transplant Living" />
+              </div>
+              <div class="resource-content">
+                <h3 class="resource-title">Transplant Living</h3>
+                <p class="resource-description">
+                  UNOS guide to living donor transplants
+                </p>
+                <span class="resource-link">Learn More →</span>
+              </div>
+            </a>
+
+            <a
+              href="https://www.livingdonorassistance.org/Resources/Additional-Resources"
+              target="_blank"
+              class="resource-card"
+            >
+              <div class="resource-image">
+                <img src="/images/nldac.webp" alt="Living Donor Assistance" />
+              </div>
+              <div class="resource-content">
+                <h3 class="resource-title">Living Donor Resources</h3>
+                <p class="resource-description">
+                  Financial assistance and additional support
+                </p>
+                <span class="resource-link">Learn More →</span>
+              </div>
+            </a>
+
+            <a
+              href="https://www.findhelp.org/"
+              target="_blank"
+              class="resource-card"
+            >
+              <div class="resource-image findhelp-logo-bg">
+                <img src="/images/fh.webp" alt="FindHelp.org Logo" />
+              </div>
+              <div class="resource-content">
+                <h3 class="resource-title">FindHelp.org</h3>
+                <p class="resource-description">
+                  Connect with local resources and support services
+                </p>
+                <span class="resource-link">Learn More →</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Video Resources Section -->
+          <div class="video-section">
+            <h3 class="subsection-title">Educational Videos</h3>
+
+            <div class="video-category">
+              <h4 class="video-category-title">National Kidney Foundation</h4>
+              <p class="video-category-description">
+                Learn about the living donor experience and finding a donor
+              </p>
+              <div class="video-grid">
+                <div class="video-card">
+                  <iframe
+                    src="https://www.youtube-nocookie.com/embed/-f5yuW9bmtY"
+                    frameborder="0"
+                    allowfullscreen
+                    title="Finding a Living Donor"
+                  ></iframe>
+                </div>
+                <div class="video-card">
+                  <iframe
+                    src="https://www.youtube-nocookie.com/embed/BJZ-kleYz40"
+                    frameborder="0"
+                    allowfullscreen
+                    title="Living Donor Experience"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+
+            <div class="video-category">
+              <h4 class="video-category-title">HRSA Animated Series</h4>
+              <p class="video-category-description">
+                Easy-to-understand animated videos about kidney donation
+              </p>
+              <div class="video-grid">
+                <div class="video-card">
+                  <iframe
+                    src="https://www.youtube-nocookie.com/embed/YiHd7YCTnr0"
+                    frameborder="0"
+                    allowfullscreen
+                    title="HRSA Video 1"
+                  ></iframe>
+                </div>
+                <div class="video-card">
+                  <iframe
+                    src="https://www.youtube-nocookie.com/embed/akqYQ3Tc8j8"
+                    frameborder="0"
+                    allowfullscreen
+                    title="HRSA Video 2"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Spanish Resources Section -->
+      <section id="spanish-resources" class="spanish-section">
+        <div class="container">
+          <div class="category-header-spanish">
+            <div class="category-icon">📚</div>
+            <div class="category-content">
+              <h3 class="spanish-category-title">Recursos en Español</h3>
+              <p class="spanish-category-description">
+                Recursos educativos y de apoyo en español para la comunidad
+                hispanohablante
+              </p>
+            </div>
+          </div>
+
+          <div class="spanish-subsection">
+            <div class="spanish-category-badge">
+              <div class="badge-icon">🎥</div>
+              <h4 class="spanish-category-title">Videos Educativos</h4>
+            </div>
+
+            <div class="spanish-video-grid">
+              <div class="spanish-video-card">
+                <iframe
+                  src="https://www.youtube-nocookie.com/embed/K1SXgQYSphI"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  title="Trasplante de Riñón - Información Completa"
+                ></iframe>
+                <div class="video-content">
+                  <h4 class="video-title">
+                    Trasplante de Riñón - Información Completa
+                  </h4>
+                  <p class="video-description">
+                    Información detallada sobre el proceso de trasplante de
+                    riñón
+                  </p>
+                </div>
+              </div>
+
+              <div class="spanish-video-card">
+                <iframe
+                  src="https://www.youtube-nocookie.com/embed/YjPb2qaaRE4"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  title="Información sobre Trasplante Renal en Español"
+                ></iframe>
+                <div class="video-content">
+                  <h4 class="video-title">
+                    Información sobre Trasplante Renal
+                  </h4>
+                  <p class="video-description">
+                    Guía completa en español sobre trasplantes renales
+                  </p>
+                </div>
+              </div>
+
+              <div class="spanish-video-card">
+                <iframe
+                  src="https://www.youtube-nocookie.com/embed/KoRY9eDo8eY"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  title="Educación sobre Trasplante de Riñón"
+                ></iframe>
+                <div class="video-content">
+                  <h4 class="video-title">
+                    Educación sobre Trasplante de Riñón
+                  </h4>
+                  <p class="video-description">
+                    Material educativo para pacientes y familias
+                  </p>
+                </div>
+              </div>
+
+              <div class="spanish-video-card">
+                <iframe
+                  src="https://www.youtube-nocookie.com/embed/TxFCu1C-Ub8"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  title="Donantes Vivos de Riñón"
+                ></iframe>
+                <div class="video-content">
+                  <h4 class="video-title">Donantes Vivos de Riñón</h4>
+                  <p class="video-description">
+                    Información sobre donación en vida
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="spanish-subsection">
+            <div class="spanish-category-badge">
+              <div class="badge-icon">📄</div>
+              <h4 class="spanish-category-title">
+                Guías y Recursos para Descargar (PDF)
+              </h4>
+            </div>
+
+            <div class="spanish-pdf-grid">
+              <div class="spanish-pdf-card">
+                <div class="pdf-image">
+                  <img
+                    src="/images/vivirbien.webp"
+                    alt="Vivir Bien con Insuficiencia Renal - Trasplante de Riñón"
+                  />
+                </div>
+                <div class="pdf-content">
+                  <h4 class="pdf-title">Trasplante de Riñón - Guía Completa</h4>
+                  <p class="pdf-description">
+                    Guía completa en español sobre el proceso de trasplante de
+                    riñón
+                  </p>
+                  <a href="#" class="pdf-download-btn" download>
+                    Descargar PDF →
+                  </a>
+                </div>
+              </div>
+
+              <div class="spanish-pdf-card">
+                <div class="pdf-image">
+                  <img
+                    src="/images/donorshild.webp"
+                    alt="Donor Shield - National Kidney Registry"
+                  />
+                </div>
+                <div class="pdf-content">
+                  <h4 class="pdf-title">
+                    Donor Shield - Protección para Donantes
+                  </h4>
+                  <p class="pdf-description">
+                    Información sobre protección y apoyo para donantes vivos
+                  </p>
+                  <a href="#" class="pdf-download-btn" download>
+                    Descargar PDF →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta-section">
+        <div class="container">
+          <h2 class="cta-title">Ready to Get Started?</h2>
+          <p class="cta-text">
+            Explore our resources today to learn more about how we can support
+            you on your path to a healthier future.
+          </p>
+          <a href="#resources" class="btn btn-primary btn-large"
+            >Access Resources</a
+          >
         </div>
       </section>
     </main>
-    <footer>
-      <p>&copy; 2025 INSPIRE</p>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <img
+            src="/images/inspire.svg"
+            alt="Inspire Logo"
+            class="footer-logo"
+          />
+          <p class="footer-text">
+            &copy; 2025 Inspire Kidney Transplant Resources. Empowering
+            communities.
+          </p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

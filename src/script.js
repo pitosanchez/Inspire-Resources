@@ -7,7 +7,10 @@
 // ========================================
 // GSAP SETUP & SMOOTH SCROLL
 // ========================================
-gsap.registerPlugin(ScrollTrigger);
+// Safely register GSAP plugins
+if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+  gsap.registerPlugin(ScrollTrigger);
+}
 
 // Scroll Progress Indicator
 window.addEventListener('scroll', () => {
@@ -130,12 +133,14 @@ document.addEventListener('DOMContentLoaded', () => {
       switchLanguage(lang);
       
       // GSAP animation for button click
-      gsap.to(btn, {
-        scale: 0.95,
-        duration: 0.1,
-        yoyo: true,
-        repeat: 1
-      });
+      if (typeof gsap !== 'undefined') {
+        gsap.to(btn, {
+          scale: 0.95,
+          duration: 0.1,
+          yoyo: true,
+          repeat: 1
+        });
+      }
     });
   });
   
@@ -146,89 +151,90 @@ document.addEventListener('DOMContentLoaded', () => {
 // ========================================
 // GSAP ANIMATIONS - Intentional Motion
 // ========================================
+if (typeof gsap !== 'undefined') {
+  // Hero Section - Fade in on load
+  gsap.from('.hero-content', {
+    opacity: 0,
+    y: 50,
+    duration: 1.2,
+    ease: 'power3.out',
+    delay: 0.2
+  });
 
-// Hero Section - Fade in on load
-gsap.from('.hero-content', {
-  opacity: 0,
-  y: 50,
-  duration: 1.2,
-  ease: 'power3.out',
-  delay: 0.2
-});
+  // Section Reveal Animations
+  const sections = gsap.utils.toArray('section');
+  sections.forEach((section, index) => {
+    gsap.from(section, {
+      scrollTrigger: {
+        trigger: section,
+        start: 'top 80%',
+        end: 'top 20%',
+        toggleActions: 'play none none none'
+      },
+      opacity: 0,
+      y: 60,
+      duration: 0.8,
+      ease: 'power2.out',
+      delay: index * 0.1
+    });
+  });
 
-// Section Reveal Animations
-const sections = gsap.utils.toArray('section');
-sections.forEach((section, index) => {
-  gsap.from(section, {
+  // CKD Stage Cards - Stagger Animation
+  gsap.from('.stage-card', {
     scrollTrigger: {
-      trigger: section,
-      start: 'top 80%',
-      end: 'top 20%',
-      toggleActions: 'play none none none'
+      trigger: '.stages-grid',
+      start: 'top 75%'
     },
     opacity: 0,
-    y: 60,
-    duration: 0.8,
-    ease: 'power2.out',
-    delay: index * 0.1
+    y: 40,
+    scale: 0.9,
+    duration: 0.6,
+    stagger: 0.1,
+    ease: 'back.out(1.2)'
   });
-});
 
-// CKD Stage Cards - Stagger Animation
-gsap.from('.stage-card', {
-  scrollTrigger: {
-    trigger: '.stages-grid',
-    start: 'top 75%'
-  },
-  opacity: 0,
-  y: 40,
-  scale: 0.9,
-  duration: 0.6,
-  stagger: 0.1,
-  ease: 'back.out(1.2)'
-});
+  // Disease Cards - Grid Reveal
+  gsap.from('.disease-card', {
+    scrollTrigger: {
+      trigger: '.disease-grid',
+      start: 'top 80%'
+    },
+    opacity: 0,
+    y: 30,
+    duration: 0.5,
+    stagger: {
+      amount: 0.8,
+      grid: 'auto',
+      from: 'start'
+    },
+    ease: 'power2.out'
+  });
 
-// Disease Cards - Grid Reveal
-gsap.from('.disease-card', {
-  scrollTrigger: {
-    trigger: '.disease-grid',
-    start: 'top 80%'
-  },
-  opacity: 0,
-  y: 30,
-  duration: 0.5,
-  stagger: {
-    amount: 0.8,
-    grid: 'auto',
-    from: 'start'
-  },
-  ease: 'power2.out'
-});
+  // Spanish Video Cards - Elegant Entrance
+  gsap.from('.spanish-video-card', {
+    scrollTrigger: {
+      trigger: '.spanish-video-grid',
+      start: 'top 80%'
+    },
+    opacity: 0,
+    y: 50,
+    duration: 0.7,
+    stagger: 0.15,
+    ease: 'power3.out'
+  });
 
-// Spanish Video Cards - Elegant Entrance
-gsap.from('.spanish-video-card', {
-  scrollTrigger: {
-    trigger: '.spanish-video-grid',
-    start: 'top 80%'
-  },
-  opacity: 0,
-  y: 50,
-  duration: 0.7,
-  stagger: 0.15,
-  ease: 'power3.out'
-});
-
-// Section Labels - Subtle Float
-gsap.from('.section-label', {
-  scrollTrigger: {
-    trigger: '.section-label',
-    start: 'top 85%'
-  },
-  opacity: 0,
-  x: -20,
-  duration: 0.6,
-  ease: 'power2.out'
-});
+  // Section Labels - Subtle Float
+  gsap.from('.section-label', {
+    scrollTrigger: {
+      trigger: '.section-label',
+      start: 'top 85%'
+    },
+    opacity: 0,
+    x: -20,
+    duration: 0.6,
+    ease: 'power2.out'
+  });
+}
 
 // ========================================
 // SMOOTH SCROLL FOR NAVIGATION
@@ -251,13 +257,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const target = document.querySelector(this.getAttribute('href'));
         
         if (target) {
-          gsap.to(window, {
-            duration: 1,
-            scrollTo: {
-              y: target,
-              offsetY: 80
-            },
-            ease: 'power3.inOut'
+          const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - 80;
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
           });
         }
       });
@@ -268,25 +271,26 @@ document.addEventListener('DOMContentLoaded', () => {
 // ========================================
 // HOVER INTERACTIONS - Micro-Moments
 // ========================================
-
-// Service Cards Tilt Effect
-document.querySelectorAll('.service-card, .resource-card, .disease-card').forEach(card => {
-  card.addEventListener('mouseenter', function() {
-    gsap.to(this, {
-      scale: 1.03,
-      duration: 0.3,
-      ease: 'power2.out'
+if (typeof gsap !== 'undefined') {
+  // Service Cards Tilt Effect
+  document.querySelectorAll('.service-card, .resource-card, .disease-card').forEach(card => {
+    card.addEventListener('mouseenter', function() {
+      gsap.to(this, {
+        scale: 1.03,
+        duration: 0.3,
+        ease: 'power2.out'
+      });
+    });
+    
+    card.addEventListener('mouseleave', function() {
+      gsap.to(this, {
+        scale: 1,
+        duration: 0.3,
+        ease: 'power2.out'
+      });
     });
   });
-  
-  card.addEventListener('mouseleave', function() {
-    gsap.to(this, {
-      scale: 1,
-      duration: 0.3,
-      ease: 'power2.out'
-    });
-  });
-});
+}
 
 // Button Ripple Effect
 document.querySelectorAll('.btn').forEach(btn => {
@@ -313,7 +317,7 @@ document.querySelectorAll('.btn').forEach(btn => {
 // ========================================
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
-if (prefersReducedMotion.matches) {
+if (prefersReducedMotion.matches && typeof gsap !== 'undefined') {
   // Disable all GSAP animations
   gsap.globalTimeline.clear();
   gsap.set('*', { clearProps: 'all' });

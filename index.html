@@ -14,6 +14,9 @@
     />
   </head>
   <body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
     <!-- Sticky Header with Z-pattern (logo left, nav right) -->
     <header class="header">
       <div class="header-container">
@@ -21,7 +24,21 @@
         <nav class="nav">
           <a href="#home" class="nav-link">Home</a>
           <a href="#about" class="nav-link">About</a>
+          <a href="#ckd-education" class="nav-link">CKD Info</a>
+          <a href="#kidney-diseases" class="nav-link">Kidney Diseases</a>
           <a href="#resources" class="nav-link">Resources</a>
+          <a href="#spanish-resources" class="nav-link">Recursos en Español</a>
+          <div class="language-switcher">
+            <button class="lang-btn active" data-lang="en" aria-label="Switch to English">
+              <span class="lang-flag">🇺🇸</span>
+              <span class="lang-text">EN</span>
+            </button>
+            <span class="lang-divider">|</span>
+            <button class="lang-btn" data-lang="es" aria-label="Switch to Spanish">
+              <span class="lang-flag">🇲🇽</span>
+              <span class="lang-text">ES</span>
+            </button>
+          </div>
           <a href="#contact" class="nav-link cta-button">Get Help</a>
         </nav>
       </div>
@@ -177,6 +194,235 @@
         </div>
       </section>
 
+      <!-- CKD Education Section -->
+      <section id="ckd-education" class="ckd-education">
+        <div class="container">
+          <span class="section-label">Knowledge is Power</span>
+          <h2 class="section-title">What is Chronic Kidney Disease?</h2>
+          <p class="section-intro">
+            Chronic Kidney Disease (CKD) is a condition where your kidneys
+            gradually lose function over time. Understanding CKD is the first step
+            in protecting your kidney health and making informed decisions about
+            your care.
+          </p>
+
+          <!-- 5 Stages of CKD -->
+          <div class="stages-container">
+            <h3 class="stages-title">The 5 Stages of CKD</h3>
+            <div class="stages-grid">
+              <div class="stage-card stage-1">
+                <div class="stage-number">1</div>
+                <h4 class="stage-title">Stage 1</h4>
+                <div class="stage-egfr">eGFR: 90+</div>
+                <p class="stage-description">
+                  Kidney damage with normal or high eGFR. Usually no symptoms.
+                </p>
+              </div>
+
+              <div class="stage-card stage-2">
+                <div class="stage-number">2</div>
+                <h4 class="stage-title">Stage 2</h4>
+                <div class="stage-egfr">eGFR: 60-89</div>
+                <p class="stage-description">
+                  Mild loss of kidney function. May have mild symptoms.
+                </p>
+              </div>
+
+              <div class="stage-card stage-3">
+                <div class="stage-number">3</div>
+                <h4 class="stage-title">Stage 3</h4>
+                <div class="stage-egfr">eGFR: 30-59</div>
+                <p class="stage-description">
+                  Moderate loss of kidney function. Symptoms may become more noticeable.
+                </p>
+              </div>
+
+              <div class="stage-card stage-4">
+                <div class="stage-number">4</div>
+                <h4 class="stage-title">Stage 4</h4>
+                <div class="stage-egfr">eGFR: 15-29</div>
+                <p class="stage-description">
+                  Severe loss of kidney function. Planning for treatment options begins.
+                </p>
+              </div>
+
+              <div class="stage-card stage-5">
+                <div class="stage-number">5</div>
+                <h4 class="stage-title">Stage 5</h4>
+                <div class="stage-egfr">eGFR: &lt;15</div>
+                <p class="stage-description">
+                  Kidney failure. Dialysis or transplant needed to survive.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Types of Kidney Diseases Section -->
+      <section id="kidney-diseases" class="kidney-diseases">
+        <div class="container">
+          <span class="section-label">Understanding Kidney Health</span>
+          <h2 class="section-title">Types of Kidney Disease</h2>
+          <p class="section-intro">
+            There are many different types of kidney disease. Each type has unique causes,
+            symptoms, and treatments. Understanding your specific condition is an important
+            step in managing your health.
+          </p>
+
+          <div class="disease-categories">
+            <div class="disease-category">
+              <h3 class="category-title common">Common Kidney Diseases</h3>
+              <div class="disease-grid">
+                <div class="disease-card">
+                  <h4 class="disease-name">Chronic Kidney Disease (CKD)</h4>
+                  <p class="disease-description">
+                    Long-term loss of kidney function, often caused by diabetes or high blood pressure.
+                  </p>
+                </div>
+
+                <div class="disease-card">
+                  <h4 class="disease-name">Diabetic Nephropathy</h4>
+                  <p class="disease-description">
+                    Kidney damage caused by diabetes, affecting the kidney's filtering ability.
+                  </p>
+                </div>
+
+                <div class="disease-card">
+                  <h4 class="disease-name">Polycystic Kidney Disease (PKD)</h4>
+                  <p class="disease-description">
+                    Genetic disorder causing fluid-filled cysts to grow in the kidneys.
+                  </p>
+                </div>
+
+                <div class="disease-card">
+                  <h4 class="disease-name">Glomerulonephritis</h4>
+                  <p class="disease-description">
+                    Inflammation of the kidney's filtering units (glomeruli).
+                  </p>
+                </div>
+
+                <div class="disease-card">
+                  <h4 class="disease-name">Kidney Stones</h4>
+                  <p class="disease-description">
+                    Hard deposits of minerals and salts that form inside the kidneys.
+                  </p>
+                </div>
+
+                <div class="disease-card">
+                  <h4 class="disease-name">Urinary Tract Infections (UTI)</h4>
+                  <p class="disease-description">
+                    Infections that can affect the kidneys if left untreated.
+                  </p>
+                </div>
+
+                <div class="disease-card">
+                  <h4 class="disease-name">Hypertensive Nephropathy</h4>
+                  <p class="disease-description">
+                    Kidney damage caused by chronic high blood pressure.
+                  </p>
+                </div>
+
+                <div class="disease-card">
+                  <h4 class="disease-name">Acute Kidney Injury (AKI)</h4>
+                  <p class="disease-description">
+                    Sudden loss of kidney function, often reversible with treatment.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="disease-category">
+              <h3 class="category-title rare">Rare Kidney Diseases</h3>
+              <div class="disease-grid">
+                <div class="disease-card">
+                  <h4 class="disease-name">IgA Nephropathy</h4>
+                  <p class="disease-description">
+                    Immune system disorder causing IgA protein buildup in the kidneys.
+                  </p>
+                </div>
+
+                <div class="disease-card">
+                  <h4 class="disease-name">Alport Syndrome</h4>
+                  <p class="disease-description">
+                    Genetic condition affecting kidney function, hearing, and vision.
+                  </p>
+                </div>
+
+                <div class="disease-card">
+                  <h4 class="disease-name">Fabry Disease</h4>
+                  <p class="disease-description">
+                    Rare genetic disorder causing fat buildup in kidney cells.
+                  </p>
+                </div>
+
+                <div class="disease-card">
+                  <h4 class="disease-name">Membranous Nephropathy</h4>
+                  <p class="disease-description">
+                    Immune disorder causing kidney membrane thickening.
+                  </p>
+                </div>
+
+                <div class="disease-card">
+                  <h4 class="disease-name">Focal Segmental Glomerulosclerosis (FSGS)</h4>
+                  <p class="disease-description">
+                    Scarring of the kidney's filtering units.
+                  </p>
+                </div>
+
+                <div class="disease-card">
+                  <h4 class="disease-name">Nephrotic Syndrome</h4>
+                  <p class="disease-description">
+                    Kidney disorder causing excess protein loss in urine.
+                  </p>
+                </div>
+
+                <div class="disease-card">
+                  <h4 class="disease-name">Renal Artery Stenosis</h4>
+                  <p class="disease-description">
+                    Narrowing of arteries that carry blood to the kidneys.
+                  </p>
+                </div>
+
+                <div class="disease-card">
+                  <h4 class="disease-name">Lupus Nephritis</h4>
+                  <p class="disease-description">
+                    Kidney inflammation caused by lupus autoimmune disease.
+                  </p>
+                </div>
+
+                <div class="disease-card">
+                  <h4 class="disease-name">Minimal Change Disease</h4>
+                  <p class="disease-description">
+                    Kidney disorder causing protein leakage, common in children.
+                  </p>
+                </div>
+
+                <div class="disease-card">
+                  <h4 class="disease-name">Goodpasture Syndrome</h4>
+                  <p class="disease-description">
+                    Rare autoimmune disease affecting kidneys and lungs.
+                  </p>
+                </div>
+
+                <div class="disease-card">
+                  <h4 class="disease-name">Interstitial Nephritis</h4>
+                  <p class="disease-description">
+                    Inflammation of kidney tubules and surrounding structures.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="disease-cta">
+            <p class="disease-cta-text">
+              Want to learn more? Visit the <a href="https://www.kidneyfund.org/all-about-kidneys/types-kidney-diseases" target="_blank" rel="noopener noreferrer">American Kidney Fund</a> for detailed information.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <!-- Resources Section with card-based layout -->
       <section id="resources" class="resources">
         <div class="container">
@@ -256,6 +502,23 @@
                 <span class="resource-link">Learn More →</span>
               </div>
             </a>
+
+            <a
+              href="https://www.findhelp.org/"
+              target="_blank"
+              class="resource-card"
+            >
+              <div class="resource-image findhelp-logo-bg">
+                <img src="/images/fh.webp" alt="FindHelp.org Logo" />
+              </div>
+              <div class="resource-content">
+                <h3 class="resource-title">FindHelp.org</h3>
+                <p class="resource-description">
+                  Connect with local resources and support services
+                </p>
+                <span class="resource-link">Learn More →</span>
+              </div>
+            </a>
           </div>
 
           <!-- Video Resources Section -->
@@ -270,7 +533,7 @@
               <div class="video-grid">
                 <div class="video-card">
                   <iframe
-                    src="https://www.youtube.com/embed/-f5yuW9bmtY"
+                    src="https://www.youtube-nocookie.com/embed/-f5yuW9bmtY"
                     frameborder="0"
                     allowfullscreen
                     title="Finding a Living Donor"
@@ -278,7 +541,7 @@
                 </div>
                 <div class="video-card">
                   <iframe
-                    src="https://www.youtube.com/embed/BJZ-kleYz40"
+                    src="https://www.youtube-nocookie.com/embed/BJZ-kleYz40"
                     frameborder="0"
                     allowfullscreen
                     title="Living Donor Experience"
@@ -295,7 +558,7 @@
               <div class="video-grid">
                 <div class="video-card">
                   <iframe
-                    src="https://www.youtube.com/embed/YiHd7YCTnr0"
+                    src="https://www.youtube-nocookie.com/embed/YiHd7YCTnr0"
                     frameborder="0"
                     allowfullscreen
                     title="HRSA Video 1"
@@ -303,11 +566,138 @@
                 </div>
                 <div class="video-card">
                   <iframe
-                    src="https://www.youtube.com/embed/akqYQ3Tc8j8"
+                    src="https://www.youtube-nocookie.com/embed/akqYQ3Tc8j8"
                     frameborder="0"
                     allowfullscreen
                     title="HRSA Video 2"
                   ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Spanish Resources Section -->
+      <section id="spanish-resources" class="spanish-section">
+        <div class="container">
+          <div class="category-header-spanish">
+            <div class="category-icon">📚</div>
+            <div class="category-content">
+              <h3 class="spanish-category-title">Recursos en Español</h3>
+              <p class="spanish-category-description">
+                Recursos educativos y de apoyo en español para la comunidad hispanohablante
+              </p>
+            </div>
+          </div>
+
+          <div class="spanish-subsection">
+            <div class="spanish-category-badge">
+              <div class="badge-icon">🎥</div>
+              <h4 class="spanish-category-title">Videos Educativos</h4>
+            </div>
+
+            <div class="spanish-video-grid">
+              <div class="spanish-video-card">
+                <iframe
+                  src="https://www.youtube-nocookie.com/embed/K1SXgQYSphI"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  title="Trasplante de Riñón - Información Completa"
+                ></iframe>
+                <div class="video-content">
+                  <h4 class="video-title">Trasplante de Riñón - Información Completa</h4>
+                  <p class="video-description">
+                    Información detallada sobre el proceso de trasplante de riñón
+                  </p>
+                </div>
+              </div>
+
+              <div class="spanish-video-card">
+                <iframe
+                  src="https://www.youtube-nocookie.com/embed/YjPb2qaaRE4"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  title="Información sobre Trasplante Renal en Español"
+                ></iframe>
+                <div class="video-content">
+                  <h4 class="video-title">Información sobre Trasplante Renal</h4>
+                  <p class="video-description">
+                    Guía completa en español sobre trasplantes renales
+                  </p>
+                </div>
+              </div>
+
+              <div class="spanish-video-card">
+                <iframe
+                  src="https://www.youtube-nocookie.com/embed/KoRY9eDo8eY"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  title="Educación sobre Trasplante de Riñón"
+                ></iframe>
+                <div class="video-content">
+                  <h4 class="video-title">Educación sobre Trasplante de Riñón</h4>
+                  <p class="video-description">
+                    Material educativo para pacientes y familias
+                  </p>
+                </div>
+              </div>
+
+              <div class="spanish-video-card">
+                <iframe
+                  src="https://www.youtube-nocookie.com/embed/TxFCu1C-Ub8"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  title="Donantes Vivos de Riñón"
+                ></iframe>
+                <div class="video-content">
+                  <h4 class="video-title">Donantes Vivos de Riñón</h4>
+                  <p class="video-description">
+                    Información sobre donación en vida
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="spanish-subsection">
+            <div class="spanish-category-badge">
+              <div class="badge-icon">📄</div>
+              <h4 class="spanish-category-title">Guías y Recursos para Descargar (PDF)</h4>
+            </div>
+
+            <div class="spanish-pdf-grid">
+              <div class="spanish-pdf-card">
+                <div class="pdf-image">
+                  <img src="/images/vivirbien.webp" alt="Vivir Bien con Insuficiencia Renal - Trasplante de Riñón" />
+                </div>
+                <div class="pdf-content">
+                  <h4 class="pdf-title">Trasplante de Riñón - Guía Completa</h4>
+                  <p class="pdf-description">
+                    Guía completa en español sobre el proceso de trasplante de riñón
+                  </p>
+                  <a href="#" class="pdf-download-btn" download>
+                    Descargar PDF →
+                  </a>
+                </div>
+              </div>
+
+              <div class="spanish-pdf-card">
+                <div class="pdf-image">
+                  <img src="/images/donorshild.webp" alt="Donor Shield - National Kidney Registry" />
+                </div>
+                <div class="pdf-content">
+                  <h4 class="pdf-title">Donor Shield - Protección para Donantes</h4>
+                  <p class="pdf-description">
+                    Información sobre protección y apoyo para donantes vivos
+                  </p>
+                  <a href="#" class="pdf-download-btn" download>
+                    Descargar PDF →
+                  </a>
                 </div>
               </div>
             </div>

@@ -1,0 +1,20 @@
+<svg width="300" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="dsGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0066cc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#004c99;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="300" height="400" rx="12" fill="url(#dsGradient)" opacity="0.9"/>
+  
+  <!-- Shield Icon -->
+  <path d="M150 80 L110 95 L110 145 C110 175 130 195 150 210 C170 195 190 175 190 145 L190 95 Z" 
+        fill="white" opacity="0.9" stroke="white" stroke-width="2"/>
+  <text x="150" y="155" font-family="Arial, sans-serif" font-size="40" font-weight="bold" fill="#0066cc" text-anchor="middle">+</text>
+  
+  <text x="150" y="250" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="white" text-anchor="middle">Donor Shield</text>
+  <line x="80" y="270" x2="220" y2="270" stroke="white" stroke-width="2"/>
+  <text x="150" y="310" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle">Protección para</text>
+  <text x="150" y="340" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle">Donantes Vivos</text>
+  <text x="150" y="370" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle" opacity="0.8">National Kidney Registry</text>
+</svg>

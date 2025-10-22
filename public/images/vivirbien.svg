@@ -1,0 +1,16 @@
+<svg width="300" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vbGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="300" height="400" rx="12" fill="url(#vbGradient)" opacity="0.9"/>
+  <text x="150" y="120" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="white" text-anchor="middle">Vivir Bien</text>
+  <text x="150" y="160" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle">con</text>
+  <text x="150" y="200" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">Insuficiencia Renal</text>
+  <line x1="80" y1="220" x2="220" y2="220" stroke="white" stroke-width="2"/>
+  <text x="150" y="260" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white" text-anchor="middle">Trasplante</text>
+  <text x="150" y="295" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white" text-anchor="middle">de Riñón</text>
+  <text x="150" y="340" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">Guía Completa</text>
+</svg>

@@ -5,14 +5,8 @@
  */
 
 // ========================================
-// GSAP SETUP & SMOOTH SCROLL
+// SCROLL PROGRESS INDICATOR
 // ========================================
-// Safely register GSAP plugins
-if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
-  gsap.registerPlugin(ScrollTrigger);
-}
-
-// Scroll Progress Indicator
 window.addEventListener('scroll', () => {
   const scrollProgress = document.getElementById('scrollProgress');
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -52,11 +46,6 @@ const translations = {
     'Knowledge is Power': 'Knowledge is Power',
     'What is Chronic Kidney Disease?': 'What is Chronic Kidney Disease?',
     'The 5 Stages of CKD': 'The 5 Stages of CKD',
-    'Stage 1': 'Stage 1',
-    'Stage 2': 'Stage 2',
-    'Stage 3': 'Stage 3',
-    'Stage 4': 'Stage 4',
-    'Stage 5': 'Stage 5',
     
     // Other
     'Ready to Get Started?': 'Ready to Get Started?',
@@ -86,11 +75,6 @@ const translations = {
     'Knowledge is Power': 'El Conocimiento es Poder',
     'What is Chronic Kidney Disease?': '¿Qué es la Enfermedad Renal Crónica?',
     'The 5 Stages of CKD': 'Las 5 Etapas de la ERC',
-    'Stage 1': 'Etapa 1',
-    'Stage 2': 'Etapa 2',
-    'Stage 3': 'Etapa 3',
-    'Stage 4': 'Etapa 4',
-    'Stage 5': 'Etapa 5',
     
     // Other
     'Ready to Get Started?': '¿Listo para Comenzar?',
@@ -124,122 +108,21 @@ function switchLanguage(lang) {
   document.documentElement.lang = lang;
 }
 
-// Initialize language switcher
+// ========================================
+// INITIALIZE ON DOM READY
+// ========================================
 document.addEventListener('DOMContentLoaded', () => {
-  // Set up language buttons
+  // Language switcher setup
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const lang = btn.getAttribute('data-lang');
       switchLanguage(lang);
-      
-      // GSAP animation for button click
-      if (typeof gsap !== 'undefined') {
-        gsap.to(btn, {
-          scale: 0.95,
-          duration: 0.1,
-          yoyo: true,
-          repeat: 1
-        });
-      }
     });
   });
   
   // Initialize with saved language
   switchLanguage(currentLang);
-});
-
-// ========================================
-// GSAP ANIMATIONS - Intentional Motion
-// ========================================
-if (typeof gsap !== 'undefined') {
-  // Hero Section - Fade in on load
-  gsap.from('.hero-content', {
-    opacity: 0,
-    y: 50,
-    duration: 1.2,
-    ease: 'power3.out',
-    delay: 0.2
-  });
-
-  // Section Reveal Animations
-  const sections = gsap.utils.toArray('section');
-  sections.forEach((section, index) => {
-    gsap.from(section, {
-      scrollTrigger: {
-        trigger: section,
-        start: 'top 80%',
-        end: 'top 20%',
-        toggleActions: 'play none none none'
-      },
-      opacity: 0,
-      y: 60,
-      duration: 0.8,
-      ease: 'power2.out',
-      delay: index * 0.1
-    });
-  });
-
-  // CKD Stage Cards - Stagger Animation
-  gsap.from('.stage-card', {
-    scrollTrigger: {
-      trigger: '.stages-grid',
-      start: 'top 75%'
-    },
-    opacity: 0,
-    y: 40,
-    scale: 0.9,
-    duration: 0.6,
-    stagger: 0.1,
-    ease: 'back.out(1.2)'
-  });
-
-  // Disease Cards - Grid Reveal
-  gsap.from('.disease-card', {
-    scrollTrigger: {
-      trigger: '.disease-grid',
-      start: 'top 80%'
-    },
-    opacity: 0,
-    y: 30,
-    duration: 0.5,
-    stagger: {
-      amount: 0.8,
-      grid: 'auto',
-      from: 'start'
-    },
-    ease: 'power2.out'
-  });
-
-  // Spanish Video Cards - Elegant Entrance
-  gsap.from('.spanish-video-card', {
-    scrollTrigger: {
-      trigger: '.spanish-video-grid',
-      start: 'top 80%'
-    },
-    opacity: 0,
-    y: 50,
-    duration: 0.7,
-    stagger: 0.15,
-    ease: 'power3.out'
-  });
-
-  // Section Labels - Subtle Float
-  gsap.from('.section-label', {
-    scrollTrigger: {
-      trigger: '.section-label',
-      start: 'top 85%'
-    },
-    opacity: 0,
-    x: -20,
-    duration: 0.6,
-    ease: 'power2.out'
-  });
-}
-
-// ========================================
-// SMOOTH SCROLL FOR NAVIGATION
-// ========================================
-document.addEventListener('DOMContentLoaded', () => {
+  
   // External links open in new tab
   const anchors = document.querySelectorAll('a');
   anchors.forEach(anchor => {
@@ -266,82 +149,57 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   });
-});
-
-// ========================================
-// HOVER INTERACTIONS - Micro-Moments
-// ========================================
-if (typeof gsap !== 'undefined') {
-  // Service Cards Tilt Effect
-  document.querySelectorAll('.service-card, .resource-card, .disease-card').forEach(card => {
-    card.addEventListener('mouseenter', function() {
-      gsap.to(this, {
-        scale: 1.03,
-        duration: 0.3,
-        ease: 'power2.out'
-      });
-    });
-    
-    card.addEventListener('mouseleave', function() {
-      gsap.to(this, {
-        scale: 1,
-        duration: 0.3,
-        ease: 'power2.out'
-      });
-    });
-  });
-}
-
-// Button Ripple Effect
-document.querySelectorAll('.btn').forEach(btn => {
-  btn.addEventListener('click', function(e) {
-    const ripple = document.createElement('span');
-    const rect = this.getBoundingClientRect();
-    const size = Math.max(rect.width, rect.height);
-    const x = e.clientX - rect.left - size / 2;
-    const y = e.clientY - rect.top - size / 2;
-    
-    ripple.style.width = ripple.style.height = size + 'px';
-    ripple.style.left = x + 'px';
-    ripple.style.top = y + 'px';
-    ripple.classList.add('ripple');
-    
-    this.appendChild(ripple);
-    
-    setTimeout(() => ripple.remove(), 600);
-  });
-});
-
-// ========================================
-// ACCESSIBILITY - Reduced Motion
-// ========================================
-const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-
-if (prefersReducedMotion.matches && typeof gsap !== 'undefined') {
-  // Disable all GSAP animations
-  gsap.globalTimeline.clear();
-  gsap.set('*', { clearProps: 'all' });
-}
-
-// ========================================
-// PERFORMANCE - Lazy Load Images
-// ========================================
-if ('IntersectionObserver' in window) {
-  const imageObserver = new IntersectionObserver((entries, observer) => {
+  
+  // Fade in sections on scroll
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px'
+  };
+  
+  const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        const img = entry.target;
-        img.src = img.dataset.src;
-        img.classList.add('loaded');
-        observer.unobserve(img);
+        entry.target.classList.add('fade-in-visible');
       }
     });
+  }, observerOptions);
+  
+  // Observe all sections
+  document.querySelectorAll('section').forEach(section => {
+    section.classList.add('fade-in');
+    observer.observe(section);
   });
   
-  document.querySelectorAll('img[data-src]').forEach(img => {
-    imageObserver.observe(img);
+  // Observe stage cards
+  document.querySelectorAll('.stage-card, .disease-card').forEach(card => {
+    card.classList.add('fade-in');
+    observer.observe(card);
   });
-}
+});
+
+// ========================================
+// BUTTON RIPPLE EFFECT
+// ========================================
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.btn').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      const ripple = document.createElement('span');
+      const rect = this.getBoundingClientRect();
+      const size = Math.max(rect.width, rect.height);
+      const x = e.clientX - rect.left - size / 2;
+      const y = e.clientY - rect.top - size / 2;
+      
+      ripple.style.width = ripple.style.height = size + 'px';
+      ripple.style.left = x + 'px';
+      ripple.style.top = y + 'px';
+      ripple.classList.add('ripple');
+      
+      this.appendChild(ripple);
+      
+      setTimeout(() => ripple.remove(), 600);
+    });
+  });
+});
 
 console.log('%c🎨 Designed with empathy. Built with intention.', 'color: #0066cc; font-size: 14px; font-weight: bold;');
 console.log('%c💙 INSPIRE - Every pixel tells a story', 'color: #06d6a0; font-size: 12px;');

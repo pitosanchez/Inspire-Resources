@@ -3,9 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inspire - Kidney Transplant Resources</title>
+
+    <!-- SEO Meta Tags - Rule 6: Optimize for SEO -->
+    <title>Inspire - Kidney Transplant Resources & Education</title>
+    <meta
+      name="description"
+      content="Comprehensive kidney transplant resources, education, and support for patients and families. Access trusted guides, connect with healthcare professionals, and navigate your transplant journey with confidence."
+    />
+    <meta
+      name="keywords"
+      content="kidney transplant, kidney disease, CKD, renal disease, living donor, transplant resources, kidney health"
+    />
+    <meta name="author" content="Inspire Kidney Transplant Resources" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://inspirekidney.org/" />
+    <meta property="og:title" content="Inspire - Kidney Transplant Resources" />
+    <meta
+      property="og:description"
+      content="Comprehensive kidney transplant resources and education for patients and families."
+    />
+    <meta property="og:image" content="/images/inspire.svg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://inspirekidney.org/" />
+    <meta
+      property="twitter:title"
+      content="Inspire - Kidney Transplant Resources"
+    />
+    <meta
+      property="twitter:description"
+      content="Comprehensive kidney transplant resources and education for patients and families."
+    />
+    <meta property="twitter:image" content="/images/inspire.svg" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/images/inspire.svg" />
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="src/styles.css" />
+
+    <!-- Scripts -->
     <script defer src="src/script.js"></script>
+
+    <!-- Fonts - Rule 2: System fonts first, then web fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,20 +66,33 @@
       <div class="header-container">
         <img src="/images/inspire.svg" alt="Inspire Logo" class="logo" />
         <nav class="nav">
-          <a href="#home" class="nav-link">Home</a>
-          <a href="#about" class="nav-link">About</a>
-          <a href="#ckd-education" class="nav-link">CKD Info</a>
-          <a href="#kidney-diseases" class="nav-link">Kidney Diseases</a>
-          <a href="#resources" class="nav-link">Resources</a>
-          <a href="#spanish-resources" class="nav-link">Recursos en Español</a>
+          <a href="#home" class="nav-link" data-translate="Home">Home</a>
+          <a href="#about" class="nav-link" data-translate="About">About</a>
+          <a href="#ckd-education" class="nav-link" data-translate="CKD Info"
+            >CKD Info</a
+          >
+          <a
+            href="#kidney-diseases"
+            class="nav-link"
+            data-translate="Kidney Diseases"
+            >Kidney Diseases</a
+          >
+          <a href="#resources" class="nav-link" data-translate="Resources"
+            >Resources</a
+          >
+          <a
+            href="#spanish-resources"
+            class="nav-link"
+            data-translate="Recursos en Español"
+            >Recursos en Español</a
+          >
           <div class="language-switcher">
             <button
               class="lang-btn active"
               data-lang="en"
               aria-label="Switch to English"
             >
-              <span class="lang-flag">🇺🇸</span>
-              <span class="lang-text">EN</span>
+              <span class="lang-text">ENG</span>
             </button>
             <span class="lang-divider">|</span>
             <button
@@ -43,8 +100,7 @@
               data-lang="es"
               aria-label="Switch to Spanish"
             >
-              <span class="lang-flag">🇲🇽</span>
-              <span class="lang-text">ES</span>
+              <span class="lang-text">SPA</span>
             </button>
           </div>
           <a href="#contact" class="nav-link cta-button">Get Help</a>
@@ -56,395 +112,967 @@
       <!-- Hero Section with clear visual hierarchy -->
       <section id="home" class="hero">
         <div class="hero-content">
-          <h1 class="hero-brand">INSPIRE</h1>
-          <p class="hero-eyebrow">Empowering Communities</p>
-          <h2 class="hero-title">
-            Everyone Deserves a Fair Chance at a
-            <span class="highlight">Life-Saving</span> Kidney Transplant
-          </h2>
-          <p class="hero-subtitle">
-            Breaking down barriers for underserved communities through
-            education, support, and advocacy.
-          </p>
+          <h1 class="hero-brand">
+            <img src="/images/inspire.png" alt="INSPIRE" class="hero-logo" />
+          </h1>
           <div class="hero-cta">
-            <a href="#resources" class="btn btn-primary">Explore Resources</a>
-            <a href="#about" class="btn btn-secondary">Learn More</a>
+            <a
+              href="#resources"
+              class="btn btn-primary"
+              data-translate="Explore Resources"
+              >Explore Resources</a
+            >
+            <a
+              href="#about"
+              class="btn btn-secondary"
+              data-translate="Learn More"
+              >Learn More</a
+            >
           </div>
         </div>
       </section>
 
-      <!-- Mission Statement with strong contrast -->
-      <section class="mission">
+      <!-- About Section - Professional Hierarchy Design -->
+      <section id="about" class="about-section">
         <div class="container">
-          <div class="mission-content">
-            <h2 class="section-title">Our Mission</h2>
-            <p class="mission-text large">
-              We provide
-              <strong
-                >easy-to-understand education, one-on-one patient support, and
-                strong community partnerships</strong
-              >
-              to empower people with the tools and knowledge they need to
-              navigate the transplant process with confidence.
+          <!-- Header Section -->
+          <div class="about-header">
+            <span class="section-label" data-translate="About Us"
+              >About Us</span
+            >
+            <h1
+              class="about-title"
+              data-translate="Breaking Down Barriers to Kidney Care"
+            >
+              Breaking Down Barriers to Kidney Care
+            </h1>
+            <p
+              class="about-subtitle"
+              data-translate="We're dedicated to ensuring everyone has fair access to life-saving kidney transplants, regardless of background, income, or circumstances."
+            >
+              We're dedicated to ensuring everyone has fair access to
+              life-saving kidney transplants, regardless of background, income,
+              or circumstances.
             </p>
           </div>
-        </div>
-      </section>
 
-      <!-- About Section with F-pattern layout -->
-      <section id="about" class="about">
-        <div class="container">
-          <span class="section-label">About Us</span>
-          <h2 class="section-title">Breaking Down Barriers to Care</h2>
-
-          <div class="about-grid">
-            <div class="about-text">
-              <p class="body-text">
-                At <strong>Inspire Kidney Transplant Resources</strong>, we
-                recognize that many people, especially those from
-                <strong>Black, Brown, and underserved communities</strong>, face
-                serious obstacles when trying to access kidney care.
-              </p>
-
-              <p class="body-text">
-                These barriers include
-                <strong
-                  >racial bias in healthcare, financial struggles, lack of
-                  reliable transportation, food and housing insecurity, and
-                  limited access to medical information.</strong
+          <!-- Mission Statement -->
+          <div class="mission-statement">
+            <div class="mission-content">
+              <div class="mission-text">
+                <h2 data-translate="Our Mission">Our Mission</h2>
+                <p
+                  class="mission-large"
+                  data-translate="We provide comprehensive education, personalized patient support, and strong community partnerships to empower people with the tools and knowledge they need to navigate the transplant process with confidence."
                 >
-                This is not fair, and we are here to change that.
+                  We provide
+                  <strong
+                    >comprehensive education, personalized patient support, and
+                    strong community partnerships</strong
+                  >
+                  to empower people with the tools and knowledge they need to
+                  navigate the transplant process with confidence.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Problem Statement -->
+          <div class="problem-section">
+            <div class="problem-header">
+              <h2 data-translate="The Challenge We Face">
+                The Challenge We Face
+              </h2>
+              <p
+                class="problem-intro"
+                data-translate="Many people from underserved communities face serious obstacles when trying to access kidney care, creating disparities in healthcare outcomes."
+              >
+                Many people from <strong>underserved communities</strong> face
+                serious obstacles when trying to access kidney care, creating
+                disparities in healthcare outcomes.
               </p>
             </div>
 
-            <div class="stat-card highlight-card">
-              <p class="stat-number">5</p>
-              <p class="stat-label">Key Support Areas</p>
+            <div class="barriers-grid">
+              <div class="barrier-card">
+                <div class="barrier-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M3 21h18"></path>
+                    <path d="M5 21V7l8-4v18"></path>
+                    <path d="M19 21V11l-6-4"></path>
+                  </svg>
+                </div>
+                <h3 data-translate="Healthcare Access">Healthcare Access</h3>
+                <p
+                  data-translate="Limited access to specialized medical care and providers"
+                >
+                  Limited access to specialized medical care and providers
+                </p>
+              </div>
+              <div class="barrier-card">
+                <div class="barrier-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <line x1="12" y1="1" x2="12" y2="23"></line>
+                    <path
+                      d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 data-translate="Financial Barriers">Financial Barriers</h3>
+                <p
+                  data-translate="High costs of treatment, medications, and transportation"
+                >
+                  High costs of treatment, medications, and transportation
+                </p>
+              </div>
+              <div class="barrier-card">
+                <div class="barrier-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <rect
+                      x="3"
+                      y="11"
+                      width="18"
+                      height="11"
+                      rx="2"
+                      ry="2"
+                    ></rect>
+                    <circle cx="12" cy="16" r="1"></circle>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                </div>
+                <h3 data-translate="Transportation">Transportation</h3>
+                <p
+                  data-translate="Lack of reliable transportation to medical appointments"
+                >
+                  Lack of reliable transportation to medical appointments
+                </p>
+              </div>
+              <div class="barrier-card">
+                <div class="barrier-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                    ></path>
+                    <polyline points="9,22 9,12 15,12 15,22"></polyline>
+                  </svg>
+                </div>
+                <h3 data-translate="Basic Needs">Basic Needs</h3>
+                <p
+                  data-translate="Food and housing insecurity affecting health outcomes"
+                >
+                  Food and housing insecurity affecting health outcomes
+                </p>
+              </div>
+              <div class="barrier-card">
+                <div class="barrier-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                  </svg>
+                </div>
+                <h3 data-translate="Information Access">Information Access</h3>
+                <p
+                  data-translate="Limited access to clear, understandable medical information"
+                >
+                  Limited access to clear, understandable medical information
+                </p>
+              </div>
             </div>
           </div>
 
-          <!-- How We Help Section -->
-          <div class="help-section">
-            <h3 class="subsection-title">How We Help</h3>
-            <p class="body-text">
-              We work with
-              <strong
-                >trusted doctors, hospitals, and community organizations</strong
+          <!-- Solution Section -->
+          <div class="solution-section">
+            <div class="solution-header">
+              <h2 data-translate="How We're Making a Difference">
+                How We're Making a Difference
+              </h2>
+              <p
+                class="solution-intro"
+                data-translate="We work with trusted doctors, hospitals, and community organizations to design programs that make kidney transplant access more fair and equal for everyone."
               >
-              to design programs that make kidney transplant access more
-              <strong>fair and equal</strong> for everyone. Our
-              <strong>Community Health Worker (CHW) initiative</strong> provides
-              personalized support every step of the way.
-            </p>
+                We work with
+                <strong
+                  >trusted doctors, hospitals, and community
+                  organizations</strong
+                >
+                to design programs that make kidney transplant access more
+                <strong>fair and equal</strong> for everyone.
+              </p>
+            </div>
 
-            <div class="services-grid">
-              <div class="service-card">
-                <div class="service-icon">🔍</div>
-                <h4 class="service-title">Screening for Barriers</h4>
-                <p class="service-description">
-                  Helping patients identify challenges they may face in getting
-                  a transplant
-                </p>
-              </div>
+            <!-- Services Grid -->
+            <div class="services-section">
+              <h3 data-translate="Our Comprehensive Support Services">
+                Our Comprehensive Support Services
+              </h3>
+              <div class="services-grid">
+                <div class="service-card card-brand">
+                  <h4 data-translate="Screening for Barriers">
+                    Screening for Barriers
+                  </h4>
+                  <p
+                    data-translate="Helping patients identify challenges they may face in getting a transplant"
+                  >
+                    Helping patients identify challenges they may face in
+                    getting a transplant
+                  </p>
+                  <div
+                    class="service-highlight"
+                    data-translate="Early Detection"
+                  >
+                    Early Detection
+                  </div>
+                </div>
 
-              <div class="service-card">
-                <div class="service-icon">🤝</div>
-                <h4 class="service-title">Connecting to Resources</h4>
-                <p class="service-description">
-                  Access to food programs, affordable housing, and financial aid
-                </p>
-              </div>
+                <div class="service-card card-accent">
+                  <h4 data-translate="Resource Connection">
+                    Resource Connection
+                  </h4>
+                  <p
+                    data-translate="Access to food programs, affordable housing, and financial aid"
+                  >
+                    Access to food programs, affordable housing, and financial
+                    aid
+                  </p>
+                  <div
+                    class="service-highlight"
+                    data-translate="Community Support"
+                  >
+                    Community Support
+                  </div>
+                </div>
 
-              <div class="service-card">
-                <div class="service-icon">🗺️</div>
-                <h4 class="service-title">Healthcare Navigation</h4>
-                <p class="service-description">
-                  Guiding through paperwork, transplant referrals, and insurance
-                </p>
-              </div>
+                <div class="service-card card-success">
+                  <h4 data-translate="Healthcare Navigation">
+                    Healthcare Navigation
+                  </h4>
+                  <p
+                    data-translate="Guiding through paperwork, transplant referrals, and insurance"
+                  >
+                    Guiding through paperwork, transplant referrals, and
+                    insurance
+                  </p>
+                  <div
+                    class="service-highlight"
+                    data-translate="Expert Guidance"
+                  >
+                    Expert Guidance
+                  </div>
+                </div>
 
-              <div class="service-card">
-                <div class="service-icon">⚖️</div>
-                <h4 class="service-title">Fighting Provider Bias</h4>
-                <p class="service-description">
-                  Identifying unfair treatment and advocating for equal
-                  opportunities
-                </p>
-              </div>
+                <div class="service-card card-warning">
+                  <h4 data-translate="Advocacy & Equity">Advocacy & Equity</h4>
+                  <p
+                    data-translate="Identifying unfair treatment and advocating for equal opportunities"
+                  >
+                    Identifying unfair treatment and advocating for equal
+                    opportunities
+                  </p>
+                  <div
+                    class="service-highlight"
+                    data-translate="Fair Treatment"
+                  >
+                    Fair Treatment
+                  </div>
+                </div>
 
-              <div class="service-card">
-                <div class="service-icon">🚗</div>
-                <h4 class="service-title">Transportation & Medication</h4>
-                <p class="service-description">
-                  Ensuring access to appointments and affordable medications
-                </p>
+                <div class="service-card card-brand">
+                  <h4 data-translate="Transportation & Medication">
+                    Transportation & Medication
+                  </h4>
+                  <p
+                    data-translate="Ensuring access to appointments and affordable medications"
+                  >
+                    Ensuring access to appointments and affordable medications
+                  </p>
+                  <div
+                    class="service-highlight"
+                    data-translate="Practical Support"
+                  >
+                    Practical Support
+                  </div>
+                </div>
+
+                <div class="service-card card-accent">
+                  <h4 data-translate="Community Health Workers">
+                    Community Health Workers
+                  </h4>
+                  <p
+                    data-translate="Personalized one-on-one support throughout your entire journey"
+                  >
+                    Personalized one-on-one support throughout your entire
+                    journey
+                  </p>
+                  <div class="service-highlight" data-translate="Personal Care">
+                    Personal Care
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Encouragement Section -->
-          <div class="encouragement">
-            <h3 class="encouragement-title">
-              You Are Not Alone<span class="exclamation">!</span>
-            </h3>
-            <p class="body-text center">
-              We understand that the journey to a kidney transplant can feel
-              overwhelming, but you
-              <strong>do not have to go through it alone</strong>. Whether you
-              need guidance, resources, or just someone to answer your
-              questions,
-              <strong>we are here to help.</strong>
-            </p>
-            <div class="encouragement-cta">
-              <a href="#resources" class="btn btn-primary">Get Started Today</a>
+          <!-- Call to Action -->
+          <div class="about-cta">
+            <div class="cta-content">
+              <h2 data-translate="You Don't Have to Face This Alone">
+                You Don't Have to Face This Alone
+              </h2>
+              <p
+                data-translate="We understand that the journey to a kidney transplant can feel overwhelming, but you do not have to go through it alone. Whether you need guidance, resources, or just someone to answer your questions, we are here to help."
+              >
+                We understand that the journey to a kidney transplant can feel
+                overwhelming, but you
+                <strong>do not have to go through it alone</strong>. Whether you
+                need guidance, resources, or just someone to answer your
+                questions,
+                <strong>we are here to help.</strong>
+              </p>
+              <div class="cta-actions">
+                <a
+                  href="#resources"
+                  class="btn btn-primary"
+                  data-translate="Get Started Today"
+                  >Get Started Today</a
+                >
+                <a
+                  href="#contact"
+                  class="btn btn-secondary"
+                  data-translate="Contact Our Team"
+                  >Contact Our Team</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- CKD Education Section -->
-      <section id="ckd-education" class="ckd-education">
+      <!-- Knowledge is Power Section -->
+      <section id="ckd-education" class="knowledge-section">
         <div class="container">
-          <span class="section-label">Knowledge is Power</span>
-          <h2 class="section-title">What is Chronic Kidney Disease?</h2>
-          <p class="section-intro">
-            Chronic Kidney Disease (CKD) is a condition where your kidneys
-            gradually lose function over time. Understanding CKD is the first
-            step in protecting your kidney health and making informed decisions
-            about your care.
-          </p>
+          <div class="knowledge-header">
+            <span class="section-label" data-translate="Knowledge is Power"
+              >Knowledge is Power</span
+            >
+            <h2
+              class="section-title"
+              data-translate="Understanding Kidney Health"
+            >
+              Understanding Kidney Health
+            </h2>
+            <p
+              class="section-intro"
+              data-translate="Knowledge empowers you to take control of your health journey. Whether you're newly diagnosed or have been managing kidney disease for years, understanding your condition is the foundation for making informed decisions and living your best life."
+            >
+              Knowledge empowers you to take control of your health journey.
+              Whether you're newly diagnosed or have been managing kidney
+              disease for years, understanding your condition is the foundation
+              for making informed decisions and living your best life.
+            </p>
+          </div>
+
+          <!-- Hope Message -->
+          <div class="hope-message">
+            <div class="hope-icon">💙</div>
+            <div class="hope-content">
+              <h3 data-translate="You Are Not Alone">You Are Not Alone</h3>
+              <p
+                data-translate="Millions of people live full, active lives with kidney disease. With proper care, treatment, and support, you can too. Every day brings new advances in treatment and care."
+              >
+                Millions of people live full, active lives with kidney disease.
+                With proper care, treatment, and support, you can too. Every day
+                brings new advances in treatment and care.
+              </p>
+            </div>
+          </div>
+
+          <!-- What is CKD - Simple Explanation -->
+          <div class="explanation-card">
+            <div class="explanation-icon">🫘</div>
+            <div class="explanation-content">
+              <h3 data-translate="What Are Your Kidneys?">
+                What Are Your Kidneys?
+              </h3>
+              <p
+                data-translate="Your kidneys are like your body's natural filters. They clean your blood, remove waste, and help control your blood pressure. Think of them as your body's water treatment plant - keeping everything clean and balanced."
+              >
+                Your kidneys are like your body's natural filters. They clean
+                your blood, remove waste, and help control your blood pressure.
+                Think of them as your body's water treatment plant - keeping
+                everything clean and balanced.
+              </p>
+            </div>
+          </div>
 
           <!-- 5 Stages of CKD -->
           <div class="stages-container">
-            <h3 class="stages-title">The 5 Stages of CKD</h3>
+            <h3
+              class="stages-title"
+              data-translate="The 5 Stages of Kidney Disease"
+            >
+              The 5 Stages of Kidney Disease
+            </h3>
+            <p
+              class="stages-subtitle"
+              data-translate="Understanding where you are helps you know what to expect and how to prepare"
+            >
+              Understanding where you are helps you know what to expect and how
+              to prepare
+            </p>
             <div class="stages-grid">
               <div class="stage-card stage-1">
                 <div class="stage-number">1</div>
-                <h4 class="stage-title">Stage 1</h4>
-                <div class="stage-egfr">eGFR: 90+</div>
+                <div class="stage-header">
+                  <h4 class="stage-title">Early Stage</h4>
+                  <div class="stage-egfr">eGFR: 90+</div>
+                </div>
                 <p class="stage-description">
-                  Kidney damage with normal or high eGFR. Usually no symptoms.
+                  Your kidneys are working well, but there's some damage.
+                  <strong>This is the perfect time to take action!</strong>
+                  With lifestyle changes and proper care, you can often slow or
+                  stop progression.
                 </p>
+                <div class="stage-action">✨ Focus on prevention</div>
               </div>
 
               <div class="stage-card stage-2">
                 <div class="stage-number">2</div>
-                <h4 class="stage-title">Stage 2</h4>
-                <div class="stage-egfr">eGFR: 60-89</div>
+                <div class="stage-header">
+                  <h4 class="stage-title">Mild Reduction</h4>
+                  <div class="stage-egfr">eGFR: 60-89</div>
+                </div>
                 <p class="stage-description">
-                  Mild loss of kidney function. May have mild symptoms.
+                  Slight decrease in kidney function. You might feel perfectly
+                  fine!
+                  <strong>Early detection is a gift</strong> - it gives you time
+                  to make changes that can protect your kidneys for years to
+                  come.
                 </p>
+                <div class="stage-action">🛡️ Protect your kidneys</div>
               </div>
 
               <div class="stage-card stage-3">
                 <div class="stage-number">3</div>
-                <h4 class="stage-title">Stage 3</h4>
-                <div class="stage-egfr">eGFR: 30-59</div>
+                <div class="stage-header">
+                  <h4 class="stage-title">Moderate Reduction</h4>
+                  <div class="stage-egfr">eGFR: 30-59</div>
+                </div>
                 <p class="stage-description">
-                  Moderate loss of kidney function. Symptoms may become more
-                  noticeable.
+                  Your kidneys are working at about half capacity. You might
+                  start noticing some symptoms.
+                  <strong
+                    >Many people live well at this stage for many years</strong
+                  >
+                  with proper management.
                 </p>
+                <div class="stage-action">📋 Work with your care team</div>
               </div>
 
               <div class="stage-card stage-4">
                 <div class="stage-number">4</div>
-                <h4 class="stage-title">Stage 4</h4>
-                <div class="stage-egfr">eGFR: 15-29</div>
+                <div class="stage-header">
+                  <h4 class="stage-title">Severe Reduction</h4>
+                  <div class="stage-egfr">eGFR: 15-29</div>
+                </div>
                 <p class="stage-description">
-                  Severe loss of kidney function. Planning for treatment options
-                  begins.
+                  Your kidneys are working at about 25% capacity. This is when
+                  you'll start planning for the future.
+                  <strong>Modern treatments are amazing!</strong> Dialysis and
+                  transplants have helped millions live full lives.
                 </p>
+                <div class="stage-action">🎯 Plan your next steps</div>
               </div>
 
               <div class="stage-card stage-5">
                 <div class="stage-number">5</div>
-                <h4 class="stage-title">Stage 5</h4>
-                <div class="stage-egfr">eGFR: &lt;15</div>
+                <div class="stage-header">
+                  <h4 class="stage-title">Kidney Failure</h4>
+                  <div class="stage-egfr">eGFR: &lt;15</div>
+                </div>
                 <p class="stage-description">
-                  Kidney failure. Dialysis or transplant needed to survive.
+                  Your kidneys need help to keep you healthy.
+                  <strong>This is not the end - it's a new beginning!</strong>
+                  Dialysis and transplants are life-saving treatments that work
+                  incredibly well.
+                </p>
+                <div class="stage-action">🚀 Treatment options available</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Types of Kidney Disease - Compact Gallery -->
+          <div class="disease-types-container">
+            <h3
+              class="disease-types-title"
+              data-translate="Common Types of Kidney Disease"
+            >
+              Common Types of Kidney Disease
+            </h3>
+            <p
+              class="disease-types-subtitle"
+              data-translate="Understanding your specific condition helps you get the right care"
+            >
+              Understanding your specific condition helps you get the right care
+            </p>
+            <div class="gallery-grid">
+              <div class="gallery-card card-brand">
+                <h4 data-translate="Chronic Kidney Disease (CKD)">
+                  Chronic Kidney Disease (CKD)
+                </h4>
+                <p
+                  data-translate="Most common type, often caused by diabetes or high blood pressure. Highly manageable with proper care!"
+                >
+                  Most common type, often caused by diabetes or high blood
+                  pressure. Highly manageable with proper care!
+                </p>
+              </div>
+
+              <div class="gallery-card card-accent">
+                <h4 data-translate="Diabetic Kidney Disease">
+                  Diabetic Kidney Disease
+                </h4>
+                <p
+                  data-translate="Kidney damage from diabetes. Great news: controlling your blood sugar can protect your kidneys!"
+                >
+                  Kidney damage from diabetes. Great news: controlling your
+                  blood sugar can protect your kidneys!
+                </p>
+              </div>
+
+              <div class="gallery-card card-success">
+                <h4 data-translate="Polycystic Kidney Disease (PKD)">
+                  Polycystic Kidney Disease (PKD)
+                </h4>
+                <p
+                  data-translate="Genetic condition with fluid-filled cysts. Research is advancing rapidly with new treatments being developed."
+                >
+                  Genetic condition with fluid-filled cysts. Research is
+                  advancing rapidly with new treatments being developed.
+                </p>
+              </div>
+
+              <div class="gallery-card card-warning">
+                <h4 data-translate="Glomerulonephritis">Glomerulonephritis</h4>
+                <p
+                  data-translate="Inflammation of kidney filters. Many types are treatable with medications and lifestyle changes."
+                >
+                  Inflammation of kidney filters. Many types are treatable with
+                  medications and lifestyle changes.
+                </p>
+              </div>
+
+              <div class="gallery-card card-brand">
+                <h4 data-translate="Lupus Nephritis">Lupus Nephritis</h4>
+                <p
+                  data-translate="Kidney inflammation from lupus. Treatment has improved dramatically in recent years."
+                >
+                  Kidney inflammation from lupus. Treatment has improved
+                  dramatically in recent years.
+                </p>
+              </div>
+
+              <div class="gallery-card card-accent">
+                <h4 data-translate="Acute Kidney Injury">
+                  Acute Kidney Injury
+                </h4>
+                <p
+                  data-translate="Sudden kidney damage, often temporary. Most people recover fully with proper treatment."
+                >
+                  Sudden kidney damage, often temporary. Most people recover
+                  fully with proper treatment.
                 </p>
               </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      <!-- Types of Kidney Diseases Section -->
-      <section id="kidney-diseases" class="kidney-diseases">
-        <div class="container">
-          <span class="section-label">Understanding Kidney Health</span>
-          <h2 class="section-title">Types of Kidney Disease</h2>
-          <p class="section-intro">
-            There are many different types of kidney disease. Each type has
-            unique causes, symptoms, and treatments. Understanding your specific
-            condition is an important step in managing your health.
-          </p>
-
-          <div class="disease-categories">
-            <div class="disease-category">
-              <h3 class="category-title common">Common Kidney Diseases</h3>
-              <div class="disease-grid">
-                <div class="disease-card">
-                  <h4 class="disease-name">Chronic Kidney Disease (CKD)</h4>
-                  <p class="disease-description">
-                    Long-term loss of kidney function, often caused by diabetes
-                    or high blood pressure.
-                  </p>
-                </div>
-
-                <div class="disease-card">
-                  <h4 class="disease-name">Diabetic Nephropathy</h4>
-                  <p class="disease-description">
-                    Kidney damage caused by diabetes, affecting the kidney's
-                    filtering ability.
-                  </p>
-                </div>
-
-                <div class="disease-card">
-                  <h4 class="disease-name">Polycystic Kidney Disease (PKD)</h4>
-                  <p class="disease-description">
-                    Genetic disorder causing fluid-filled cysts to grow in the
-                    kidneys.
-                  </p>
-                </div>
-
-                <div class="disease-card">
-                  <h4 class="disease-name">Glomerulonephritis</h4>
-                  <p class="disease-description">
-                    Inflammation of the kidney's filtering units (glomeruli).
-                  </p>
-                </div>
-
-                <div class="disease-card">
-                  <h4 class="disease-name">Kidney Stones</h4>
-                  <p class="disease-description">
-                    Hard deposits of minerals and salts that form inside the
-                    kidneys.
-                  </p>
-                </div>
-
-                <div class="disease-card">
-                  <h4 class="disease-name">Urinary Tract Infections (UTI)</h4>
-                  <p class="disease-description">
-                    Infections that can affect the kidneys if left untreated.
-                  </p>
-                </div>
-
-                <div class="disease-card">
-                  <h4 class="disease-name">Hypertensive Nephropathy</h4>
-                  <p class="disease-description">
-                    Kidney damage caused by chronic high blood pressure.
-                  </p>
-                </div>
-
-                <div class="disease-card">
-                  <h4 class="disease-name">Acute Kidney Injury (AKI)</h4>
-                  <p class="disease-description">
-                    Sudden loss of kidney function, often reversible with
-                    treatment.
-                  </p>
-                </div>
-              </div>
+          <!-- Positive Message -->
+          <div class="positive-message">
+            <div class="positive-content">
+              <h3>Remember: Every Journey is Unique</h3>
+              <p>
+                Your kidney disease journey is yours alone, but you don't have
+                to walk it alone. With the right information, care team, and
+                support, you can live a full, meaningful life.
+                <strong
+                  >Hope, treatment, and support are available every step of the
+                  way.</strong
+                >
+              </p>
             </div>
-
-            <div class="disease-category">
-              <h3 class="category-title rare">Rare Kidney Diseases</h3>
-              <div class="disease-grid">
-                <div class="disease-card">
-                  <h4 class="disease-name">IgA Nephropathy</h4>
-                  <p class="disease-description">
-                    Immune system disorder causing IgA protein buildup in the
-                    kidneys.
-                  </p>
-                </div>
-
-                <div class="disease-card">
-                  <h4 class="disease-name">Alport Syndrome</h4>
-                  <p class="disease-description">
-                    Genetic condition affecting kidney function, hearing, and
-                    vision.
-                  </p>
-                </div>
-
-                <div class="disease-card">
-                  <h4 class="disease-name">Fabry Disease</h4>
-                  <p class="disease-description">
-                    Rare genetic disorder causing fat buildup in kidney cells.
-                  </p>
-                </div>
-
-                <div class="disease-card">
-                  <h4 class="disease-name">Membranous Nephropathy</h4>
-                  <p class="disease-description">
-                    Immune disorder causing kidney membrane thickening.
-                  </p>
-                </div>
-
-                <div class="disease-card">
-                  <h4 class="disease-name">
-                    Focal Segmental Glomerulosclerosis (FSGS)
-                  </h4>
-                  <p class="disease-description">
-                    Scarring of the kidney's filtering units.
-                  </p>
-                </div>
-
-                <div class="disease-card">
-                  <h4 class="disease-name">Nephrotic Syndrome</h4>
-                  <p class="disease-description">
-                    Kidney disorder causing excess protein loss in urine.
-                  </p>
-                </div>
-
-                <div class="disease-card">
-                  <h4 class="disease-name">Renal Artery Stenosis</h4>
-                  <p class="disease-description">
-                    Narrowing of arteries that carry blood to the kidneys.
-                  </p>
-                </div>
-
-                <div class="disease-card">
-                  <h4 class="disease-name">Lupus Nephritis</h4>
-                  <p class="disease-description">
-                    Kidney inflammation caused by lupus autoimmune disease.
-                  </p>
-                </div>
-
-                <div class="disease-card">
-                  <h4 class="disease-name">Minimal Change Disease</h4>
-                  <p class="disease-description">
-                    Kidney disorder causing protein leakage, common in children.
-                  </p>
-                </div>
-
-                <div class="disease-card">
-                  <h4 class="disease-name">Goodpasture Syndrome</h4>
-                  <p class="disease-description">
-                    Rare autoimmune disease affecting kidneys and lungs.
-                  </p>
-                </div>
-
-                <div class="disease-card">
-                  <h4 class="disease-name">Interstitial Nephritis</h4>
-                  <p class="disease-description">
-                    Inflammation of kidney tubules and surrounding structures.
-                  </p>
-                </div>
-              </div>
+            <div class="positive-actions">
+              <a href="#resources" class="btn-positive">Find Resources</a>
+              <a href="#contact" class="btn-secondary">Get Support</a>
             </div>
           </div>
 
-          <div class="disease-cta">
-            <p class="disease-cta-text">
-              Want to learn more? Visit the
-              <a
-                href="https://www.kidneyfund.org/all-about-kidneys/types-kidney-diseases"
-                target="_blank"
-                rel="noopener noreferrer"
-                >American Kidney Fund</a
-              >
-              for detailed information.
+          <!-- AKF Toolkit Section -->
+          <div class="akf-toolkit-container">
+            <h3 class="akf-toolkit-title" data-translate="AKF Toolkit">
+              AKF Toolkit
+            </h3>
+            <p
+              class="akf-toolkit-subtitle"
+              data-translate="Your Complete Guide to Kidney Transplant"
+            >
+              Your Complete Guide to Kidney Transplant
             </p>
+
+            <div class="toolkit-grid">
+              <!-- Transplant Overview -->
+              <div class="toolkit-card card-brand">
+                <h4 data-translate="What is a Kidney Transplant?">
+                  What is a Kidney Transplant?
+                </h4>
+                <p
+                  data-translate="A kidney transplant is a treatment option for kidney failure. It's surgery to give someone with kidney failure a healthy kidney from someone else (a donor)."
+                >
+                  A kidney transplant is a treatment option for kidney failure.
+                  It's surgery to give someone with kidney failure a healthy
+                  kidney from someone else (a donor).
+                </p>
+                <div class="toolkit-benefits">
+                  <h5 data-translate="Benefits:">Benefits:</h5>
+                  <ul>
+                    <li data-translate="Live longer than dialysis patients">
+                      Live longer than dialysis patients
+                    </li>
+                    <li data-translate="Better quality of life">
+                      Better quality of life
+                    </li>
+                    <li data-translate="No more dialysis needed">
+                      No more dialysis needed
+                    </li>
+                    <li data-translate="Fewer food and drink restrictions">
+                      Fewer food and drink restrictions
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Transplant Options -->
+              <div class="toolkit-card card-accent">
+                <h4 data-translate="Your Transplant Options">
+                  Your Transplant Options
+                </h4>
+                <div class="transplant-options">
+                  <div class="option-item">
+                    <strong data-translate="Living Donor Transplant:"
+                      >Living Donor Transplant:</strong
+                    >
+                    <p
+                      data-translate="Kidney from someone alive - family, friend, or stranger. Usually lasts 15-20 years."
+                    >
+                      Kidney from someone alive - family, friend, or stranger.
+                      Usually lasts 15-20 years.
+                    </p>
+                  </div>
+                  <div class="option-item">
+                    <strong data-translate="Deceased Donor Transplant:"
+                      >Deceased Donor Transplant:</strong
+                    >
+                    <p
+                      data-translate="Kidney from someone who has died. Usually lasts 10-15 years. Wait time: 3-5 years."
+                    >
+                      Kidney from someone who has died. Usually lasts 10-15
+                      years. Wait time: 3-5 years.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- The Process -->
+              <div class="toolkit-card card-success">
+                <h4 data-translate="The Transplant Process">
+                  The Transplant Process
+                </h4>
+                <div class="process-steps">
+                  <div class="step">
+                    <span class="step-number">1</span>
+                    <div class="step-content">
+                      <strong data-translate="Talk to Your Doctor"
+                        >Talk to Your Doctor</strong
+                      >
+                      <p
+                        data-translate="Start the conversation early, ideally when eGFR is 30 or less"
+                      >
+                        Start the conversation early, ideally when eGFR is 30 or
+                        less
+                      </p>
+                    </div>
+                  </div>
+                  <div class="step">
+                    <span class="step-number">2</span>
+                    <div class="step-content">
+                      <strong data-translate="Get Referred"
+                        >Get Referred</strong
+                      >
+                      <p
+                        data-translate="Your doctor refers you to a transplant center for evaluation"
+                      >
+                        Your doctor refers you to a transplant center for
+                        evaluation
+                      </p>
+                    </div>
+                  </div>
+                  <div class="step">
+                    <span class="step-number">3</span>
+                    <div class="step-content">
+                      <strong data-translate="Evaluation">Evaluation</strong>
+                      <p
+                        data-translate="Complete tests to see if you're a good candidate"
+                      >
+                        Complete tests to see if you're a good candidate
+                      </p>
+                    </div>
+                  </div>
+                  <div class="step">
+                    <span class="step-number">4</span>
+                    <div class="step-content">
+                      <strong data-translate="Wait for Surgery"
+                        >Wait for Surgery</strong
+                      >
+                      <p
+                        data-translate="Stay healthy while waiting for your kidney"
+                      >
+                        Stay healthy while waiting for your kidney
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Eligibility Requirements -->
+              <div class="toolkit-card card-warning">
+                <h4 data-translate="Eligibility Requirements">
+                  Eligibility Requirements
+                </h4>
+                <div class="requirements-list">
+                  <div class="requirement-item">
+                    <strong data-translate="Medical Requirements:"
+                      >Medical Requirements:</strong
+                    >
+                    <ul>
+                      <li data-translate="eGFR 20 or below OR on dialysis">
+                        eGFR 20 or below OR on dialysis
+                      </li>
+                      <li data-translate="Healthy heart and lungs">
+                        Healthy heart and lungs
+                      </li>
+                      <li data-translate="No active cancer or infections">
+                        No active cancer or infections
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="requirement-item">
+                    <strong data-translate="Support Requirements:"
+                      >Support Requirements:</strong
+                    >
+                    <ul>
+                      <li data-translate="Reliable transportation">
+                        Reliable transportation
+                      </li>
+                      <li data-translate="Support person to help">
+                        Support person to help
+                      </li>
+                      <li data-translate="Stable housing and phone">
+                        Stable housing and phone
+                      </li>
+                      <li data-translate="Insurance coverage">
+                        Insurance coverage
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Finding a Living Donor -->
+              <div class="toolkit-card card-brand">
+                <h4 data-translate="Finding a Living Donor">
+                  Finding a Living Donor
+                </h4>
+                <p
+                  data-translate="Living donor transplants have many benefits - shorter wait times, longer-lasting kidneys, and better outcomes."
+                >
+                  Living donor transplants have many benefits - shorter wait
+                  times, longer-lasting kidneys, and better outcomes.
+                </p>
+                <div class="donor-tips">
+                  <h5 data-translate="How to Find a Donor:">
+                    How to Find a Donor:
+                  </h5>
+                  <ul>
+                    <li
+                      data-translate="Share your story with family and friends"
+                    >
+                      Share your story with family and friends
+                    </li>
+                    <li data-translate="Use social media to spread the word">
+                      Use social media to spread the word
+                    </li>
+                    <li data-translate="Ask others to help spread the word">
+                      Ask others to help spread the word
+                    </li>
+                    <li data-translate="Leave brochures at gatherings">
+                      Leave brochures at gatherings
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Caregiver Support -->
+              <div class="toolkit-card card-accent">
+                <h4 data-translate="Caregiver Support">Caregiver Support</h4>
+                <p
+                  data-translate="You'll need support throughout your transplant journey. Your caregiver can be anyone you choose - family, friend, or neighbor."
+                >
+                  You'll need support throughout your transplant journey. Your
+                  caregiver can be anyone you choose - family, friend, or
+                  neighbor.
+                </p>
+                <div class="caregiver-duties">
+                  <h5 data-translate="Caregiver Helps With:">
+                    Caregiver Helps With:
+                  </h5>
+                  <ul>
+                    <li data-translate="Driving to appointments">
+                      Driving to appointments
+                    </li>
+                    <li data-translate="Managing medicines">
+                      Managing medicines
+                    </li>
+                    <li data-translate="Household tasks">Household tasks</li>
+                    <li data-translate="Emotional support">
+                      Emotional support
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Important Questions -->
+              <div class="toolkit-card card-success">
+                <h4 data-translate="Questions to Ask Your Transplant Team">
+                  Questions to Ask Your Transplant Team
+                </h4>
+                <div class="questions-list">
+                  <ul>
+                    <li data-translate="Am I a good candidate for transplant?">
+                      Am I a good candidate for transplant?
+                    </li>
+                    <li
+                      data-translate="What are this center's eligibility requirements?"
+                    >
+                      What are this center's eligibility requirements?
+                    </li>
+                    <li data-translate="How long is the waitlist here?">
+                      How long is the waitlist here?
+                    </li>
+                    <li
+                      data-translate="Do you participate in paired exchange programs?"
+                    >
+                      Do you participate in paired exchange programs?
+                    </li>
+                    <li data-translate="What support resources are available?">
+                      What support resources are available?
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Myths vs Facts -->
+              <div class="toolkit-card card-warning">
+                <h4 data-translate="Myths vs Facts">Myths vs Facts</h4>
+                <div class="myth-fact">
+                  <div class="myth">
+                    <strong data-translate="Myth:">Myth:</strong>
+                    <p
+                      data-translate="You must start dialysis before getting a transplant"
+                    >
+                      You must start dialysis before getting a transplant
+                    </p>
+                  </div>
+                  <div class="fact">
+                    <strong data-translate="Fact:">Fact:</strong>
+                    <p
+                      data-translate="The best time is actually BEFORE dialysis (preemptive transplant)"
+                    >
+                      The best time is actually BEFORE dialysis (preemptive
+                      transplant)
+                    </p>
+                  </div>
+                </div>
+                <div class="myth-fact">
+                  <div class="myth">
+                    <strong data-translate="Myth:">Myth:</strong>
+                    <p
+                      data-translate="It's very hard to qualify for a kidney transplant"
+                    >
+                      It's very hard to qualify for a kidney transplant
+                    </p>
+                  </div>
+                  <div class="fact">
+                    <strong data-translate="Fact:">Fact:</strong>
+                    <p
+                      data-translate="Most people who apply are accepted onto the waitlist"
+                    >
+                      Most people who apply are accepted onto the waitlist
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Key Takeaway -->
+            <div class="toolkit-takeaway">
+              <div class="takeaway-icon">💡</div>
+              <div class="takeaway-content">
+                <h4 data-translate="Remember: You Are Not Alone">
+                  Remember: You Are Not Alone
+                </h4>
+                <p
+                  data-translate="The transplant process can feel overwhelming, but you don't have to go through it alone. Your transplant team is there to help guide you through every step. Start the conversation with your doctor today about whether a kidney transplant might be right for you."
+                >
+                  The transplant process can feel overwhelming, but you don't
+                  have to go through it alone. Your transplant team is there to
+                  help guide you through every step. Start the conversation with
+                  your doctor today about whether a kidney transplant might be
+                  right for you.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -452,11 +1080,22 @@
       <!-- Resources Section with card-based layout -->
       <section id="resources" class="resources">
         <div class="container">
-          <span class="section-label">Resources</span>
-          <h2 class="section-title">Patient Resources & Education</h2>
-          <p class="section-intro">
-            Explore our curated collection of trusted resources to help you
-            understand and navigate the kidney transplant process.
+          <span class="section-label" data-translate="Resources"
+            >Resources</span
+          >
+          <h2
+            class="section-title"
+            data-translate="Patient Resources & Education"
+          >
+            Patient Resources & Education
+          </h2>
+          <p
+            class="section-intro"
+            data-translate="Discover our carefully curated collection of trusted resources, guides, and educational materials to help you understand and navigate the kidney transplant journey with confidence."
+          >
+            Discover our carefully curated collection of trusted resources,
+            guides, and educational materials to help you understand and
+            navigate the kidney transplant journey with confidence.
           </p>
 
           <div class="resource-grid">
@@ -470,11 +1109,18 @@
                 <img src="/images/exploretrans.webp" alt="Explore Transplant" />
               </div>
               <div class="resource-content">
-                <h3 class="resource-title">Explore Transplant</h3>
-                <p class="resource-description">
+                <h3 class="resource-title" data-translate="Explore Transplant">
+                  Explore Transplant
+                </h3>
+                <p
+                  class="resource-description"
+                  data-translate="Comprehensive guide for becoming a living donor"
+                >
                   Comprehensive guide for becoming a living donor
                 </p>
-                <span class="resource-link">Learn More →</span>
+                <span class="resource-link" data-translate="Learn More →"
+                  >Learn More →</span
+                >
               </div>
             </a>
 
@@ -487,11 +1133,21 @@
                 <img src="/images/ldtk.webp" alt="Living Donor Toolkit" />
               </div>
               <div class="resource-content">
-                <h3 class="resource-title">Living Donor Toolkit</h3>
-                <p class="resource-description">
+                <h3
+                  class="resource-title"
+                  data-translate="Living Donor Toolkit"
+                >
+                  Living Donor Toolkit
+                </h3>
+                <p
+                  class="resource-description"
+                  data-translate="Essential tools and information for living donors"
+                >
                   Essential tools and information for living donors
                 </p>
-                <span class="resource-link">Learn More →</span>
+                <span class="resource-link" data-translate="Learn More →"
+                  >Learn More →</span
+                >
               </div>
             </a>
 
@@ -504,11 +1160,18 @@
                 <img src="/images/unos.webp" alt="Transplant Living" />
               </div>
               <div class="resource-content">
-                <h3 class="resource-title">Transplant Living</h3>
-                <p class="resource-description">
+                <h3 class="resource-title" data-translate="Transplant Living">
+                  Transplant Living
+                </h3>
+                <p
+                  class="resource-description"
+                  data-translate="UNOS guide to living donor transplants"
+                >
                   UNOS guide to living donor transplants
                 </p>
-                <span class="resource-link">Learn More →</span>
+                <span class="resource-link" data-translate="Learn More →"
+                  >Learn More →</span
+                >
               </div>
             </a>
 
@@ -519,16 +1182,26 @@
             >
               <div class="resource-image">
                 <img
-                  src="/images/nldac.webp?v=1"
-                  alt="Living Donor Assistance"
+                  src="/images/ldrandinfo.webp"
+                  alt="Living Donor Resources and Information"
                 />
               </div>
               <div class="resource-content">
-                <h3 class="resource-title">Living Donor Resources</h3>
-                <p class="resource-description">
-                  Financial assistance and additional support
+                <h3
+                  class="resource-title"
+                  data-translate="Living Donor Resources & Information"
+                >
+                  Living Donor Resources & Information
+                </h3>
+                <p
+                  class="resource-description"
+                  data-translate="Financial assistance and additional support for living donors"
+                >
+                  Financial assistance and additional support for living donors
                 </p>
-                <span class="resource-link">Learn More →</span>
+                <span class="resource-link" data-translate="Learn More →"
+                  >Learn More →</span
+                >
               </div>
             </a>
 
@@ -541,11 +1214,18 @@
                 <img src="/images/findhelp.webp?v=1" alt="FindHelp.org Logo" />
               </div>
               <div class="resource-content">
-                <h3 class="resource-title">FindHelp.org</h3>
-                <p class="resource-description">
+                <h3 class="resource-title" data-translate="FindHelp.org">
+                  FindHelp.org
+                </h3>
+                <p
+                  class="resource-description"
+                  data-translate="Connect with local resources and support services"
+                >
                   Connect with local resources and support services
                 </p>
-                <span class="resource-link">Learn More →</span>
+                <span class="resource-link" data-translate="Learn More →"
+                  >Learn More →</span
+                >
               </div>
             </a>
           </div>
@@ -713,7 +1393,7 @@
               <div class="spanish-pdf-card">
                 <div class="pdf-image">
                   <img
-                    src="/images/vivirbien.svg"
+                    src="/images/vivirbien.webp"
                     alt="Vivir Bien con Insuficiencia Renal - Trasplante de Riñón"
                   />
                 </div>

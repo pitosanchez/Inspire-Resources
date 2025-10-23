@@ -1,0 +1,13 @@
+# robots.txt for Inspire Kidney Transplant Resources
+# Rule 6: SEO Optimization
+
+User-agent: *
+Allow: /
+
+# Disallow admin or private areas if any
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://inspirekidney.org/sitemap.xml
+

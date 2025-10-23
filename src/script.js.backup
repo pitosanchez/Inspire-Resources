@@ -109,88 +109,73 @@ const translations = {
     'Acute Kidney Injury': 'Acute Kidney Injury',
     'Sudden kidney damage, often temporary. Most people recover fully with proper treatment.': 'Sudden kidney damage, often temporary. Most people recover fully with proper treatment.',
 
-    // Other
-    'Ready to Get Started?': 'Ready to Get Started?',
-    'Access Resources': 'Access Resources',
+        // Other
+        'Ready to Get Started?': 'Ready to Get Started?',
+        'Access Resources': 'Access Resources',
 
-    // Resources Section
-    'Patient Resources & Education': 'Patient Resources & Education',
-    'Discover our carefully curated collection of trusted resources, guides, and educational materials to help you understand and navigate the kidney transplant journey with confidence.': 'Discover our carefully curated collection of trusted resources, guides, and educational materials to help you understand and navigate the kidney transplant journey with confidence.',
-    'Explore Transplant': 'Explore Transplant',
-    'Comprehensive guide for becoming a living donor': 'Comprehensive guide for becoming a living donor',
-    'Living Donor Toolkit': 'Living Donor Toolkit',
-    'Essential tools and information for living donors': 'Essential tools and information for living donors',
-    'Transplant Living': 'Transplant Living',
-    'UNOS guide to living donor transplants': 'UNOS guide to living donor transplants',
-    'Living Donor Resources & Information': 'Living Donor Resources & Information',
-    'Financial assistance and additional support for living donors': 'Financial assistance and additional support for living donors',
-    'FindHelp.org': 'FindHelp.org',
-    'Connect with local resources and support services': 'Connect with local resources and support services',
-    'Learn More →': 'Learn More →',
-
-    // AKF Toolkit
-    'AKF Toolkit': 'AKF Toolkit',
+        // AKF Toolkit
+        'AKF Toolkit': 'AKF Toolkit',
     'Your Complete Guide to Kidney Transplant': 'Your Complete Guide to Kidney Transplant',
-    'What is a Kidney Transplant?': 'What is a Kidney Transplant?',
-    'A kidney transplant is a treatment option for kidney failure. It\'s surgery to give someone with kidney failure a healthy kidney from someone else (a donor).': 'A kidney transplant is a treatment option for kidney failure. It\'s surgery to give someone with kidney failure a healthy kidney from someone else (a donor).',
-    'Benefits:': 'Benefits:',
-    'Live longer than dialysis patients': 'Live longer than dialysis patients',
-    'Better quality of life': 'Better quality of life',
-    'No more dialysis needed': 'No more dialysis needed',
-    'Fewer food and drink restrictions': 'Fewer food and drink restrictions',
-    'Your Transplant Options': 'Your Transplant Options',
-    'Living Donor Transplant:': 'Living Donor Transplant:',
-    'Kidney from someone alive - family, friend, or stranger. Usually lasts 15-20 years.': 'Kidney from someone alive - family, friend, or stranger. Usually lasts 15-20 years.',
-    'Deceased Donor Transplant:': 'Deceased Donor Transplant:',
-    'Kidney from someone who has died. Usually lasts 10-15 years. Wait time: 3-5 years.': 'Kidney from someone who has died. Usually lasts 10-15 years. Wait time: 3-5 years.',
-    'The Transplant Process': 'The Transplant Process',
-    'Talk to Your Doctor': 'Talk to Your Doctor',
-    'Start the conversation early, ideally when eGFR is 30 or less': 'Start the conversation early, ideally when eGFR is 30 or less',
-    'Get Referred': 'Get Referred',
-    'Your doctor refers you to a transplant center for evaluation': 'Your doctor refers you to a transplant center for evaluation',
-    'Evaluation': 'Evaluation',
-    'Complete tests to see if you\'re a good candidate': 'Complete tests to see if you\'re a good candidate',
-    'Wait for Surgery': 'Wait for Surgery',
-    'Stay healthy while waiting for your kidney': 'Stay healthy while waiting for your kidney',
-    'Eligibility Requirements': 'Eligibility Requirements',
-    'Medical Requirements:': 'Medical Requirements:',
-    'eGFR 20 or below OR on dialysis': 'eGFR 20 or below OR on dialysis',
-    'Healthy heart and lungs': 'Healthy heart and lungs',
-    'No active cancer or infections': 'No active cancer or infections',
-    'Support Requirements:': 'Support Requirements:',
-    'Reliable transportation': 'Reliable transportation',
-    'Support person to help': 'Support person to help',
-    'Stable housing and phone': 'Stable housing and phone',
-    'Insurance coverage': 'Insurance coverage',
-    'Finding a Living Donor': 'Finding a Living Donor',
-    'Living donor transplants have many benefits - shorter wait times, longer-lasting kidneys, and better outcomes.': 'Living donor transplants have many benefits - shorter wait times, longer-lasting kidneys, and better outcomes.',
-    'How to Find a Donor:': 'How to Find a Donor:',
-    'Share your story with family and friends': 'Share your story with family and friends',
-    'Use social media to spread the word': 'Use social media to spread the word',
-    'Ask others to help spread the word': 'Ask others to help spread the word',
-    'Leave brochures at gatherings': 'Leave brochures at gatherings',
-    'Caregiver Support': 'Caregiver Support',
-    'You\'ll need support throughout your transplant journey. Your caregiver can be anyone you choose - family, friend, or neighbor.': 'You\'ll need support throughout your transplant journey. Your caregiver can be anyone you choose - family, friend, or neighbor.',
-    'Caregiver Helps With:': 'Caregiver Helps With:',
-    'Driving to appointments': 'Driving to appointments',
-    'Managing medicines': 'Managing medicines',
-    'Household tasks': 'Household tasks',
-    'Emotional support': 'Emotional support',
-    'Questions to Ask Your Transplant Team': 'Questions to Ask Your Transplant Team',
-    'Am I a good candidate for transplant?': 'Am I a good candidate for transplant?',
-    'What are this center\'s eligibility requirements?': 'What are this center\'s eligibility requirements?',
-    'How long is the waitlist here?': 'How long is the waitlist here?',
-    'Do you participate in paired exchange programs?': 'Do you participate in paired exchange programs?',
-    'What support resources are available?': 'What support resources are available?',
-    'Myths vs Facts': 'Myths vs Facts',
-    'Myth:': 'Myth:',
-    'You must start dialysis before getting a transplant': 'You must start dialysis before getting a transplant',
-    'Fact:': 'Fact:',
-    'The best time is actually BEFORE dialysis (preemptive transplant)': 'The best time is actually BEFORE dialysis (preemptive transplant)',
-    'It\'s very hard to qualify for a kidney transplant': 'It\'s very hard to qualify for a kidney transplant',
-    'Most people who apply are accepted onto the waitlist': 'Most people who apply are accepted onto the waitlist',
-    'Remember: You Are Not Alone': 'Remember: You Are Not Alone',
-    'The transplant process can feel overwhelming, but you don\'t have to go through it alone. Your transplant team is there to help guide you through every step. Start the conversation with your doctor today about whether a kidney transplant might be right for you.': 'The transplant process can feel overwhelming, but you don\'t have to go through it alone. Your transplant team is there to help guide you through every step. Start the conversation with your doctor today about whether a kidney transplant might be right for you.'
+    'What is a Kidney Transplant?': '¿Qué es un Trasplante de Riñón?',
+    'A kidney transplant is a treatment option for kidney failure. It\'s surgery to give someone with kidney failure a healthy kidney from someone else (a donor).': 'Un trasplante de riñón es una opción de tratamiento para la insuficiencia renal. Es una cirugía para darle a alguien con insuficiencia renal un riñón sano de otra persona (un donante).',
+    'Benefits:': 'Beneficios:',
+    'Live longer than dialysis patients': 'Vive más tiempo que los pacientes en diálisis',
+    'Better quality of life': 'Mejor calidad de vida',
+    'No more dialysis needed': 'Ya no necesitas diálisis',
+    'Fewer food and drink restrictions': 'Menos restricciones de comida y bebida',
+    'Your Transplant Options': 'Tus Opciones de Trasplante',
+    'Living Donor Transplant:': 'Trasplante de Donante Vivo:',
+    'Kidney from someone alive - family, friend, or stranger. Usually lasts 15-20 years.': 'Riñón de alguien vivo - familia, amigo o desconocido. Generalmente dura 15-20 años.',
+    'Deceased Donor Transplant:': 'Trasplante de Donante Fallecido:',
+    'Kidney from someone who has died. Usually lasts 10-15 years. Wait time: 3-5 years.': 'Riñón de alguien que ha fallecido. Generalmente dura 10-15 años. Tiempo de espera: 3-5 años.',
+    'The Transplant Process': 'El Proceso de Trasplante',
+    'Talk to Your Doctor': 'Habla con Tu Doctor',
+    'Start the conversation early, ideally when eGFR is 30 or less': 'Inicia la conversación temprano, idealmente cuando el eGFR sea 30 o menos',
+    'Get Referred': 'Obtén una Referencia',
+    'Your doctor refers you to a transplant center for evaluation': 'Tu doctor te refiere a un centro de trasplante para evaluación',
+    'Evaluation': 'Evaluación',
+    'Complete tests to see if you\'re a good candidate': 'Completa las pruebas para ver si eres un buen candidato',
+    'Wait for Surgery': 'Espera la Cirugía',
+    'Stay healthy while waiting for your kidney': 'Mantente saludable mientras esperas tu riñón',
+    'Eligibility Requirements': 'Requisitos de Elegibilidad',
+    'Medical Requirements:': 'Requisitos Médicos:',
+    'eGFR 20 or below OR on dialysis': 'eGFR 20 o menos O en diálisis',
+    'Healthy heart and lungs': 'Corazón y pulmones saludables',
+    'No active cancer or infections': 'Sin cáncer activo o infecciones',
+    'Support Requirements:': 'Requisitos de Apoyo:',
+    'Reliable transportation': 'Transporte confiable',
+    'Support person to help': 'Persona de apoyo para ayudar',
+    'Stable housing and phone': 'Vivienda estable y teléfono',
+    'Insurance coverage': 'Cobertura de seguro',
+    'Finding a Living Donor': 'Encontrando un Donante Vivo',
+    'Living donor transplants have many benefits - shorter wait times, longer-lasting kidneys, and better outcomes.': 'Los trasplantes de donante vivo tienen muchos beneficios - tiempos de espera más cortos, riñones más duraderos y mejores resultados.',
+    'How to Find a Donor:': 'Cómo Encontrar un Donante:',
+    'Share your story with family and friends': 'Comparte tu historia con familia y amigos',
+    'Use social media to spread the word': 'Usa redes sociales para difundir la palabra',
+    'Ask others to help spread the word': 'Pide a otros que ayuden a difundir la palabra',
+    'Leave brochures at gatherings': 'Deja folletos en reuniones',
+    'Caregiver Support': 'Apoyo del Cuidador',
+    'You\'ll need support throughout your transplant journey. Your caregiver can be anyone you choose - family, friend, or neighbor.': 'Necesitarás apoyo durante todo tu viaje de trasplante. Tu cuidador puede ser cualquiera que elijas - familia, amigo o vecino.',
+    'Caregiver Helps With:': 'El Cuidador Ayuda Con:',
+    'Driving to appointments': 'Llevarte a citas',
+    'Managing medicines': 'Manejar medicamentos',
+    'Household tasks': 'Tareas del hogar',
+    'Emotional support': 'Apoyo emocional',
+    'Questions to Ask Your Transplant Team': 'Preguntas para Hacer a Tu Equipo de Trasplante',
+    'Am I a good candidate for transplant?': '¿Soy un buen candidato para trasplante?',
+    'What are this center\'s eligibility requirements?': '¿Cuáles son los requisitos de elegibilidad de este centro?',
+    'How long is the waitlist here?': '¿Cuánto tiempo dura la lista de espera aquí?',
+    'Do you participate in paired exchange programs?': '¿Participan en programas de intercambio emparejado?',
+    'What support resources are available?': '¿Qué recursos de apoyo están disponibles?',
+    'Myths vs Facts': 'Mitos vs Hechos',
+    'Myth:': 'Mito:',
+    'You must start dialysis before getting a transplant': 'Debes comenzar diálisis antes de obtener un trasplante',
+    'Fact:': 'Hecho:',
+    'The best time is actually BEFORE dialysis (preemptive transplant)': 'El mejor momento es en realidad ANTES de la diálisis (trasplante preventivo)',
+    'It\'s very hard to qualify for a kidney transplant': 'Es muy difícil calificar para un trasplante de riñón',
+    'Most people who apply are accepted onto the waitlist': 'La mayoría de las personas que solicitan son aceptadas en la lista de espera',
+    'Remember: You Are Not Alone': 'Recuerda: No Estás Solo',
+    'The transplant process can feel overwhelming, but you don\'t have to go through it alone. Your transplant team is there to help guide you through every step. Start the conversation with your doctor today about whether a kidney transplant might be right for you.': 'El proceso de trasplante puede sentirse abrumador, pero no tienes que pasarlo solo. Tu equipo de trasplante está ahí para ayudarte a guiarte en cada paso. Inicia la conversación con tu doctor hoy sobre si un trasplante de riñón podría ser adecuado para ti.'
   },
   es: {
     // Navigation
@@ -283,43 +268,28 @@ const translations = {
     'Ready to Get Started?': '¿Listo para Comenzar?',
     'Access Resources': 'Acceder a Recursos',
 
-    // Resources Section
-    'Patient Resources & Education': 'Recursos y Educación para Pacientes',
-    'Discover our carefully curated collection of trusted resources, guides, and educational materials to help you understand and navigate the kidney transplant journey with confidence.': 'Descubre nuestra colección cuidadosamente seleccionada de recursos confiables, guías y materiales educativos para ayudarte a entender y navegar el viaje del trasplante de riñón con confianza.',
-    'Explore Transplant': 'Explorar Trasplante',
-    'Comprehensive guide for becoming a living donor': 'Guía completa para convertirse en donante vivo',
-    'Living Donor Toolkit': 'Kit de Herramientas para Donantes Vivos',
-    'Essential tools and information for living donors': 'Herramientas e información esencial para donantes vivos',
-    'Transplant Living': 'Trasplante Viviente',
-    'UNOS guide to living donor transplants': 'Guía de UNOS para trasplantes de donante vivo',
-    'Living Donor Resources & Information': 'Recursos e Información para Donantes Vivos',
-    'Financial assistance and additional support for living donors': 'Asistencia financiera y apoyo adicional para donantes vivos',
-    'FindHelp.org': 'FindHelp.org',
-    'Connect with local resources and support services': 'Conéctate con recursos locales y servicios de apoyo',
-    'Learn More →': 'Aprender Más →',
-
     // AKF Toolkit
     'AKF Toolkit': 'Kit de Herramientas AKF',
     'Your Complete Guide to Kidney Transplant': 'Tu Guía Completa para Trasplante de Riñón',
     'What is a Kidney Transplant?': '¿Qué es un Trasplante de Riñón?',
-    'A kidney transplant is a treatment option for kidney failure. It\'s surgery to give someone with kidney failure a healthy kidney from someone else (a donor).': 'Un trasplante de riñón es una opción de tratamiento para la insuficiencia renal. Es una cirugía para dar a alguien con insuficiencia renal un riñón sano de otra persona (un donante).',
+    'A kidney transplant is a treatment option for kidney failure. It\'s surgery to give someone with kidney failure a healthy kidney from someone else (a donor).': 'Un trasplante de riñón es una opción de tratamiento para la insuficiencia renal. Es una cirugía para darle a alguien con insuficiencia renal un riñón sano de otra persona (un donante).',
     'Benefits:': 'Beneficios:',
-    'Live longer than dialysis patients': 'Vivir más tiempo que los pacientes en diálisis',
+    'Live longer than dialysis patients': 'Vive más tiempo que los pacientes en diálisis',
     'Better quality of life': 'Mejor calidad de vida',
-    'No more dialysis needed': 'Ya no se necesita diálisis',
-    'Fewer food and drink restrictions': 'Menos restricciones de alimentos y bebidas',
+    'No more dialysis needed': 'Ya no necesitas diálisis',
+    'Fewer food and drink restrictions': 'Menos restricciones de comida y bebida',
     'Your Transplant Options': 'Tus Opciones de Trasplante',
     'Living Donor Transplant:': 'Trasplante de Donante Vivo:',
-    'Kidney from someone alive - family, friend, or stranger. Usually lasts 15-20 years.': 'Riñón de alguien vivo - familiar, amigo o extraño. Generalmente dura 15-20 años.',
+    'Kidney from someone alive - family, friend, or stranger. Usually lasts 15-20 years.': 'Riñón de alguien vivo - familia, amigo o desconocido. Generalmente dura 15-20 años.',
     'Deceased Donor Transplant:': 'Trasplante de Donante Fallecido:',
     'Kidney from someone who has died. Usually lasts 10-15 years. Wait time: 3-5 years.': 'Riñón de alguien que ha fallecido. Generalmente dura 10-15 años. Tiempo de espera: 3-5 años.',
     'The Transplant Process': 'El Proceso de Trasplante',
-    'Talk to Your Doctor': 'Habla con Tu Médico',
-    'Start the conversation early, ideally when eGFR is 30 or less': 'Inicia la conversación temprano, idealmente cuando el eGFR es 30 o menos',
+    'Talk to Your Doctor': 'Habla con Tu Doctor',
+    'Start the conversation early, ideally when eGFR is 30 or less': 'Inicia la conversación temprano, idealmente cuando el eGFR sea 30 o menos',
     'Get Referred': 'Obtén una Referencia',
-    'Your doctor refers you to a transplant center for evaluation': 'Tu médico te refiere a un centro de trasplante para evaluación',
+    'Your doctor refers you to a transplant center for evaluation': 'Tu doctor te refiere a un centro de trasplante para evaluación',
     'Evaluation': 'Evaluación',
-    'Complete tests to see if you\'re a good candidate': 'Completa pruebas para ver si eres un buen candidato',
+    'Complete tests to see if you\'re a good candidate': 'Completa las pruebas para ver si eres un buen candidato',
     'Wait for Surgery': 'Espera la Cirugía',
     'Stay healthy while waiting for your kidney': 'Mantente saludable mientras esperas tu riñón',
     'Eligibility Requirements': 'Requisitos de Elegibilidad',
@@ -332,18 +302,18 @@ const translations = {
     'Support person to help': 'Persona de apoyo para ayudar',
     'Stable housing and phone': 'Vivienda estable y teléfono',
     'Insurance coverage': 'Cobertura de seguro',
-    'Finding a Living Donor': 'Encontrar un Donante Vivo',
-    'Living donor transplants have many benefits - shorter wait times, longer-lasting kidneys, and better outcomes.': 'Los trasplantes de donante vivo tienen muchos beneficios: tiempos de espera más cortos, riñones que duran más tiempo y mejores resultados.',
+    'Finding a Living Donor': 'Encontrando un Donante Vivo',
+    'Living donor transplants have many benefits - shorter wait times, longer-lasting kidneys, and better outcomes.': 'Los trasplantes de donante vivo tienen muchos beneficios - tiempos de espera más cortos, riñones más duraderos y mejores resultados.',
     'How to Find a Donor:': 'Cómo Encontrar un Donante:',
     'Share your story with family and friends': 'Comparte tu historia con familia y amigos',
-    'Use social media to spread the word': 'Usa las redes sociales para difundir la información',
-    'Ask others to help spread the word': 'Pide a otros que ayuden a difundir la información',
+    'Use social media to spread the word': 'Usa redes sociales para difundir la palabra',
+    'Ask others to help spread the word': 'Pide a otros que ayuden a difundir la palabra',
     'Leave brochures at gatherings': 'Deja folletos en reuniones',
     'Caregiver Support': 'Apoyo del Cuidador',
-    'You\'ll need support throughout your transplant journey. Your caregiver can be anyone you choose - family, friend, or neighbor.': 'Necesitarás apoyo durante todo tu viaje de trasplante. Tu cuidador puede ser cualquiera que elijas - familiar, amigo o vecino.',
+    'You\'ll need support throughout your transplant journey. Your caregiver can be anyone you choose - family, friend, or neighbor.': 'Necesitarás apoyo durante todo tu viaje de trasplante. Tu cuidador puede ser cualquiera que elijas - familia, amigo o vecino.',
     'Caregiver Helps With:': 'El Cuidador Ayuda Con:',
-    'Driving to appointments': 'Llevar a citas',
-    'Managing medicines': 'Gestionar medicamentos',
+    'Driving to appointments': 'Llevarte a citas',
+    'Managing medicines': 'Manejar medicamentos',
     'Household tasks': 'Tareas del hogar',
     'Emotional support': 'Apoyo emocional',
     'Questions to Ask Your Transplant Team': 'Preguntas para Hacer a Tu Equipo de Trasplante',
@@ -360,7 +330,7 @@ const translations = {
     'It\'s very hard to qualify for a kidney transplant': 'Es muy difícil calificar para un trasplante de riñón',
     'Most people who apply are accepted onto the waitlist': 'La mayoría de las personas que solicitan son aceptadas en la lista de espera',
     'Remember: You Are Not Alone': 'Recuerda: No Estás Solo',
-    'The transplant process can feel overwhelming, but you don\'t have to go through it alone. Your transplant team is there to help guide you through every step. Start the conversation with your doctor today about whether a kidney transplant might be right for you.': 'El proceso de trasplante puede sentirse abrumador, pero no tienes que pasar por esto solo. Tu equipo de trasplante está ahí para ayudarte a guiarte en cada paso. Inicia la conversación con tu médico hoy sobre si un trasplante de riñón podría ser adecuado para ti.'
+    'The transplant process can feel overwhelming, but you don\'t have to go through it alone. Your transplant team is there to help guide you through every step. Start the conversation with your doctor today about whether a kidney transplant might be right for you.': 'El proceso de trasplante puede sentirse abrumador, pero no tienes que pasarlo solo. Tu equipo de trasplante está ahí para ayudarte a guiarte en cada paso. Inicia la conversación con tu doctor hoy sobre si un trasplante de riñón podría ser adecuado para ti.'
   }
 };
 
@@ -373,15 +343,8 @@ function switchLanguage(lang) {
   // Update all translatable elements
   document.querySelectorAll('[data-translate]').forEach(element => {
     const key = element.getAttribute('data-translate');
-    if (translations[lang] && translations[lang][key]) {
-      // Check if element is an input, textarea, or img
-      if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
-        element.value = translations[lang][key];
-      } else if (element.tagName === 'IMG') {
-        element.alt = translations[lang][key];
-      } else {
-        element.textContent = translations[lang][key];
-      }
+    if (translations[lang][key]) {
+      element.textContent = translations[lang][key];
     }
   });
 
@@ -395,31 +358,21 @@ function switchLanguage(lang) {
 
   // Update HTML lang attribute
   document.documentElement.lang = lang;
-
-  console.log(`Language switched to: ${lang}`);
 }
 
 // ========================================
 // INITIALIZE ON DOM READY
 // ========================================
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('Initializing language switcher...');
-
   // Language switcher setup
-  const langButtons = document.querySelectorAll('.lang-btn');
-  console.log(`Found ${langButtons.length} language buttons`);
-
-  langButtons.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
       const lang = btn.getAttribute('data-lang');
-      console.log(`Language button clicked: ${lang}`);
       switchLanguage(lang);
     });
   });
 
   // Initialize with saved language
-  console.log(`Initializing with language: ${currentLang}`);
   switchLanguage(currentLang);
 
   // External links open in new tab

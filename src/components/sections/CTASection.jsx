@@ -20,8 +20,9 @@ export default function CTASection() {
         </p>
         <Button
           href="#resources"
+          variant="orange"
           size="lg"
-          className="bg-white text-brand-600 hover:bg-neutral-50 shadow-xl hover:shadow-2xl font-semibold"
+          className="shadow-xl hover:shadow-2xl font-semibold"
         >
           {t("final.cta.button")}
         </Button>

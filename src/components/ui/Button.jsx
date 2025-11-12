@@ -8,17 +8,19 @@ import { clsx } from "clsx";
 
 const variants = {
   primary:
-    "bg-brand text-brand-foreground shadow-sm hover:bg-brand-600 focus-visible:ring-brand",
+    "bg-brand-500 text-white shadow-sm hover:bg-brand-600 focus-visible:ring-brand active:bg-brand-700",
   secondary:
     "bg-transparent text-brand-600 border-2 border-brand hover:bg-brand-50 focus-visible:ring-brand",
   accent:
-    "bg-accent text-accent-foreground shadow-sm hover:bg-accent-600 focus-visible:ring-accent",
+    "bg-accent-500 text-white shadow-sm hover:bg-accent-600 focus-visible:ring-accent active:bg-accent-700",
+  orange:
+    "bg-warm-500 text-white shadow-sm hover:bg-warm-600 focus-visible:ring-warm-500 active:bg-warm-700",
   ghost:
     "bg-transparent text-neutral-700 hover:bg-neutral-100 focus-visible:ring-neutral-400",
   outline:
     "border-2 border-neutral-300 bg-transparent hover:bg-neutral-50 focus-visible:ring-neutral-400",
   destructive:
-    "bg-destructive text-destructive-foreground shadow-sm hover:bg-red-600 focus-visible:ring-destructive",
+    "bg-destructive text-destructive-foreground shadow-sm hover:bg-red-600 focus-visible:ring-destructive active:bg-red-700",
   subtle:
     "bg-neutral-100 text-neutral-900 hover:bg-neutral-200 focus-visible:ring-neutral-400",
 };

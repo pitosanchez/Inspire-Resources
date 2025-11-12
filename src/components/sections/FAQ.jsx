@@ -148,7 +148,7 @@ export default function FAQ() {
               </a>
               <a
                 href="mailto:transplant@inspire.org"
-                className="inline-flex items-center justify-center gap-2 bg-white text-brand-600 border-2 border-brand-500 px-6 py-3 rounded-lg font-semibold hover:bg-brand-50 transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 bg-accent-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-accent-600 transition-all duration-300 hover:shadow-lg"
               >
                 <svg
                   className="w-5 h-5"

@@ -283,16 +283,16 @@ export default function About() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 href="#resources"
+                variant="orange"
                 size="lg"
-                className="bg-white text-accent-600 hover:bg-neutral-50 shadow-xl hover:shadow-2xl hover:scale-105 font-semibold"
+                className="shadow-xl hover:shadow-2xl hover:scale-105 font-semibold"
               >
                 {t("cta.primary")}
               </Button>
               <Button
                 href="#contact"
-                variant="ghost"
                 size="lg"
-                className="bg-transparent backdrop-blur-md text-white border-2 border-white hover:bg-white/20 hover:scale-105 font-semibold"
+                className="bg-brand-500 text-white shadow-xl hover:shadow-2xl hover:scale-105 font-semibold"
               >
                 {t("cta.secondary")}
               </Button>

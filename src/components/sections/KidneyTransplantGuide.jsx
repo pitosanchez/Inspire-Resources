@@ -622,9 +622,9 @@ export default function KidneyTransplantGuide() {
                   </p>
                   <Button
                     onClick={() => setQuizAnswers({})}
-                    variant="primary"
+                    variant="accent"
                     size="sm"
-                    className="mt-4 bg-white text-brand-600 hover:bg-neutral-50"
+                    className="mt-4"
                   >
                     Try Again
                   </Button>
@@ -651,8 +651,9 @@ export default function KidneyTransplantGuide() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 href="#resources"
+                variant="accent"
                 size="lg"
-                className="bg-white text-brand-600 hover:bg-neutral-50 shadow-xl hover:shadow-2xl font-semibold"
+                className="shadow-xl hover:shadow-2xl font-semibold"
               >
                 Find Resources
               </Button>
@@ -660,9 +661,9 @@ export default function KidneyTransplantGuide() {
                 href="https://optn.transplant.hrsa.gov/members/member-directory/"
                 target="_blank"
                 rel="noopener noreferrer"
-                variant="ghost"
+                variant="orange"
                 size="lg"
-                className="bg-transparent backdrop-blur-md text-white border-2 border-white hover:bg-white/20 font-semibold"
+                className="shadow-xl hover:shadow-2xl font-semibold"
               >
                 Find a Transplant Center
               </Button>

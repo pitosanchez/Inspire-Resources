@@ -84,17 +84,17 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in animation-delay-400">
             <Button
               href="#resources"
+              variant="accent"
               size="lg"
-              className="bg-white text-brand-600 hover:bg-neutral-50 shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 font-semibold"
+              className="shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 font-semibold"
             >
               {t("hero.cta.primary")}
             </Button>
             <Button
               href="#about"
-              variant="secondary"
+              variant="orange"
               size="lg"
-              className="bg-transparent backdrop-blur-md text-white border-2 border-white hover:bg-white/20 hover:border-white shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 font-semibold"
-              style={{ textShadow: "0 1px 3px rgba(0, 0, 0, 0.3)" }}
+              className="shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 font-semibold"
             >
               {t("hero.cta.secondary")}
             </Button>

@@ -1,0 +1,338 @@
+/**
+ * INSPIRE - Kidney Transplant Resources
+ * Handcrafted Design System
+ *
+ * Design Philosophy:
+ * - Every spacing decision is intentional
+ * - Colors chosen for empathy and accessibility
+ * - Typography that breathes and speaks with warmth
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========================================
+   BASE STYLES - Foundation
+   ======================================== */
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply scroll-smooth antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-size: 16px; /* Medical readability standard */
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* Smooth page transitions */
+  section {
+    scroll-snap-align: start;
+    scroll-margin-top: 80px;
+  }
+
+  /* Typography - Medical Professional Standards */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-sans text-neutral-800;
+    line-height: 1.3;
+    margin-bottom: 0.75em;
+    font-weight: 600;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+    letter-spacing: -0.01em;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl lg:text-4xl;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl lg:text-3xl;
+  }
+
+  p {
+    @apply text-base md:text-lg text-neutral-700;
+    margin-bottom: 1em;
+  }
+
+  strong {
+    @apply font-semibold text-neutral-900;
+  }
+
+  /* Links */
+  a {
+    @apply transition-colors duration-200;
+  }
+}
+
+/* ========================================
+   ACCESSIBILITY - For Everyone
+   ======================================== */
+
+@layer base {
+  /* Focus visible for keyboard navigation */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+
+  /* Remove default focus styles */
+  *:focus {
+    @apply outline-none;
+  }
+
+  /* Skip to main content link */
+  .skip-to-main {
+    @apply absolute -top-10 left-0 bg-brand text-white px-4 py-2 no-underline z-50;
+  }
+
+  .skip-to-main:focus {
+    @apply top-0;
+  }
+
+  /* Screen reader only content */
+  .sr-only {
+    @apply absolute w-px h-px p-0 -m-px overflow-hidden whitespace-nowrap border-0;
+    clip: rect(0, 0, 0, 0);
+  }
+
+  /* Focus ring utility */
+  .focus-ring {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background;
+  }
+}
+
+/* ========================================
+   ANIMATIONS - Gentle, Purposeful Motion
+   ======================================== */
+
+@layer utilities {
+  /* Respect user's motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  /* Animation delay utilities */
+  .animation-delay-100 {
+    animation-delay: 0.1s;
+  }
+  .animation-delay-200 {
+    animation-delay: 0.2s;
+  }
+  .animation-delay-300 {
+    animation-delay: 0.3s;
+  }
+  .animation-delay-400 {
+    animation-delay: 0.4s;
+  }
+  .animation-delay-500 {
+    animation-delay: 0.5s;
+  }
+
+  /* Stagger children animations */
+  .stagger-children > * {
+    @apply animate-fade-in;
+  }
+
+  .stagger-children > *:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  .stagger-children > *:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .stagger-children > *:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  .stagger-children > *:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  .stagger-children > *:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+  .stagger-children > *:nth-child(6) {
+    animation-delay: 0.6s;
+  }
+}
+
+/* ========================================
+   COMPONENTS - Crafted with Purpose
+   ======================================== */
+
+@layer components {
+  /* Container with asymmetric padding */
+  .section-container {
+    @apply w-full max-w-7xl mx-auto px-6 sm:px-8 lg:px-12;
+  }
+
+  /* Section spacing - asymmetric, intentional */
+  .section-spacing {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  /* Viewport height section */
+  .section-vh {
+    @apply min-h-screen py-16 md:py-24;
+  }
+
+  /* Prose container for content */
+  .prose-container {
+    @apply max-w-[68ch] mx-auto;
+  }
+
+  /* Glass morphism - Medical Design */
+  .glass {
+    @apply backdrop-blur-xl bg-white/10 border border-white/20;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+
+  .glass-white {
+    @apply backdrop-blur-md bg-white/90 border border-white/30;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08),
+      inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  }
+
+  .glass-card {
+    @apply backdrop-blur-lg bg-white/95 border border-white/30 rounded-2xl;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  }
+
+  /* Elevated card with float effect */
+  .card-elevated {
+    @apply bg-white rounded-2xl shadow-lg border border-neutral-200 p-6 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1;
+  }
+
+  /* Floating card - Medical design */
+  .card-float {
+    @apply bg-white rounded-3xl p-6 transition-all duration-500;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-float:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Interactive card */
+  .card-interactive {
+    @apply card-elevated cursor-pointer hover:scale-[1.02] active:scale-[0.98];
+  }
+
+  /* Button reset */
+  .btn-reset {
+    @apply inline-flex items-center justify-center font-medium transition-all duration-200 focus-ring disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  /* Medical-Specific Utilities */
+  .content-section {
+    @apply py-16 md:py-24;
+  }
+
+  .medical-card {
+    @apply bg-white border-2 border-neutral-200 rounded-xl p-8 shadow-sm hover:shadow-lg transition-all duration-300;
+  }
+
+  .touch-target {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  /* 8px Baseline Grid Spacing */
+  .spacing-8 {
+    padding: 8px;
+  }
+  .spacing-16 {
+    padding: 16px;
+  }
+  .spacing-24 {
+    padding: 24px;
+  }
+  .spacing-32 {
+    padding: 32px;
+  }
+  .spacing-48 {
+    padding: 48px;
+  }
+  .spacing-64 {
+    padding: 64px;
+  }
+}
+
+/* ========================================
+   CUSTOM SCROLLBAR - Subtle, Refined
+   ======================================== */
+
+@layer utilities {
+  .scrollbar-custom::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-track {
+    @apply bg-neutral-100;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    @apply bg-brand-400 rounded-full;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-thumb:hover {
+    @apply bg-brand-500;
+  }
+}
+
+/* Global scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-neutral-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-brand-400 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-brand-500;
+}
+
+/* ========================================
+   SELECTION - Brand Identity
+   ======================================== */
+
+::selection {
+  @apply bg-brand-200 text-brand-900;
+}
+
+::-moz-selection {
+  @apply bg-brand-200 text-brand-900;
+}

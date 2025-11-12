@@ -12,7 +12,7 @@ window.addEventListener('scroll', () => {
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   const scrollPercentage = (scrollTop / scrollHeight) * 100;
-
+  
   if (scrollProgress) {
     scrollProgress.style.transform = `scaleX(${scrollPercentage / 100})`;
   }
@@ -31,7 +31,7 @@ const translations = {
     'Resources': 'Resources',
     'Recursos en Español': 'Spanish Resources',
     'Get Help': 'Get Help',
-
+    
     // Hero Section
     'INSPIRE': 'INSPIRE',
     'Empowering Communities': 'Empowering Communities',
@@ -83,7 +83,7 @@ const translations = {
     'We understand that the journey to a kidney transplant can feel overwhelming, but you do not have to go through it alone. Whether you need guidance, resources, or just someone to answer your questions, we are here to help.': 'We understand that the journey to a kidney transplant can feel overwhelming, but you do not have to go through it alone. Whether you need guidance, resources, or just someone to answer your questions, we are here to help.',
     'Get Started Today': 'Get Started Today',
     'Contact Our Team': 'Contact Our Team',
-
+    
     // CKD Education
     'Knowledge is Power': 'Knowledge is Power',
     'Understanding Kidney Health': 'Understanding Kidney Health',
@@ -108,7 +108,7 @@ const translations = {
     'Kidney inflammation from lupus. Treatment has improved dramatically in recent years.': 'Kidney inflammation from lupus. Treatment has improved dramatically in recent years.',
     'Acute Kidney Injury': 'Acute Kidney Injury',
     'Sudden kidney damage, often temporary. Most people recover fully with proper treatment.': 'Sudden kidney damage, often temporary. Most people recover fully with proper treatment.',
-
+    
     // Other
     'Ready to Get Started?': 'Ready to Get Started?',
     'Access Resources': 'Access Resources',
@@ -201,7 +201,7 @@ const translations = {
     'Resources': 'Recursos',
     'Recursos en Español': 'Recursos en Español',
     'Get Help': 'Obtener Ayuda',
-
+    
     // Hero Section
     'INSPIRE': 'INSPIRE',
     'Empowering Communities': 'Empoderando Comunidades',
@@ -253,7 +253,7 @@ const translations = {
     'We understand that the journey to a kidney transplant can feel overwhelming, but you do not have to go through it alone. Whether you need guidance, resources, or just someone to answer your questions, we are here to help.': 'Entendemos que el viaje hacia un trasplante de riñón puede sentirse abrumador, pero no tienes que pasar por esto solo. Ya sea que necesites orientación, recursos, o simplemente alguien que responda tus preguntas, estamos aquí para ayudar.',
     'Get Started Today': 'Comienza Hoy',
     'Contact Our Team': 'Contacta Nuestro Equipo',
-
+    
     // CKD Education
     'Knowledge is Power': 'El Conocimiento es Poder',
     'Understanding Kidney Health': 'Entendiendo la Salud Renal',
@@ -278,7 +278,7 @@ const translations = {
     'Kidney inflammation from lupus. Treatment has improved dramatically in recent years.': 'Inflamación renal por lupus. El tratamiento ha mejorado dramáticamente en los últimos años.',
     'Acute Kidney Injury': 'Lesión Renal Aguda',
     'Sudden kidney damage, often temporary. Most people recover fully with proper treatment.': 'Daño renal súbito, a menudo temporal. La mayoría de las personas se recuperan completamente con tratamiento adecuado.',
-
+    
     // Other
     'Ready to Get Started?': '¿Listo para Comenzar?',
     'Access Resources': 'Acceder a Recursos',
@@ -369,7 +369,7 @@ let currentLang = localStorage.getItem('language') || 'en';
 function switchLanguage(lang) {
   currentLang = lang;
   localStorage.setItem('language', lang);
-
+  
   // Update all translatable elements
   document.querySelectorAll('[data-translate]').forEach(element => {
     const key = element.getAttribute('data-translate');
@@ -380,11 +380,11 @@ function switchLanguage(lang) {
       } else if (element.tagName === 'IMG') {
         element.alt = translations[lang][key];
       } else {
-        element.textContent = translations[lang][key];
+      element.textContent = translations[lang][key];
       }
     }
   });
-
+  
   // Update button states
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.classList.remove('active');
@@ -392,7 +392,7 @@ function switchLanguage(lang) {
       btn.classList.add('active');
     }
   });
-
+  
   // Update HTML lang attribute
   document.documentElement.lang = lang;
 
@@ -417,27 +417,27 @@ document.addEventListener('DOMContentLoaded', () => {
       switchLanguage(lang);
     });
   });
-
+  
   // Initialize with saved language
   console.log(`Initializing with language: ${currentLang}`);
   switchLanguage(currentLang);
-
+  
   // External links open in new tab
   const anchors = document.querySelectorAll('a');
   anchors.forEach(anchor => {
     const href = anchor.getAttribute('href');
-
+    
     if (href && !href.startsWith('#')) {
       anchor.setAttribute('target', '_blank');
       anchor.setAttribute('rel', 'noopener noreferrer');
     }
-
+    
     // Smooth scroll for internal links
     if (href && href.startsWith('#')) {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
-
+        
         if (target) {
           const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - 80;
           window.scrollTo({
@@ -448,13 +448,13 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   });
-
+  
   // Fade in sections on scroll
   const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -100px 0px'
   };
-
+  
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -462,13 +462,13 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }, observerOptions);
-
+  
   // Observe all sections
   document.querySelectorAll('section').forEach(section => {
     section.classList.add('fade-in');
     observer.observe(section);
   });
-
+  
   // Observe stage cards
   document.querySelectorAll('.stage-card, .disease-card').forEach(card => {
     card.classList.add('fade-in');
@@ -487,14 +487,14 @@ document.addEventListener('DOMContentLoaded', () => {
       const size = Math.max(rect.width, rect.height);
       const x = e.clientX - rect.left - size / 2;
       const y = e.clientY - rect.top - size / 2;
-
+      
       ripple.style.width = ripple.style.height = size + 'px';
       ripple.style.left = x + 'px';
       ripple.style.top = y + 'px';
       ripple.classList.add('ripple');
-
+      
       this.appendChild(ripple);
-
+      
       setTimeout(() => ripple.remove(), 600);
     });
   });

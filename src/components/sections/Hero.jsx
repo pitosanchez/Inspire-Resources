@@ -44,7 +44,7 @@ export default function Hero() {
           <div className="mb-8 animate-fade-in">
             <div className="relative inline-block bg-white rounded-2xl p-6 shadow-xl">
               <img
-                src="/images/inspire.svg"
+                src={`${import.meta.env.BASE_URL}images/inspire.svg`}
                 alt="INSPIRE - Kidney Transplant Resources"
                 className="w-auto mx-auto"
                 style={{

@@ -11,31 +11,31 @@ export default function Resources() {
 
   const resources = [
     {
-      image: "/images/exploretrans.webp",
+      image: `${import.meta.env.BASE_URL}images/exploretrans.webp`,
       title: t("resource.exploretransplant"),
       description: t("resource.exploretransplant.desc"),
       link: "https://exploretransplant.org/for-family-friends/become-a-living-donor/",
     },
     {
-      image: "/images/ldtk.webp",
+      image: `${import.meta.env.BASE_URL}images/ldtk.webp`,
       title: t("resource.toolkit"),
       description: t("resource.toolkit.desc"),
       link: "https://www.livingdonortoolkit.com/",
     },
     {
-      image: "/images/unos.webp",
+      image: `${import.meta.env.BASE_URL}images/unos.webp`,
       title: t("resource.transplantliving"),
       description: t("resource.transplantliving.desc"),
       link: "https://transplantliving.org/kidney/about-living-donor-transplant/",
     },
     {
-      image: "/images/ldrandinfo.webp",
+      image: `${import.meta.env.BASE_URL}images/ldrandinfo.webp`,
       title: t("resource.ldar"),
       description: t("resource.ldar.desc"),
       link: "https://www.livingdonorassistance.org/Resources/Additional-Resources",
     },
     {
-      image: "/images/findhelp.webp",
+      image: `${import.meta.env.BASE_URL}images/findhelp.webp`,
       title: t("resource.findhelp"),
       description: t("resource.findhelp.desc"),
       link: "https://www.findhelp.org/",

@@ -82,7 +82,7 @@ export default function SpanishResources() {
             <div className="backdrop-blur-lg bg-white/95 border border-white/30 rounded-2xl p-3 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
               <div className="aspect-square mb-3 rounded-xl overflow-hidden bg-gradient-to-br from-warm-100 to-warm-200 flex items-center justify-center p-3 shadow-inner">
                 <img
-                  src="/images/vivirbien.webp"
+                  src={`${import.meta.env.BASE_URL}images/vivirbien.webp`}
                   alt="Vivir Bien con Insuficiencia Renal"
                   className="w-full h-full object-contain"
                   loading="lazy"
@@ -98,7 +98,7 @@ export default function SpanishResources() {
             <div className="backdrop-blur-lg bg-white/95 border border-white/30 rounded-2xl p-3 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
               <div className="aspect-square mb-3 rounded-xl overflow-hidden bg-gradient-to-br from-warm-100 to-warm-200 flex items-center justify-center p-4 shadow-inner">
                 <img
-                  src="/images/donorshild.svg"
+                  src={`${import.meta.env.BASE_URL}images/donorshild.svg`}
                   alt="Donor Shield"
                   className="w-full h-full object-contain"
                   loading="lazy"

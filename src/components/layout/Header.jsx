@@ -41,7 +41,7 @@ export default function Header() {
           {/* Logo */}
           <a href="#home" className="flex items-center gap-3 group">
             <img
-              src="/images/inspire.svg"
+              src={`${import.meta.env.BASE_URL}images/inspire.svg`}
               alt="Inspire Logo"
               className="h-10 w-auto transition-transform duration-300 group-hover:scale-105"
             />

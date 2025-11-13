@@ -101,33 +101,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-
-      {/* Scroll Indicator - Subtle & Professional */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce z-50">
-        <div
-          className="backdrop-blur-md bg-white/40 border-2 border-white/60 rounded-full p-3 shadow-lg hover:bg-white/50 transition-all duration-300"
-          style={{
-            boxShadow:
-              "0 4px 16px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.5)",
-          }}
-        >
-          <svg
-            className="w-6 h-6 text-white"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-            style={{ filter: "drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2))" }}
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M19 14l-7 7m0 0l-7-7m7 7V3"
-            />
-          </svg>
-        </div>
-      </div>
     </section>
   );
 }

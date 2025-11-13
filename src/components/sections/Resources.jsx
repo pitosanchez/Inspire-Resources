@@ -12,33 +12,32 @@ export default function Resources() {
   const resources = [
     {
       image: "/images/exploretrans.webp",
-      title: "Explore Transplant",
-      description: "Comprehensive guide for becoming a living donor",
+      title: t("resource.exploretransplant"),
+      description: t("resource.exploretransplant.desc"),
       link: "https://exploretransplant.org/for-family-friends/become-a-living-donor/",
     },
     {
       image: "/images/ldtk.webp",
-      title: "Living Donor Toolkit",
-      description: "Essential tools and information for living donors",
+      title: t("resource.toolkit"),
+      description: t("resource.toolkit.desc"),
       link: "https://www.livingdonortoolkit.com/",
     },
     {
       image: "/images/unos.webp",
-      title: "Transplant Living",
-      description: "UNOS guide to living donor transplants",
+      title: t("resource.transplantliving"),
+      description: t("resource.transplantliving.desc"),
       link: "https://transplantliving.org/kidney/about-living-donor-transplant/",
     },
     {
       image: "/images/ldrandinfo.webp",
-      title: "Living Donor Resources & Information",
-      description:
-        "Financial assistance and additional support for living donors",
+      title: t("resource.ldar"),
+      description: t("resource.ldar.desc"),
       link: "https://www.livingdonorassistance.org/Resources/Additional-Resources",
     },
     {
       image: "/images/findhelp.webp",
-      title: "FindHelp.org",
-      description: "Connect with local resources and support services",
+      title: t("resource.findhelp"),
+      description: t("resource.findhelp.desc"),
       link: "https://www.findhelp.org/",
     },
   ];
@@ -106,25 +105,25 @@ export default function Resources() {
         {/* Video Section - Glassmorphism Cards */}
         <div className="max-w-6xl mx-auto">
           <h3 className="text-2xl md:text-3xl font-serif text-neutral-900 mb-8 text-center">
-            Educational Videos
+            {t("resource.videos.title")}
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
                 id: "-f5yuW9bmtY",
-                title: "Finding a Living Donor",
+                title: t("resource.video1"),
               },
               {
                 id: "BJZ-kleYz40",
-                title: "Living Donor Experience",
+                title: t("resource.video2"),
               },
               {
                 id: "YiHd7YCTnr0",
-                title: "Kidney Transplant Process",
+                title: t("resource.video3"),
               },
               {
                 id: "akqYQ3Tc8j8",
-                title: "Living Donor Information",
+                title: t("resource.video4"),
               },
             ].map((video) => (
               <div key={video.id} className="card-float">

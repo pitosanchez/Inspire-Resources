@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { useLanguage } from "../../utils/LanguageContext";
 import Card, { CardContent, CardHeader, CardTitle } from "../ui/Card";
 import Button from "../ui/Button";
 import Badge from "../ui/Badge";
 
 export default function KidneyTransplantGuide() {
+  const { t } = useLanguage();
   const [activeStep, setActiveStep] = useState(0);
   const [openAccordion, setOpenAccordion] = useState(null);
   const [quizAnswers, setQuizAnswers] = useState({});
@@ -11,163 +13,151 @@ export default function KidneyTransplantGuide() {
   const roadmapSteps = [
     {
       number: 1,
-      title: "Talk with Your Doctor",
+      title: t("roadmap.step1.title"),
       icon: "💬",
-      description:
-        "Start the conversation when your eGFR is 25-35. Ask about referral options when your eGFR is 30 or less.",
-      action: "Schedule a conversation with your nephrologist",
+      description: t("roadmap.step1.desc"),
+      action: t("roadmap.step1.action"),
     },
     {
       number: 2,
-      title: "Get Referred",
+      title: t("roadmap.step2.title"),
       icon: "📋",
-      description:
-        "Your nephrologist or dialysis social worker will refer you to a transplant center, or you can call one yourself.",
-      action: "Contact transplant center for evaluation",
+      description: t("roadmap.step2.desc"),
+      action: t("roadmap.step2.action"),
     },
     {
       number: 3,
-      title: "Complete Evaluation",
+      title: t("roadmap.step3.title"),
       icon: "🏥",
-      description:
-        "Meet with the transplant team for tests and screenings. This typically takes about 3 months or less.",
-      action: "Attend evaluation appointments",
+      description: t("roadmap.step3.desc"),
+      action: t("roadmap.step3.action"),
     },
     {
       number: 4,
-      title: "Join the Waitlist",
+      title: t("roadmap.step4.title"),
       icon: "⏳",
-      description:
-        "Average wait time is 3-5 years for deceased donor, or 3-6 months with a living donor.",
-      action: "Stay healthy and keep contact info updated",
+      description: t("roadmap.step4.desc"),
+      action: t("roadmap.step4.action"),
     },
     {
       number: 5,
-      title: "Transplant Surgery",
+      title: t("roadmap.step5.title"),
       icon: "⚕️",
-      description:
-        "Surgery takes 3-4 hours. You'll stay in the hospital for 3-5 days after surgery.",
-      action: "Prepare mentally and physically",
+      description: t("roadmap.step5.desc"),
+      action: t("roadmap.step5.action"),
     },
     {
       number: 6,
-      title: "Recovery",
+      title: t("roadmap.step6.title"),
       icon: "🌟",
-      description:
-        "Most people fully recover after 3 months. You'll meet with your team regularly for the first 6 weeks.",
-      action: "Follow post-transplant care plan",
+      description: t("roadmap.step6.desc"),
+      action: t("roadmap.step6.action"),
     },
   ];
 
   const benefits = [
     {
       icon: "💪",
-      title: "Live Longer",
-      description: "80% survival rate after 5 years vs 40% on dialysis",
+      title: t("benefits.longer"),
+      description: t("benefits.longer.desc"),
     },
     {
       icon: "✨",
-      title: "Better Quality of Life",
-      description: "No more dialysis, fewer restrictions, more energy",
+      title: t("benefits.quality"),
+      description: t("benefits.quality.desc"),
     },
     {
       icon: "🍽️",
-      title: "Fewer Diet Limits",
-      description: "More freedom with food and drink choices",
+      title: t("benefits.diet"),
+      description: t("benefits.diet.desc"),
     },
     {
       icon: "✈️",
-      title: "Travel Easier",
-      description: "Work and travel without dialysis constraints",
+      title: t("benefits.travel"),
+      description: t("benefits.travel.desc"),
     },
   ];
 
   const eligibilityFactors = [
     {
-      category: "Medical Health",
+      category: t("eligibility.medical"),
       icon: "🏥",
       items: [
-        "Cancer-free (or cleared by oncologist)",
-        "No active infections",
-        "Heart/lung/circulation health",
-        "Controlled chronic conditions",
+        t("eligibility.medical.1"),
+        t("eligibility.medical.2"),
+        t("eligibility.medical.3"),
+        t("eligibility.medical.4"),
       ],
     },
     {
-      category: "Lifestyle",
+      category: t("eligibility.lifestyle"),
       icon: "🚭",
       items: [
-        "No current substance use disorder",
-        "Healthy BMI (varies by center)",
-        "Compliance with medical care",
-        "Non-smoker",
+        t("eligibility.lifestyle.1"),
+        t("eligibility.lifestyle.2"),
+        t("eligibility.lifestyle.3"),
+        t("eligibility.lifestyle.4"),
       ],
     },
     {
-      category: "Support System",
+      category: t("eligibility.support"),
       icon: "👥",
       items: [
-        "Reliable caregiver available",
-        "Transportation to appointments",
-        "Stable housing",
-        "Updated contact information",
+        t("eligibility.support.1"),
+        t("eligibility.support.2"),
+        t("eligibility.support.3"),
+        t("eligibility.support.4"),
       ],
     },
     {
-      category: "Financial",
+      category: t("eligibility.financial"),
       icon: "💳",
       items: [
-        "Health insurance coverage",
-        "Ability to afford medications",
-        "Financial coordinator assistance",
-        "Access to support resources",
+        t("eligibility.financial.1"),
+        t("eligibility.financial.2"),
+        t("eligibility.financial.3"),
+        t("eligibility.financial.4"),
       ],
     },
   ];
 
   const myths = [
     {
-      myth: "A transplant is a cure for kidney failure",
-      fact: "A transplant is a treatment option, not a cure. You may need medications for life and possibly future transplants.",
+      myth: t("myth1"),
+      fact: t("fact1"),
     },
     {
-      myth: "I can only get a transplant after starting dialysis",
-      fact: "The best time is actually BEFORE dialysis (preemptive transplant) when your eGFR is 20 or below.",
+      myth: t("myth2"),
+      fact: t("fact2"),
     },
     {
-      myth: "All transplant centers are the same",
-      fact: "Centers have different eligibility requirements, acceptance criteria, and processes. Shop around!",
+      myth: t("myth3"),
+      fact: t("fact3"),
     },
     {
-      myth: "It's very hard to qualify for a kidney transplant",
-      fact: "Actually, most people who apply for a kidney transplant are accepted onto the waitlist.",
+      myth: t("myth4"),
+      fact: t("fact4"),
     },
     {
-      myth: "My living donor must be a family member",
-      fact: "Donors can be friends, coworkers, or even altruistic strangers. Race and ethnicity don't affect matching.",
+      myth: t("myth5"),
+      fact: t("fact5"),
     },
   ];
 
   const quizQuestions = [
     {
-      question: "What is the average wait time for a deceased donor kidney?",
-      options: ["1-2 years", "3-5 years", "7-10 years", "6 months"],
+      question: t("quiz.q1"),
+      options: [t("quiz.q1.a"), t("quiz.q1.b"), t("quiz.q1.c"), t("quiz.q1.d")],
       correct: 1,
     },
     {
-      question:
-        "When should you start talking to your doctor about a transplant?",
-      options: [
-        "When eGFR is 90",
-        "When eGFR is 25-35",
-        "Only after starting dialysis",
-        "When eGFR is 10",
-      ],
+      question: t("quiz.q2"),
+      options: [t("quiz.q2.a"), t("quiz.q2.b"), t("quiz.q2.c"), t("quiz.q2.d")],
       correct: 1,
     },
     {
-      question: "How long do living donor kidneys typically last?",
-      options: ["5-10 years", "10-15 years", "15-20 years", "20-25 years"],
+      question: t("quiz.q3"),
+      options: [t("quiz.q3.a"), t("quiz.q3.b"), t("quiz.q3.c"), t("quiz.q3.d")],
       correct: 2,
     },
   ];
@@ -190,15 +180,13 @@ export default function KidneyTransplantGuide() {
         <div className="max-w-4xl mx-auto text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-100 text-brand-700 text-sm font-medium rounded-full mb-4">
             <span>📖</span>
-            <span>Your Complete Guide</span>
+            <span>{t("guide.label")}</span>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-neutral-900 mb-6">
-            Kidney Transplant Guide
+            {t("guide.title")}
           </h1>
           <p className="text-xl text-neutral-600 leading-relaxed mb-8">
-            Everything you need to know about kidney transplants — from
-            evaluation to recovery. This guide empowers you to navigate your
-            transplant journey with confidence.
+            {t("guide.intro")}
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Button
@@ -206,10 +194,10 @@ export default function KidneyTransplantGuide() {
               size="lg"
               className="bg-brand-500 text-white hover:bg-brand-600"
             >
-              Start Your Journey
+              {t("guide.cta.start")}
             </Button>
             <Button href="#quiz" variant="secondary" size="lg">
-              Test Your Knowledge
+              {t("guide.cta.quiz")}
             </Button>
           </div>
         </div>
@@ -238,10 +226,10 @@ export default function KidneyTransplantGuide() {
         <div id="roadmap" className="max-w-6xl mx-auto mb-20">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-serif text-neutral-900 mb-4">
-              Your Transplant Roadmap
+              {t("roadmap.title")}
             </h2>
             <p className="text-lg text-neutral-600">
-              6 steps from consultation to recovery
+              {t("roadmap.subtitle")}
             </p>
           </div>
 
@@ -305,7 +293,7 @@ export default function KidneyTransplantGuide() {
                 variant="outline"
                 size="sm"
               >
-                ← Previous
+                {t("roadmap.previous")}
               </Button>
               <Button
                 onClick={() =>
@@ -316,7 +304,7 @@ export default function KidneyTransplantGuide() {
                 disabled={activeStep === roadmapSteps.length - 1}
                 size="sm"
               >
-                Next →
+                {t("roadmap.next")}
               </Button>
             </div>
           </Card>
@@ -326,11 +314,10 @@ export default function KidneyTransplantGuide() {
         <div className="max-w-6xl mx-auto mb-20">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-serif text-neutral-900 mb-4">
-              Am I Eligible?
+              {t("eligibility.title")}
             </h2>
             <p className="text-lg text-neutral-600">
-              Most people who apply are accepted! Here's what transplant centers
-              look for:
+              {t("eligibility.intro")}
             </p>
           </div>
 
@@ -364,12 +351,10 @@ export default function KidneyTransplantGuide() {
 
           <Card variant="brand" className="mt-8 p-6 text-center">
             <p className="text-lg text-brand-900 font-semibold mb-2">
-              💙 Don't meet all requirements? Don't give up!
+              {t("eligibility.note")}
             </p>
             <p className="text-brand-800">
-              Many factors can be improved (like weight, quitting smoking, or
-              getting infections treated). Every transplant center has different
-              criteria — you might be accepted at another center.
+              {t("eligibility.note.desc")}
             </p>
           </Card>
         </div>
@@ -378,11 +363,10 @@ export default function KidneyTransplantGuide() {
         <div className="max-w-6xl mx-auto mb-20">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-serif text-neutral-900 mb-4">
-              Living Donor Benefits
+              {t("donor.title")}
             </h2>
             <p className="text-lg text-neutral-600">
-              Living donor kidneys last 15-20 years on average (vs 10-15 for
-              deceased donors)
+              {t("donor.intro")}
             </p>
           </div>
 
@@ -390,28 +374,28 @@ export default function KidneyTransplantGuide() {
             <Card variant="accent" className="p-6 text-center">
               <div className="text-5xl mb-4">⚡</div>
               <h3 className="text-xl font-semibold text-accent-900 mb-2">
-                Faster Process
+                {t("donor.faster")}
               </h3>
               <p className="text-accent-800">
-                3-6 months vs 3-5 years wait time
+                {t("donor.faster.desc")}
               </p>
             </Card>
             <Card variant="warm" className="p-6 text-center">
               <div className="text-5xl mb-4">💪</div>
               <h3 className="text-xl font-semibold text-warm-900 mb-2">
-                Better Outcomes
+                {t("donor.outcomes")}
               </h3>
               <p className="text-warm-800">
-                Higher success rates and kidney longevity
+                {t("donor.outcomes.desc")}
               </p>
             </Card>
             <Card variant="brand" className="p-6 text-center">
               <div className="text-5xl mb-4">🎯</div>
               <h3 className="text-xl font-semibold text-brand-900 mb-2">
-                Scheduled Surgery
+                {t("donor.scheduled")}
               </h3>
               <p className="text-brand-800">
-                Plan ahead instead of waiting for "the call"
+                {t("donor.scheduled.desc")}
               </p>
             </Card>
           </div>
@@ -421,7 +405,7 @@ export default function KidneyTransplantGuide() {
             className="mt-8 p-8 bg-gradient-to-br from-accent-50 to-white"
           >
             <h3 className="text-2xl font-serif text-neutral-900 mb-4">
-              Types of Living Donation
+              {t("donor.types")}
             </h3>
             <div className="space-y-4">
               <div className="flex items-start gap-4">
@@ -430,10 +414,10 @@ export default function KidneyTransplantGuide() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-neutral-900 mb-1">
-                    Directed Donation
+                    {t("donor.directed")}
                   </h4>
                   <p className="text-neutral-700">
-                    From someone you know (family, friend, coworker)
+                    {t("donor.directed.desc")}
                   </p>
                 </div>
               </div>
@@ -443,10 +427,10 @@ export default function KidneyTransplantGuide() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-neutral-900 mb-1">
-                    Paired Exchange (Kidney Swap)
+                    {t("donor.paired")}
                   </h4>
                   <p className="text-neutral-700">
-                    When your donor isn't a match, swap with another pair
+                    {t("donor.paired.desc")}
                   </p>
                 </div>
               </div>
@@ -456,10 +440,10 @@ export default function KidneyTransplantGuide() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-neutral-900 mb-1">
-                    Altruistic Donation
+                    {t("donor.altruistic")}
                   </h4>
                   <p className="text-neutral-700">
-                    From a stranger who wants to help anyone in need
+                    {t("donor.altruistic.desc")}
                   </p>
                 </div>
               </div>
@@ -471,10 +455,10 @@ export default function KidneyTransplantGuide() {
         <div className="max-w-4xl mx-auto mb-20">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-serif text-neutral-900 mb-4">
-              Myths vs Facts
+              {t("myths.title")}
             </h2>
             <p className="text-lg text-neutral-600">
-              Let's clear up common misconceptions
+              {t("myths.intro")}
             </p>
           </div>
 
@@ -490,7 +474,7 @@ export default function KidneyTransplantGuide() {
                   <div className="flex items-center justify-between gap-4">
                     <div className="flex items-center gap-4 flex-1">
                       <Badge variant="destructive" size="lg">
-                        MYTH
+                        {t("myth.label")}
                       </Badge>
                       <p className="font-semibold text-neutral-900">
                         {item.myth}
@@ -517,7 +501,7 @@ export default function KidneyTransplantGuide() {
                     <div className="mt-4 pt-4 border-t border-neutral-200 animate-fade-in">
                       <div className="flex items-start gap-4">
                         <Badge variant="success" size="lg">
-                          FACT
+                          {t("fact.label")}
                         </Badge>
                         <p className="text-neutral-700 flex-1">{item.fact}</p>
                       </div>
@@ -538,10 +522,10 @@ export default function KidneyTransplantGuide() {
             <div className="text-center mb-8">
               <div className="text-5xl mb-4">🧠</div>
               <h2 className="text-3xl font-serif text-neutral-900 mb-4">
-                Test Your Knowledge
+                {t("quiz.title")}
               </h2>
               <p className="text-lg text-neutral-600">
-                See how much you've learned!
+                {t("quiz.intro")}
               </p>
             </div>
 
@@ -611,14 +595,14 @@ export default function KidneyTransplantGuide() {
                       : "💪"}
                   </div>
                   <p className="text-xl font-semibold text-brand-900 mb-2">
-                    You scored{" "}
+                    {t("quiz.score")}{" "}
                     {
                       Object.values(quizAnswers).filter(
                         (answer, index) =>
                           answer === quizQuestions[index].correct
                       ).length
                     }{" "}
-                    out of {quizQuestions.length}!
+                    {t("quiz.outof")} {quizQuestions.length}!
                   </p>
                   <Button
                     onClick={() => setQuizAnswers({})}
@@ -626,7 +610,7 @@ export default function KidneyTransplantGuide() {
                     size="sm"
                     className="mt-4"
                   >
-                    Try Again
+                    {t("quiz.retry")}
                   </Button>
                 </Card>
               </div>
@@ -642,11 +626,10 @@ export default function KidneyTransplantGuide() {
           >
             <div className="text-5xl mb-4">🌟</div>
             <h2 className="text-3xl md:text-4xl font-serif mb-4">
-              Ready to Start Your Journey?
+              {t("guide.final.title")}
             </h2>
             <p className="text-xl mb-8 opacity-95">
-              Talk to your doctor about kidney transplant options. You deserve a
-              chance at a healthier, fuller life.
+              {t("guide.final.desc")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -655,7 +638,7 @@ export default function KidneyTransplantGuide() {
                 size="lg"
                 className="shadow-xl hover:shadow-2xl font-semibold"
               >
-                Find Resources
+                {t("guide.final.resources")}
               </Button>
               <Button
                 href="https://optn.transplant.hrsa.gov/members/member-directory/"
@@ -665,7 +648,7 @@ export default function KidneyTransplantGuide() {
                 size="lg"
                 className="shadow-xl hover:shadow-2xl font-semibold"
               >
-                Find a Transplant Center
+                {t("guide.final.centers")}
               </Button>
             </div>
           </Card>

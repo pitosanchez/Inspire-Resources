@@ -48,8 +48,8 @@ function App() {
         <main id="main-content">
           <Hero />
           <About />
-          <CKDEducation />
           <KidneyTransplantGuide />
+          <CKDEducation />
           <Resources />
           <SpanishResources />
           <CTASection />

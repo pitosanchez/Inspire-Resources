@@ -24,8 +24,8 @@ export default function Header() {
   const navItems = [
     { label: t("nav.home"), href: "#home" },
     { label: t("nav.about"), href: "#about" },
-    { label: t("nav.ckd"), href: "#ckd-education" },
     { label: t("nav.guide"), href: "#transplant-guide" },
+    { label: t("nav.ckd"), href: "#ckd-education" },
     { label: t("nav.resources"), href: "#resources" },
     { label: t("nav.spanish"), href: "#spanish-resources" },
   ];
@@ -41,7 +41,7 @@ export default function Header() {
           {/* Logo */}
           <a href="#home" className="flex items-center gap-3 group">
             <img
-              src={`${import.meta.env.BASE_URL}/images/inspire.svg`}
+              src={`${import.meta.env.BASE_URL}images/inspire.svg`}
               alt="Inspire Logo"
               className="h-10 w-auto transition-transform duration-300 group-hover:scale-105"
             />

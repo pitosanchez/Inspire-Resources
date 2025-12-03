@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useLanguage } from "../../utils/LanguageContext";
-import Card, { CardContent, CardHeader, CardTitle } from "../ui/Card";
+import Card from "../ui/Card";
 import Button from "../ui/Button";
 import Badge from "../ui/Badge";
 
@@ -8,7 +8,6 @@ export default function KidneyTransplantGuide() {
   const { t } = useLanguage();
   const [activeStep, setActiveStep] = useState(0);
   const [openAccordion, setOpenAccordion] = useState(null);
-  const [quizAnswers, setQuizAnswers] = useState({});
 
   const roadmapSteps = [
     {
@@ -144,30 +143,8 @@ export default function KidneyTransplantGuide() {
     },
   ];
 
-  const quizQuestions = [
-    {
-      question: t("quiz.q1"),
-      options: [t("quiz.q1.a"), t("quiz.q1.b"), t("quiz.q1.c"), t("quiz.q1.d")],
-      correct: 1,
-    },
-    {
-      question: t("quiz.q2"),
-      options: [t("quiz.q2.a"), t("quiz.q2.b"), t("quiz.q2.c"), t("quiz.q2.d")],
-      correct: 1,
-    },
-    {
-      question: t("quiz.q3"),
-      options: [t("quiz.q3.a"), t("quiz.q3.b"), t("quiz.q3.c"), t("quiz.q3.d")],
-      correct: 2,
-    },
-  ];
-
   const toggleAccordion = (index) => {
     setOpenAccordion(openAccordion === index ? null : index);
-  };
-
-  const handleQuizAnswer = (questionIndex, answerIndex) => {
-    setQuizAnswers({ ...quizAnswers, [questionIndex]: answerIndex });
   };
 
   return (
@@ -513,112 +490,7 @@ export default function KidneyTransplantGuide() {
           </div>
         </div>
 
-        {/* Interactive Quiz */}
-        <div id="quiz" className="max-w-4xl mx-auto mb-20">
-          <Card
-            variant="elevated"
-            className="p-8 bg-gradient-to-br from-brand-50 to-accent-50"
-          >
-            <div className="text-center mb-8">
-              <div className="text-5xl mb-4">🧠</div>
-              <h2 className="text-3xl font-serif text-neutral-900 mb-4">
-                {t("quiz.title")}
-              </h2>
-              <p className="text-lg text-neutral-600">
-                {t("quiz.intro")}
-              </p>
-            </div>
-
-            <div className="space-y-8">
-              {quizQuestions.map((q, qIndex) => (
-                <div
-                  key={qIndex}
-                  className="bg-white rounded-2xl p-6 shadow-md"
-                >
-                  <p className="font-semibold text-neutral-900 mb-4">
-                    {qIndex + 1}. {q.question}
-                  </p>
-                  <div className="space-y-3">
-                    {q.options.map((option, oIndex) => {
-                      const isSelected = quizAnswers[qIndex] === oIndex;
-                      const isCorrect = q.correct === oIndex;
-                      const showResult = quizAnswers[qIndex] !== undefined;
-
-                      return (
-                        <button
-                          key={oIndex}
-                          onClick={() => handleQuizAnswer(qIndex, oIndex)}
-                          disabled={showResult}
-                          className={`w-full text-left p-4 rounded-xl border-2 transition-all duration-300 ${
-                            showResult && isCorrect
-                              ? "bg-green-50 border-green-500 text-green-900"
-                              : showResult && isSelected && !isCorrect
-                              ? "bg-red-50 border-red-500 text-red-900"
-                              : isSelected
-                              ? "bg-brand-50 border-brand-500"
-                              : "bg-white border-neutral-300 hover:border-brand-400"
-                          }`}
-                        >
-                          <div className="flex items-center gap-3">
-                            <div
-                              className={`w-6 h-6 rounded-full border-2 flex items-center justify-center ${
-                                showResult && isCorrect
-                                  ? "border-green-500 bg-green-500 text-white"
-                                  : showResult && isSelected && !isCorrect
-                                  ? "border-red-500 bg-red-500 text-white"
-                                  : isSelected
-                                  ? "border-brand-500 bg-brand-500 text-white"
-                                  : "border-neutral-300"
-                              }`}
-                            >
-                              {showResult && isCorrect && "✓"}
-                              {showResult && isSelected && !isCorrect && "✗"}
-                            </div>
-                            <span>{option}</span>
-                          </div>
-                        </button>
-                      );
-                    })}
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {Object.keys(quizAnswers).length === quizQuestions.length && (
-              <div className="mt-8 text-center animate-fade-in">
-                <Card variant="brand" className="p-6">
-                  <div className="text-4xl mb-3">
-                    {Object.values(quizAnswers).filter(
-                      (answer, index) => answer === quizQuestions[index].correct
-                    ).length === quizQuestions.length
-                      ? "🎉"
-                      : "💪"}
-                  </div>
-                  <p className="text-xl font-semibold text-brand-900 mb-2">
-                    {t("quiz.score")}{" "}
-                    {
-                      Object.values(quizAnswers).filter(
-                        (answer, index) =>
-                          answer === quizQuestions[index].correct
-                      ).length
-                    }{" "}
-                    {t("quiz.outof")} {quizQuestions.length}!
-                  </p>
-                  <Button
-                    onClick={() => setQuizAnswers({})}
-                    variant="accent"
-                    size="sm"
-                    className="mt-4"
-                  >
-                    {t("quiz.retry")}
-                  </Button>
-                </Card>
-              </div>
-            )}
-          </Card>
-        </div>
-
-        {/* Call to Action */}
+{/* Call to Action */}
         <div className="max-w-4xl mx-auto">
           <Card
             variant="elevated"

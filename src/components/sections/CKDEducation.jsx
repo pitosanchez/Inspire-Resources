@@ -71,25 +71,7 @@ export default function CKDEducation() {
           </p>
         </div>
 
-        {/* Hope Message */}
-        <Card
-          variant="elevated"
-          className="max-w-4xl mx-auto mb-16 p-8 bg-gradient-to-br from-accent-50 to-brand-50"
-        >
-          <div className="flex items-start gap-6">
-            <div className="text-5xl">💙</div>
-            <div>
-              <h3 className="text-2xl font-serif text-neutral-900 mb-3">
-                {t("ckd.hope.title")}
-              </h3>
-              <p className="text-lg text-neutral-700 leading-relaxed">
-                {t("ckd.hope.text")}
-              </p>
-            </div>
-          </div>
-        </Card>
-
-        {/* What Are Kidneys */}
+{/* What Are Kidneys */}
         <Card variant="elevated" className="max-w-4xl mx-auto mb-20 p-8">
           <div className="flex items-start gap-6">
             <div className="text-5xl">🫘</div>

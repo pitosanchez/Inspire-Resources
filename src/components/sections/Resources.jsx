@@ -11,31 +11,31 @@ export default function Resources() {
 
   const resources = [
     {
-      image: `${import.meta.env.BASE_URL}/images/exploretrans.webp`,
+      image: "/images/exploretrans.webp",
       title: t("resource.exploretransplant"),
       description: t("resource.exploretransplant.desc"),
       link: "https://exploretransplant.org/for-family-friends/become-a-living-donor/",
     },
     {
-      image: `${import.meta.env.BASE_URL}/images/ldtk.webp`,
+      image: "/images/ldtk.webp",
       title: t("resource.toolkit"),
       description: t("resource.toolkit.desc"),
       link: "https://www.livingdonortoolkit.com/",
     },
     {
-      image: `${import.meta.env.BASE_URL}/images/unos.webp`,
+      image: "/images/unos.webp",
       title: t("resource.transplantliving"),
       description: t("resource.transplantliving.desc"),
       link: "https://transplantliving.org/kidney/about-living-donor-transplant/",
     },
     {
-      image: `${import.meta.env.BASE_URL}/images/ldrandinfo.webp`,
+      image: "/images/ldrandinfo.webp",
       title: t("resource.ldar"),
       description: t("resource.ldar.desc"),
       link: "https://www.livingdonorassistance.org/Resources/Additional-Resources",
     },
     {
-      image: `${import.meta.env.BASE_URL}/images/findhelp.webp`,
+      image: "/images/findhelp.webp",
       title: t("resource.findhelp"),
       description: t("resource.findhelp.desc"),
       link: "https://www.findhelp.org/",
@@ -68,36 +68,48 @@ export default function Resources() {
               rel="noopener noreferrer"
               className="group block"
             >
-              <div className="card-float h-full overflow-hidden">
-                <div className="aspect-video bg-gradient-to-br from-brand-50 to-brand-100 mb-4 rounded-xl overflow-hidden">
+              <Card className="h-full overflow-hidden group-hover:shadow-xl transition-all duration-300 p-0">
+                <div className="aspect-video bg-gradient-to-br from-brand-50 to-brand-100 rounded-t-2xl overflow-hidden p-4 flex items-center justify-center">
                   <img
                     src={resource.image}
                     alt={resource.title}
                     className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
                     loading="lazy"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      const fallback = e.target.parentElement.querySelector('.image-fallback');
+                      if (fallback) fallback.style.display = 'flex';
+                    }}
                   />
+                  <div className="hidden image-fallback w-full h-full items-center justify-center text-neutral-400">
+                    <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                  </div>
                 </div>
-                <h3 className="text-xl font-serif font-semibold text-neutral-900 mb-3">
-                  {resource.title}
-                </h3>
-                <p className="text-neutral-700 mb-4">{resource.description}</p>
-                <div className="inline-flex items-center gap-2 text-brand-600 font-semibold group-hover:gap-3 transition-all duration-300">
-                  {t("resources.cta")}
-                  <svg
-                    className="w-5 h-5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
+                <div className="p-6">
+                  <h3 className="text-xl font-serif font-semibold text-neutral-900 mb-3">
+                    {resource.title}
+                  </h3>
+                  <p className="text-neutral-700 mb-4">{resource.description}</p>
+                  <div className="inline-flex items-center gap-2 text-brand-600 font-semibold group-hover:gap-3 transition-all duration-300">
+                    {t("resources.cta")}
+                    <svg
+                      className="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
+                  </div>
                 </div>
-              </div>
+              </Card>
             </a>
           ))}
         </div>

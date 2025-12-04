@@ -22,16 +22,37 @@ export const translations = {
     'hero.cta.primary': 'Explore Resources',
     'hero.cta.secondary': 'Learn More',
 
-    // About Section
+    // About Section - Hero
+    'about.hero.badge': 'About INSPIRE',
+    'about.hero.title': 'Breaking Down Barriers to Kidney Care',
+    'about.hero.subtitle': 'We\'re dedicated to ensuring everyone has fair access to life-saving kidney transplants, regardless of background, income, or circumstances.',
+    'about.hero.supporting': 'Every person deserves equal access to life-saving care. We\'re here to make that vision a reality.',
+    'about.hero.trust': 'Trusted by 50+ Transplant Centers',
+    'about.hero.cta.primary': 'Get Help Today',
+    'about.hero.cta.secondary': 'Learn More',
+    
+    // About Section - Legacy (for backward compatibility)
     'about.label': 'About Us',
     'about.title': 'Breaking Down Barriers to Kidney Care',
     'about.subtitle': 'We\'re dedicated to ensuring everyone has fair access to life-saving kidney transplants, regardless of background, income, or circumstances.',
+    
+    // Mission & Vision
+    'about.mission.label': 'Our Foundation',
     'about.mission.title': 'Our Mission',
-    'about.mission.text': 'We provide comprehensive education, personalized patient support, and strong community partnerships to empower people with the tools and knowledge they need to navigate the transplant process with confidence.',
+    'about.mission.text': 'At INSPIRE, we believe that access to life-saving kidney transplants should never depend on where you live, how much you earn, or the color of your skin. We are dedicated to breaking down systemic barriers that prevent underserved communities from receiving the care they deserve. Through comprehensive education, personalized support, and strong community partnerships, we empower individuals and families with the knowledge, resources, and advocacy they need to navigate the transplant journey with confidence and dignity.',
+    'about.vision.title': 'Our Vision',
+    'about.vision.text': 'We envision a future where every person facing kidney disease has equal access to transplant care, regardless of their background or circumstances. A future where communities are empowered with knowledge, healthcare systems are equitable, and no one faces this journey alone.',
 
     // Barriers
+    'barriers.label': 'Understanding the Problem',
     'barriers.title': 'The Challenge We Face',
-    'barriers.intro': 'Many people from underserved communities face serious obstacles when trying to access kidney care, creating disparities in healthcare outcomes.',
+    'barriers.intro': 'The path to a kidney transplant is complex and challenging for everyone, but for underserved communities, the journey is often marked by additional obstacles that can seem insurmountable. These barriers don\'t just delay care—they can prevent life-saving treatment entirely.',
+    'barriers.stat1.title': '30% Less Likely',
+    'barriers.stat1.desc': 'People from underserved communities are 30% less likely to be referred for transplant evaluation',
+    'barriers.stat2.title': '1 in 4 Patients',
+    'barriers.stat2.desc': 'Financial barriers prevent 1 in 4 eligible patients from pursuing transplant',
+    'barriers.stat3.title': '40% Missed Appointments',
+    'barriers.stat3.desc': 'Transportation challenges cause 40% of missed transplant appointments',
     'barriers.healthcare.title': 'Healthcare Access',
     'barriers.healthcare.desc': 'Limited access to specialized medical care and providers',
     'barriers.financial.title': 'Financial Barriers',
@@ -42,11 +63,21 @@ export const translations = {
     'barriers.basic.desc': 'Food and housing insecurity affecting health outcomes',
     'barriers.info.title': 'Information Access',
     'barriers.info.desc': 'Limited access to clear, understandable medical information',
+    'barriers.language.title': 'Language Barriers',
+    'barriers.language.desc': 'Limited resources in native languages',
 
     // Solutions
     'solutions.title': 'How We\'re Making a Difference',
-    'solutions.intro': 'We work with trusted doctors, hospitals, and community organizations to design programs that make kidney transplant access more fair and equal for everyone.',
+    'solutions.intro': 'We don\'t just identify problems—we create solutions. INSPIRE works hand-in-hand with trusted transplant centers, healthcare providers, and community organizations to design programs that make kidney transplant access more fair and equal for everyone. Our comprehensive approach addresses barriers at every stage of the transplant journey.',
     'solutions.services.title': 'Our Comprehensive Support Services',
+    
+    // Service descriptions (enhanced)
+    'service.screening.desc.full': 'We help patients identify challenges they may face in getting a transplant, addressing concerns before they become obstacles.',
+    'service.resources.desc.full': 'Access to food programs, affordable housing, financial aid, and other essential resources that support transplant success.',
+    'service.navigation.desc.full': 'Personalized guidance through paperwork, transplant referrals, insurance navigation, and complex medical systems.',
+    'service.advocacy.desc.full': 'Identifying unfair treatment, advocating for equal opportunities, and ensuring every patient receives the care they deserve.',
+    'service.transportation.desc.full': 'Ensuring access to appointments and affordable medications through direct assistance and resource connections.',
+    'service.workers.desc.full': 'Personalized one-on-one support throughout your entire journey, from evaluation to recovery and beyond.',
 
     // Services
     'service.screening.title': 'Screening for Barriers',
@@ -68,10 +99,45 @@ export const translations = {
     'service.workers.desc': 'Personalized one-on-one support throughout your entire journey',
     'service.workers.badge': 'Personal Care',
 
+    // Impact Section
+    'impact.title': 'The Difference We Make',
+    'impact.intro': 'Numbers tell a story, but behind every statistic is a person—a patient, a family, a community. Since our founding, INSPIRE has helped thousands of individuals navigate the transplant journey with dignity, support, and hope.',
+    'impact.stat1.number': '5,000+',
+    'impact.stat1.label': 'Patients and Families Served',
+    'impact.stat2.number': '50+',
+    'impact.stat2.label': 'Transplant Centers Partnered',
+    'impact.stat3.number': '85%',
+    'impact.stat3.label': 'Report Improved Confidence',
+    'impact.stat4.number': '12',
+    'impact.stat4.label': 'States with Active Programs',
+    'impact.story.title': 'Maria\'s Story',
+    'impact.story.text': 'When Maria first came to INSPIRE, she was overwhelmed by the transplant process. Language barriers, financial concerns, and transportation challenges made it feel impossible. Our team connected her with resources, provided bilingual support, and walked alongside her every step. Today, Maria is thriving with her new kidney and volunteers with INSPIRE to help others facing similar challenges.',
+    
+    // Partners & Team
+    'partners.title': 'Trusted Partners in Care',
+    'partners.intro': 'INSPIRE doesn\'t work alone. We\'re proud to partner with leading transplant centers, national organizations, and community groups who share our commitment to health equity. Together, we\'re building a network of support that spans the entire country.',
+    'partners.contact': 'Feel free to contact us regarding partnerships, collaborations, or related opportunities.',
+    'partners.unos': 'UNOS',
+    'partners.nkf': 'National Kidney Foundation',
+    'partners.ast': 'American Society of Transplantation',
+    'partners.community': 'Community Health Organizations',
+    
+    // Values
+    'values.title': 'What Guides Us',
+    'values.intro': 'Our values shape everything we do, from the programs we create to the way we interact with every person we serve.',
+    'values.equity.title': 'Health Equity',
+    'values.equity.desc': 'We believe every person deserves equal access to life-saving care, regardless of background, income, or circumstances.',
+    'values.compassion.title': 'Compassionate Care',
+    'values.compassion.desc': 'We meet people where they are, with empathy, respect, and understanding for the challenges they face.',
+    'values.empowerment.title': 'Knowledge is Power',
+    'values.empowerment.desc': 'We provide education and resources that empower individuals to make informed decisions about their health.',
+    'values.community.title': 'Community First',
+    'values.community.desc': 'We build strong partnerships with communities, listening to their needs and working together toward solutions.',
+    
     // CTA
     'cta.title': 'You Don\'t Have to Face This Alone',
-    'cta.text': 'We understand that the journey to a kidney transplant can feel overwhelming, but you do not have to go through it alone. Whether you need guidance, resources, or just someone to answer your questions, we are here to help.',
-    'cta.primary': 'Get Started Today',
+    'cta.text': 'We understand that the journey to a kidney transplant can feel overwhelming, but you do not have to go through it alone. Whether you need guidance, resources, or just someone to answer your questions, we are here to help. Reach out today and take the first step toward a healthier future.',
+    'cta.primary': 'Get Help Today',
     'cta.secondary': 'Contact Our Team',
 
     // CKD Education
@@ -122,6 +188,103 @@ export const translations = {
     'guide.intro': 'Everything you need to know about kidney transplants — from evaluation to recovery. This guide empowers you to navigate your transplant journey with confidence.',
     'guide.cta.start': 'Start Your Journey',
     'guide.cta.quiz': 'Test Your Knowledge',
+    
+    // Guide Section 1: Overview
+    'guide.overview.title': 'Kidney Transplant Overview',
+    'guide.overview.what.title': 'What is a kidney transplant?',
+    'guide.overview.what.text': 'A kidney transplant is a treatment option for you if your kidneys are not working well enough on their own. This is called kidney failure, also called end stage kidney disease or end stage renal disease. It is a surgery to give a person with kidney failure (the recipient) a healthy kidney from someone else (the donor).',
+    'guide.overview.why.title': 'Why should I consider getting a transplant?',
+    'guide.overview.why.quality.title': 'Improve your quality of life',
+    'guide.overview.why.quality.text': 'While a kidney transplant is a major surgery and can seem scary, there can be many positive lifestyle changes. You may be able to return to the life you lived before kidney failure. You will no longer need dialysis and have fewer food and drink limits (restrictions), but it will still be important to keep a healthy weight and eat healthy foods.',
+    'guide.overview.why.longer.title': 'Increase your chance of living longer',
+    'guide.overview.why.longer.text': 'Studies show that people who get a kidney transplant have a higher chance of living longer than people who stay on dialysis. On average:',
+    'guide.overview.why.longer.stat1': 'People who are on dialysis have a 40% chance of living after 5 years with kidney failure.',
+    'guide.overview.why.longer.stat2': 'People who get a kidney transplant have a 80% chance of living after 5 years with kidney failure.',
+    'guide.overview.when.title': 'When is the right time to get a kidney transplant?',
+    'guide.overview.when.text': 'The right time for you to get a kidney transplant may be different from others. Your doctor will work with you to decide the right time for you to get a transplant. If possible, the best time to get a transplant is before you need dialysis, which is called a preemptive transplant.',
+    'guide.overview.egfr.title': 'eGFR Test',
+    'guide.overview.egfr.text': 'Estimated glomerular filtration (eGFR) is a measure of how well your kidneys filter and remove waste products. Your doctor will use your results from the eGFR blood test to help decide when to refer you for evaluation for a transplant. A normal eGFR is 90 or more. You can be placed on the waitlist for a kidney transplant as soon as your eGFR is 20 or lower. But your doctor may refer you for evaluation before your eGFR is 20. Ask your doctor about a referral when your eGFR is 30 or less.',
+    'guide.overview.options.title': 'What are my transplant options?',
+    'guide.overview.living.title': 'Living Donor Transplant',
+    'guide.overview.living.desc': 'A living donor kidney transplant is surgery where doctors give you a kidney from a person who is alive and chooses to donate one of their two healthy kidneys.',
+    'guide.overview.living.directed': 'Directed donation - from someone you know',
+    'guide.overview.living.paired': 'Paired exchange (kidney swap)',
+    'guide.overview.living.altruistic': 'Altruistic donation - from a stranger',
+    'guide.overview.living.voucher': 'Transplant voucher program',
+    'guide.overview.deceased.title': 'Deceased Donor Transplant',
+    'guide.overview.deceased.desc': 'A deceased donor kidney transplant is a surgery where doctors give you a kidney from an organ donor who has died. The average wait time is 3-5 years for a deceased donor\'s kidney and may be longer or shorter in some parts of the country.',
+    
+    // Guide Section 3: Transplant Center
+    'guide.center.title': 'The Transplant Center',
+    'guide.center.what.title': 'What is a Transplant Center?',
+    'guide.center.what.text': 'A transplant center is a hospital with a special team of doctors, nurses, and other healthcare workers who help people get organ transplants. These centers have the experience and resources needed for transplant surgery and care.',
+    'guide.center.why.title': 'Why the Transplant Center Matters',
+    'guide.center.why.text': 'Choosing the right transplant center is important because different centers have different rules and requirements, wait times vary, and you want a team you trust and feel comfortable with.',
+    'guide.center.team.title': 'The Transplant Team',
+    'guide.center.team.coordinator': 'Transplant Coordinator - Your main contact person',
+    'guide.center.team.surgeons': 'Transplant Surgeons - Perform the surgery',
+    'guide.center.team.nephrologists': 'Nephrologists - Manage your kidney health',
+    'guide.center.team.nurses': 'Nurses - Provide day-to-day care',
+    'guide.center.team.social': 'Social Workers - Help with support and resources',
+    'guide.center.team.financial': 'Financial Coordinators - Help with insurance and costs',
+    
+    // Guide Section 5: Caregiver
+    'guide.caregiver.title': 'Caregiver Role',
+    'guide.caregiver.what.title': 'What is a Caregiver?',
+    'guide.caregiver.what.text': 'A caregiver is someone who helps you during your transplant journey. This person supports you before, during, and after your transplant surgery. Having a good caregiver is very important for your recovery and success.',
+    'guide.caregiver.why.title': 'Why You Need a Caregiver',
+    'guide.caregiver.why.text': 'After your transplant, you\'ll need help with many things: getting to appointments, taking medications, daily tasks, emotional support, and watching for problems. Transplant centers require that you have a reliable caregiver.',
+    'guide.caregiver.who.title': 'Who Can Be Your Caregiver?',
+    'guide.caregiver.who.family': 'Family Members',
+    'guide.caregiver.who.friends': 'Friends',
+    'guide.caregiver.who.others': 'Other Support People',
+    
+    // Guide Section 6: Finding a Living Donor
+    'guide.finding.title': 'Finding a Living Donor',
+    'guide.finding.why.title': 'Why Consider a Living Donor?',
+    'guide.finding.who.title': 'Who Can Be a Living Donor?',
+    'guide.finding.who.text': 'Many people can be living donors. Don\'t assume someone can\'t donate - let the transplant center evaluate them. Family members, friends, coworkers, and sometimes even strangers (altruistic donors) can donate.',
+    'guide.finding.matching.title': 'Important Facts About Matching',
+    'guide.finding.matching.text': 'Race and ethnicity don\'t matter for matching! This is a common myth. Your donor doesn\'t need to be the same race or ethnicity as you.',
+    
+    // Guide Section 7: Becoming a Living Donor
+    'guide.becoming.title': 'Becoming a Living Donor',
+    'guide.becoming.what.title': 'What is Living Donation?',
+    'guide.becoming.what.text': 'Living donation is when a healthy person gives one of their kidneys to someone who needs a transplant. This is a generous and life-saving gift that helps someone in need.',
+    'guide.becoming.safe.title': 'Is Living Donation Safe?',
+    'guide.becoming.safe.answer': 'Yes, living donation is very safe for healthy donors.',
+    'guide.becoming.safe.fact1': 'You can live a completely normal life with one kidney',
+    'guide.becoming.safe.fact2': 'Your remaining kidney will do the work of two',
+    'guide.becoming.safe.fact3': 'Most donors recover quickly and have no long-term problems',
+    'guide.becoming.safe.fact4': 'Donors live just as long as people who don\'t donate',
+    'guide.becoming.who.title': 'Who Can Be a Living Donor?',
+    'guide.becoming.who.text': 'Usually age 18 to 65, in good overall health, have two healthy kidneys, no serious health problems, normal blood pressure and kidney function, and willing and able to donate voluntarily.',
+    
+    // Guide Section 8: Questions
+    'guide.questions.title': 'Questions to Ask Your Transplant Team',
+    'guide.questions.why.title': 'Why Asking Questions Matters',
+    'guide.questions.why.text': 'Asking questions helps you understand your transplant journey better, feel more confident and prepared, make informed decisions about your care, and build trust with your care team.',
+    'guide.questions.starting.title': 'Questions About Getting Started',
+    'guide.questions.starting.1': 'When should I start thinking about a transplant?',
+    'guide.questions.starting.2': 'How do I get started with the evaluation?',
+    'guide.questions.starting.3': 'How long does the whole process take?',
+    'guide.questions.evaluation.title': 'Questions About Evaluation',
+    'guide.questions.evaluation.1': 'How long will my evaluation take?',
+    'guide.questions.evaluation.2': 'What tests will I need?',
+    'guide.questions.evaluation.3': 'What are your requirements for transplant?',
+    'guide.questions.waitlist.title': 'Questions About Being on the Waitlist',
+    'guide.questions.waitlist.1': 'How long will I wait for a kidney?',
+    'guide.questions.waitlist.2': 'What should I do while I wait?',
+    'guide.questions.waitlist.3': 'How will you contact me when a kidney is available?',
+    'guide.questions.surgery.title': 'Questions About Surgery',
+    'guide.questions.surgery.1': 'How long will the surgery take?',
+    'guide.questions.surgery.2': 'How long will I stay in the hospital?',
+    'guide.questions.surgery.3': 'What will recovery be like?',
+    'guide.questions.medications.title': 'Questions About Medications',
+    'guide.questions.medications.1': 'What medications will I need to take?',
+    'guide.questions.medications.2': 'How long will I need to take them?',
+    'guide.questions.medications.3': 'What are the side effects?',
+    'guide.questions.remember': 'Remember: There are no silly questions. Your transplant team wants you to understand everything. Don\'t be afraid to ask anything you\'re wondering about.',
 
     // Roadmap
     'roadmap.title': 'Your Transplant Roadmap',
@@ -293,16 +456,37 @@ export const translations = {
     'hero.cta.primary': 'Explorar Recursos',
     'hero.cta.secondary': 'Aprender Más',
 
-    // About Section
+    // About Section - Hero
+    'about.hero.badge': 'Acerca de INSPIRE',
+    'about.hero.title': 'Derribando Barreras al Cuidado Renal',
+    'about.hero.subtitle': 'Estamos dedicados a asegurar que todos tengan acceso justo a trasplantes de riñón que salvan vidas, independientemente de su origen, ingresos o circunstancias.',
+    'about.hero.supporting': 'Toda persona merece igual acceso a atención que salva vidas. Estamos aquí para hacer esa visión realidad.',
+    'about.hero.trust': 'Confiado por más de 50 Centros de Trasplante',
+    'about.hero.cta.primary': 'Obtener Ayuda Hoy',
+    'about.hero.cta.secondary': 'Aprender Más',
+    
+    // About Section - Legacy
     'about.label': 'Acerca de Nosotros',
     'about.title': 'Derribando Barreras al Cuidado Renal',
     'about.subtitle': 'Estamos dedicados a asegurar que todos tengan acceso justo a trasplantes de riñón que salvan vidas, independientemente de su origen, ingresos o circunstancias.',
+    
+    // Mission & Vision
+    'about.mission.label': 'Nuestra Fundación',
     'about.mission.title': 'Nuestra Misión',
-    'about.mission.text': 'Proporcionamos educación integral, apoyo personalizado al paciente y sólidas asociaciones comunitarias para empoderar a las personas con las herramientas y conocimientos que necesitan para navegar el proceso de trasplante con confianza.',
+    'about.mission.text': 'En INSPIRE, creemos que el acceso a trasplantes de riñón que salvan vidas nunca debe depender de dónde vives, cuánto ganas o el color de tu piel. Estamos dedicados a derribar barreras sistémicas que impiden que las comunidades desatendidas reciban la atención que merecen. A través de educación integral, apoyo personalizado y sólidas asociaciones comunitarias, empoderamos a individuos y familias con el conocimiento, recursos y defensa que necesitan para navegar el viaje de trasplante con confianza y dignidad.',
+    'about.vision.title': 'Nuestra Visión',
+    'about.vision.text': 'Imaginamos un futuro donde cada persona que enfrenta enfermedad renal tenga igual acceso a atención de trasplante, independientemente de su origen o circunstancias. Un futuro donde las comunidades estén empoderadas con conocimiento, los sistemas de salud sean equitativos, y nadie enfrente este viaje solo.',
 
     // Barriers
+    'barriers.label': 'Entendiendo el Problema',
     'barriers.title': 'El Desafío que Enfrentamos',
-    'barriers.intro': 'Muchas personas de comunidades desatendidas enfrentan obstáculos serios al intentar acceder al cuidado renal, creando disparidades en los resultados de salud.',
+    'barriers.intro': 'El camino hacia un trasplante de riñón es complejo y desafiante para todos, pero para las comunidades desatendidas, el viaje a menudo está marcado por obstáculos adicionales que pueden parecer insuperables. Estas barreras no solo retrasan la atención—pueden prevenir el tratamiento que salva vidas por completo.',
+    'barriers.stat1.title': '30% Menos Probable',
+    'barriers.stat1.desc': 'Las personas de comunidades desatendidas tienen 30% menos probabilidad de ser referidas para evaluación de trasplante',
+    'barriers.stat2.title': '1 de cada 4 Pacientes',
+    'barriers.stat2.desc': 'Las barreras financieras impiden que 1 de cada 4 pacientes elegibles busquen trasplante',
+    'barriers.stat3.title': '40% Citas Perdidas',
+    'barriers.stat3.desc': 'Los desafíos de transporte causan el 40% de las citas de trasplante perdidas',
     'barriers.healthcare.title': 'Acceso a la Salud',
     'barriers.healthcare.desc': 'Acceso limitado a atención médica especializada y proveedores',
     'barriers.financial.title': 'Barreras Financieras',
@@ -313,11 +497,21 @@ export const translations = {
     'barriers.basic.desc': 'Inseguridad alimentaria y de vivienda que afecta los resultados de salud',
     'barriers.info.title': 'Acceso a la Información',
     'barriers.info.desc': 'Acceso limitado a información médica clara y comprensible',
+    'barriers.language.title': 'Barreras del Idioma',
+    'barriers.language.desc': 'Recursos limitados en idiomas nativos',
 
     // Solutions
     'solutions.title': 'Cómo Estamos Marcando la Diferencia',
-    'solutions.intro': 'Trabajamos con médicos, hospitales y organizaciones comunitarias de confianza para diseñar programas que hagan el acceso al trasplante de riñón más justo e igualitario para todos.',
+    'solutions.intro': 'No solo identificamos problemas—creamos soluciones. INSPIRE trabaja mano a mano con centros de trasplante de confianza, proveedores de atención médica y organizaciones comunitarias para diseñar programas que hagan el acceso al trasplante de riñón más justo e igualitario para todos. Nuestro enfoque integral aborda barreras en cada etapa del viaje de trasplante.',
     'solutions.services.title': 'Nuestros Servicios Integrales de Apoyo',
+    
+    // Service descriptions (enhanced)
+    'service.screening.desc.full': 'Ayudamos a los pacientes a identificar desafíos que pueden enfrentar al obtener un trasplante, abordando preocupaciones antes de que se conviertan en obstáculos.',
+    'service.resources.desc.full': 'Acceso a programas de alimentos, vivienda asequible, ayuda financiera y otros recursos esenciales que apoyan el éxito del trasplante.',
+    'service.navigation.desc.full': 'Orientación personalizada a través de papeleo, referencias de trasplante, navegación de seguros y sistemas médicos complejos.',
+    'service.advocacy.desc.full': 'Identificando tratamiento injusto, defendiendo oportunidades iguales y asegurando que cada paciente reciba la atención que merece.',
+    'service.transportation.desc.full': 'Asegurando acceso a citas y medicamentos asequibles a través de asistencia directa y conexiones de recursos.',
+    'service.workers.desc.full': 'Apoyo personalizado uno a uno durante todo tu viaje, desde la evaluación hasta la recuperación y más allá.',
 
     // Services
     'service.screening.title': 'Detección de Barreras',
@@ -339,10 +533,45 @@ export const translations = {
     'service.workers.desc': 'Apoyo personalizado uno a uno durante todo tu viaje',
     'service.workers.badge': 'Cuidado Personal',
 
+    // Impact Section
+    'impact.title': 'La Diferencia que Hacemos',
+    'impact.intro': 'Los números cuentan una historia, pero detrás de cada estadística hay una persona—un paciente, una familia, una comunidad. Desde nuestra fundación, INSPIRE ha ayudado a miles de individuos a navegar el viaje de trasplante con dignidad, apoyo y esperanza.',
+    'impact.stat1.number': '5,000+',
+    'impact.stat1.label': 'Pacientes y Familias Atendidos',
+    'impact.stat2.number': '50+',
+    'impact.stat2.label': 'Centros de Trasplante Asociados',
+    'impact.stat3.number': '85%',
+    'impact.stat3.label': 'Reportan Mejor Confianza',
+    'impact.stat4.number': '12',
+    'impact.stat4.label': 'Estados con Programas Activos',
+    'impact.story.title': 'La Historia de María',
+    'impact.story.text': 'Cuando María llegó por primera vez a INSPIRE, estaba abrumada por el proceso de trasplante. Las barreras del idioma, las preocupaciones financieras y los desafíos de transporte hacían que pareciera imposible. Nuestro equipo la conectó con recursos, proporcionó apoyo bilingüe y caminó junto a ella en cada paso. Hoy, María está prosperando con su nuevo riñón y se ofrece como voluntaria con INSPIRE para ayudar a otros que enfrentan desafíos similares.',
+    
+    // Partners & Team
+    'partners.title': 'Socios de Confianza en el Cuidado',
+    'partners.intro': 'INSPIRE no trabaja solo. Estamos orgullosos de asociarnos con centros de trasplante líderes, organizaciones nacionales y grupos comunitarios que comparten nuestro compromiso con la equidad en salud. Juntos, estamos construyendo una red de apoyo que abarca todo el país.',
+    'partners.contact': 'No dude en contactarnos con respecto a asociaciones, colaboraciones u oportunidades relacionadas.',
+    'partners.unos': 'UNOS',
+    'partners.nkf': 'Fundación Nacional del Riñón',
+    'partners.ast': 'Sociedad Americana de Trasplante',
+    'partners.community': 'Organizaciones de Salud Comunitaria',
+    
+    // Values
+    'values.title': 'Lo que Nos Guía',
+    'values.intro': 'Nuestros valores dan forma a todo lo que hacemos, desde los programas que creamos hasta la forma en que interactuamos con cada persona a la que servimos.',
+    'values.equity.title': 'Equidad en Salud',
+    'values.equity.desc': 'Creemos que toda persona merece igual acceso a atención que salva vidas, independientemente de su origen, ingresos o circunstancias.',
+    'values.compassion.title': 'Cuidado Compasivo',
+    'values.compassion.desc': 'Conocemos a las personas donde están, con empatía, respeto y comprensión por los desafíos que enfrentan.',
+    'values.empowerment.title': 'El Conocimiento es Poder',
+    'values.empowerment.desc': 'Proporcionamos educación y recursos que empoderan a los individuos para tomar decisiones informadas sobre su salud.',
+    'values.community.title': 'La Comunidad Primero',
+    'values.community.desc': 'Construimos sólidas asociaciones con comunidades, escuchando sus necesidades y trabajando juntos hacia soluciones.',
+    
     // CTA
     'cta.title': 'No Tienes que Enfrentar Esto Solo',
-    'cta.text': 'Entendemos que el viaje hacia un trasplante de riñón puede sentirse abrumador, pero no tienes que pasar por esto solo. Ya sea que necesites orientación, recursos, o simplemente alguien que responda tus preguntas, estamos aquí para ayudar.',
-    'cta.primary': 'Comienza Hoy',
+    'cta.text': 'Entendemos que el viaje hacia un trasplante de riñón puede sentirse abrumador, pero no tienes que pasar por esto solo. Ya sea que necesites orientación, recursos, o simplemente alguien que responda tus preguntas, estamos aquí para ayudar. Comunícate hoy y da el primer paso hacia un futuro más saludable.',
+    'cta.primary': 'Obtener Ayuda Hoy',
     'cta.secondary': 'Contacta Nuestro Equipo',
 
     // CKD Education
@@ -393,6 +622,103 @@ export const translations = {
     'guide.intro': 'Todo lo que necesitas saber sobre trasplantes de riñón — desde la evaluación hasta la recuperación. Esta guía te empodera para navegar tu viaje de trasplante con confianza.',
     'guide.cta.start': 'Comienza Tu Viaje',
     'guide.cta.quiz': 'Pon a Prueba Tu Conocimiento',
+    
+    // Guide Section 1: Overview
+    'guide.overview.title': 'Resumen del Trasplante de Riñón',
+    'guide.overview.what.title': '¿Qué es un trasplante de riñón?',
+    'guide.overview.what.text': 'Un trasplante de riñón es una opción de tratamiento para ti si tus riñones no funcionan lo suficientemente bien por sí solos. Esto se llama insuficiencia renal, también llamada enfermedad renal en etapa terminal o enfermedad renal terminal. Es una cirugía para dar a una persona con insuficiencia renal (el receptor) un riñón sano de otra persona (el donante).',
+    'guide.overview.why.title': '¿Por qué debería considerar un trasplante?',
+    'guide.overview.why.quality.title': 'Mejora tu calidad de vida',
+    'guide.overview.why.quality.text': 'Aunque un trasplante de riñón es una cirugía mayor y puede parecer aterrador, puede haber muchos cambios positivos en el estilo de vida. Puedes volver a la vida que tenías antes de la insuficiencia renal. Ya no necesitarás diálisis y tendrás menos límites de comida y bebida (restricciones), pero seguirá siendo importante mantener un peso saludable y comer alimentos saludables.',
+    'guide.overview.why.longer.title': 'Aumenta tu probabilidad de vivir más tiempo',
+    'guide.overview.why.longer.text': 'Los estudios muestran que las personas que reciben un trasplante de riñón tienen una mayor probabilidad de vivir más tiempo que las personas que permanecen en diálisis. En promedio:',
+    'guide.overview.why.longer.stat1': 'Las personas que están en diálisis tienen un 40% de probabilidad de vivir después de 5 años con insuficiencia renal.',
+    'guide.overview.why.longer.stat2': 'Las personas que reciben un trasplante de riñón tienen un 80% de probabilidad de vivir después de 5 años con insuficiencia renal.',
+    'guide.overview.when.title': '¿Cuándo es el momento adecuado para un trasplante de riñón?',
+    'guide.overview.when.text': 'El momento adecuado para ti puede ser diferente al de otros. Tu doctor trabajará contigo para decidir el momento adecuado para un trasplante. Si es posible, el mejor momento es antes de necesitar diálisis, lo que se llama trasplante preventivo.',
+    'guide.overview.egfr.title': 'Prueba de eGFR',
+    'guide.overview.egfr.text': 'La filtración glomerular estimada (eGFR) es una medida de qué tan bien tus riñones filtran y eliminan productos de desecho. Tu doctor usará los resultados de tu análisis de sangre eGFR para ayudar a decidir cuándo referirte para evaluación de trasplante. Un eGFR normal es 90 o más. Puedes ser colocado en la lista de espera para un trasplante de riñón tan pronto como tu eGFR sea 20 o menor. Pero tu doctor puede referirte para evaluación antes de que tu eGFR sea 20. Pregunta a tu doctor sobre una referencia cuando tu eGFR sea 30 o menos.',
+    'guide.overview.options.title': '¿Cuáles son mis opciones de trasplante?',
+    'guide.overview.living.title': 'Trasplante de Donante Vivo',
+    'guide.overview.living.desc': 'Un trasplante de riñón de donante vivo es una cirugía donde los doctores te dan un riñón de una persona que está viva y elige donar uno de sus dos riñones sanos.',
+    'guide.overview.living.directed': 'Donación dirigida - de alguien que conoces',
+    'guide.overview.living.paired': 'Intercambio pareado (intercambio de riñón)',
+    'guide.overview.living.altruistic': 'Donación altruista - de un extraño',
+    'guide.overview.living.voucher': 'Programa de vale de trasplante',
+    'guide.overview.deceased.title': 'Trasplante de Donante Fallecido',
+    'guide.overview.deceased.desc': 'Un trasplante de riñón de donante fallecido es una cirugía donde los doctores te dan un riñón de un donante de órganos que ha muerto. El tiempo de espera promedio es de 3-5 años para un riñón de donante fallecido y puede ser más largo o más corto en algunas partes del país.',
+    
+    // Guide Section 3: Transplant Center
+    'guide.center.title': 'El Centro de Trasplante',
+    'guide.center.what.title': '¿Qué es un Centro de Trasplante?',
+    'guide.center.what.text': 'Un centro de trasplante es un hospital con un equipo especial de doctores, enfermeras y otros trabajadores de salud que ayudan a las personas a obtener trasplantes de órganos. Estos centros tienen la experiencia y los recursos necesarios para la cirugía de trasplante y el cuidado.',
+    'guide.center.why.title': 'Por qué Importa el Centro de Trasplante',
+    'guide.center.why.text': 'Elegir el centro de trasplante correcto es importante porque diferentes centros tienen diferentes reglas y requisitos, los tiempos de espera varían, y quieres un equipo en el que confíes y con el que te sientas cómodo.',
+    'guide.center.team.title': 'El Equipo de Trasplante',
+    'guide.center.team.coordinator': 'Coordinador de Trasplante - Tu persona de contacto principal',
+    'guide.center.team.surgeons': 'Cirujanos de Trasplante - Realizan la cirugía',
+    'guide.center.team.nephrologists': 'Nefrólogos - Manejan tu salud renal',
+    'guide.center.team.nurses': 'Enfermeras - Proporcionan cuidado diario',
+    'guide.center.team.social': 'Trabajadores Sociales - Ayudan con apoyo y recursos',
+    'guide.center.team.financial': 'Coordinadores Financieros - Ayudan con seguros y costos',
+    
+    // Guide Section 5: Caregiver
+    'guide.caregiver.title': 'Rol del Cuidador',
+    'guide.caregiver.what.title': '¿Qué es un Cuidador?',
+    'guide.caregiver.what.text': 'Un cuidador es alguien que te ayuda durante tu viaje de trasplante. Esta persona te apoya antes, durante y después de tu cirugía de trasplante. Tener un buen cuidador es muy importante para tu recuperación y éxito.',
+    'guide.caregiver.why.title': 'Por qué Necesitas un Cuidador',
+    'guide.caregiver.why.text': 'Después de tu trasplante, necesitarás ayuda con muchas cosas: llegar a las citas, tomar medicamentos, tareas diarias, apoyo emocional y observar problemas. Los centros de trasplante requieren que tengas un cuidador confiable.',
+    'guide.caregiver.who.title': '¿Quién Puede Ser Tu Cuidador?',
+    'guide.caregiver.who.family': 'Miembros de la Familia',
+    'guide.caregiver.who.friends': 'Amigos',
+    'guide.caregiver.who.others': 'Otras Personas de Apoyo',
+    
+    // Guide Section 6: Finding a Living Donor
+    'guide.finding.title': 'Encontrar un Donante Vivo',
+    'guide.finding.why.title': '¿Por qué Considerar un Donante Vivo?',
+    'guide.finding.who.title': '¿Quién Puede Ser un Donante Vivo?',
+    'guide.finding.who.text': 'Muchas personas pueden ser donantes vivos. No asumas que alguien no puede donar - deja que el centro de trasplante los evalúe. Miembros de la familia, amigos, compañeros de trabajo y a veces incluso extraños (donantes altruistas) pueden donar.',
+    'guide.finding.matching.title': 'Hechos Importantes Sobre la Compatibilidad',
+    'guide.finding.matching.text': '¡La raza y la etnia no importan para la compatibilidad! Este es un mito común. Tu donante no necesita ser de la misma raza o etnia que tú.',
+    
+    // Guide Section 7: Becoming a Living Donor
+    'guide.becoming.title': 'Convertirse en un Donante Vivo',
+    'guide.becoming.what.title': '¿Qué es la Donación en Vida?',
+    'guide.becoming.what.text': 'La donación en vida es cuando una persona sana da uno de sus riñones a alguien que necesita un trasplante. Este es un regalo generoso y que salva vidas que ayuda a alguien en necesidad.',
+    'guide.becoming.safe.title': '¿Es Segura la Donación en Vida?',
+    'guide.becoming.safe.answer': 'Sí, la donación en vida es muy segura para donantes sanos.',
+    'guide.becoming.safe.fact1': 'Puedes vivir una vida completamente normal con un riñón',
+    'guide.becoming.safe.fact2': 'Tu riñón restante hará el trabajo de dos',
+    'guide.becoming.safe.fact3': 'La mayoría de los donantes se recuperan rápidamente y no tienen problemas a largo plazo',
+    'guide.becoming.safe.fact4': 'Los donantes viven tanto como las personas que no donan',
+    'guide.becoming.who.title': '¿Quién Puede Ser un Donante Vivo?',
+    'guide.becoming.who.text': 'Generalmente de 18 a 65 años, en buena salud general, tener dos riñones sanos, sin problemas de salud graves, presión arterial y función renal normales, y estar dispuesto y capaz de donar voluntariamente.',
+    
+    // Guide Section 8: Questions
+    'guide.questions.title': 'Preguntas para Hacer a Tu Equipo de Trasplante',
+    'guide.questions.why.title': 'Por qué Importa Hacer Preguntas',
+    'guide.questions.why.text': 'Hacer preguntas te ayuda a entender mejor tu viaje de trasplante, sentirte más confiado y preparado, tomar decisiones informadas sobre tu cuidado y construir confianza con tu equipo de cuidado.',
+    'guide.questions.starting.title': 'Preguntas Sobre Comenzar',
+    'guide.questions.starting.1': '¿Cuándo debo comenzar a pensar en un trasplante?',
+    'guide.questions.starting.2': '¿Cómo comienzo con la evaluación?',
+    'guide.questions.starting.3': '¿Cuánto tiempo toma todo el proceso?',
+    'guide.questions.evaluation.title': 'Preguntas Sobre la Evaluación',
+    'guide.questions.evaluation.1': '¿Cuánto tiempo tomará mi evaluación?',
+    'guide.questions.evaluation.2': '¿Qué pruebas necesitaré?',
+    'guide.questions.evaluation.3': '¿Cuáles son sus requisitos para trasplante?',
+    'guide.questions.waitlist.title': 'Preguntas Sobre Estar en la Lista de Espera',
+    'guide.questions.waitlist.1': '¿Cuánto tiempo esperaré por un riñón?',
+    'guide.questions.waitlist.2': '¿Qué debo hacer mientras espero?',
+    'guide.questions.waitlist.3': '¿Cómo me contactarán cuando un riñón esté disponible?',
+    'guide.questions.surgery.title': 'Preguntas Sobre la Cirugía',
+    'guide.questions.surgery.1': '¿Cuánto tiempo tomará la cirugía?',
+    'guide.questions.surgery.2': '¿Cuánto tiempo estaré en el hospital?',
+    'guide.questions.surgery.3': '¿Cómo será la recuperación?',
+    'guide.questions.medications.title': 'Preguntas Sobre Medicamentos',
+    'guide.questions.medications.1': '¿Qué medicamentos necesitaré tomar?',
+    'guide.questions.medications.2': '¿Cuánto tiempo necesitaré tomarlos?',
+    'guide.questions.medications.3': '¿Cuáles son los efectos secundarios?',
+    'guide.questions.remember': 'Recuerda: No hay preguntas tontas. Tu equipo de trasplante quiere que entiendas todo. No tengas miedo de preguntar cualquier cosa sobre la que te estés preguntando.',
 
     // Roadmap
     'roadmap.title': 'Tu Hoja de Ruta de Trasplante',

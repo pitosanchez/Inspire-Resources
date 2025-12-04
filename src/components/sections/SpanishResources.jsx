@@ -10,16 +10,16 @@ export default function SpanishResources() {
   const { t } = useLanguage();
   
   return (
-    <section id="spanish-resources" className="py-16 md:py-20 bg-accent-500">
+    <section id="spanish-resources" className="py-16 md:py-20 bg-accent-50">
       <div className="container mx-auto px-6">
         {/* Header - Glass Card */}
         <div className="max-w-2xl mx-auto text-center mb-12">
-          <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-6 md:p-8 shadow-xl">
+          <div className="bg-white/80 backdrop-blur-sm border border-accent-200 rounded-2xl p-6 md:p-8 shadow-lg">
             <div className="text-4xl mb-3">📚</div>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-white mb-4 drop-shadow-lg">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-neutral-900 mb-4">
               {t("spanish.title")}
             </h2>
-            <p className="text-base md:text-lg text-white/90 leading-relaxed">
+            <p className="text-base md:text-lg text-neutral-700 leading-relaxed">
               {t("spanish.intro")}
             </p>
           </div>
@@ -27,7 +27,7 @@ export default function SpanishResources() {
 
         {/* Videos Grid - Floating Cards */}
         <div className="max-w-5xl mx-auto mb-10">
-          <h3 className="text-xl md:text-2xl font-serif text-white mb-6 flex items-center justify-center gap-2 drop-shadow-lg">
+          <h3 className="text-xl md:text-2xl font-serif text-neutral-900 mb-6 flex items-center justify-center gap-2">
             <span>🎥</span>
             <span>{t("spanish.videos")}</span>
           </h3>
@@ -74,7 +74,7 @@ export default function SpanishResources() {
 
         {/* PDFs Section - Floating Cards */}
         <div className="max-w-5xl mx-auto">
-          <h3 className="text-xl md:text-2xl font-serif text-white mb-6 flex items-center justify-center gap-2 drop-shadow-lg">
+          <h3 className="text-xl md:text-2xl font-serif text-neutral-900 mb-6 flex items-center justify-center gap-2">
             <span>📄</span>
             <span>{t("spanish.pdfs")}</span>
           </h3>
@@ -82,7 +82,7 @@ export default function SpanishResources() {
             <div className="backdrop-blur-lg bg-white/95 border border-white/30 rounded-2xl p-3 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
               <div className="aspect-square mb-3 rounded-xl overflow-hidden bg-gradient-to-br from-warm-100 to-warm-200 flex items-center justify-center p-3 shadow-inner">
                 <img
-                  src={`${import.meta.env.BASE_URL}/images/vivirbien.webp`}
+                  src="/images/vbien.webp"
                   alt="Vivir Bien con Insuficiencia Renal"
                   className="w-full h-full object-contain"
                   loading="lazy"
@@ -98,8 +98,8 @@ export default function SpanishResources() {
             <div className="backdrop-blur-lg bg-white/95 border border-white/30 rounded-2xl p-3 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
               <div className="aspect-square mb-3 rounded-xl overflow-hidden bg-gradient-to-br from-warm-100 to-warm-200 flex items-center justify-center p-4 shadow-inner">
                 <img
-                  src={`${import.meta.env.BASE_URL}/images/donorshild.svg`}
-                  alt="Donor Shield"
+                  src="/images/donorshield.webp"
+                  alt="Donor Shield - Protection for Donors"
                   className="w-full h-full object-contain"
                   loading="lazy"
                 />

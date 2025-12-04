@@ -225,3 +225,7 @@ Your caregiver is an important part of your transplant success. Choose someone y
 
 Remember: You don't have to do this alone. Having someone to support you through your transplant journey will help you succeed.
 
+---
+
+*Content based on the American Kidney Fund (AKF) Transplant Toolkit. For more information, visit [kidneyfund.org](https://www.kidneyfund.org)*
+

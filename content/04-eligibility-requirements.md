@@ -182,3 +182,7 @@ When you go through evaluation, the transplant team will:
 
 Remember: **Most people who apply are accepted.** The transplant center wants to help you succeed. Work with them, be honest about your situation, and don't be afraid to ask for help meeting the requirements.
 
+---
+
+*Content based on the American Kidney Fund (AKF) Transplant Toolkit. For more information, visit [kidneyfund.org](https://www.kidneyfund.org)*
+

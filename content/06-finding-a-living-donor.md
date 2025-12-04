@@ -245,3 +245,7 @@ When someone is interested, they should:
 
 Remember: Finding a living donor takes time and effort, but it's worth it. Many people are willing to help. Don't be afraid to ask, and let your transplant center guide you through the process.
 
+---
+
+*Content based on the American Kidney Fund (AKF) Transplant Toolkit. For more information, visit [kidneyfund.org](https://www.kidneyfund.org)*
+

@@ -140,3 +140,7 @@ You don't have to go through this alone. Your team includes:
 
 Remember, every person's journey is different. Your transplant team will guide you through each step and answer all your questions.
 
+---
+
+*Content based on the American Kidney Fund (AKF) Transplant Toolkit. For more information, visit [kidneyfund.org](https://www.kidneyfund.org)*
+

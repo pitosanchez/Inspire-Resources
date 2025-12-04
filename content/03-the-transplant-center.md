@@ -174,3 +174,7 @@ Remember, the transplant center is your partner in this journey. They want you t
 
 Your transplant team is there to help you every step of the way.
 
+---
+
+*Content based on the American Kidney Fund (AKF) Transplant Toolkit. For more information, visit [kidneyfund.org](https://www.kidneyfund.org)*
+

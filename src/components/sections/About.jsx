@@ -17,7 +17,6 @@ export default function About() {
   const heroRef = useScrollAnimation();
   const missionRef = useScrollAnimation();
   const aboutRef = useScrollAnimation();
-  const partnersRef = useStaggerAnimation({ stagger: 0.1 });
   const servicesRef = useStaggerAnimation({ stagger: 0.1 });
 
   // Services
@@ -58,14 +57,6 @@ export default function About() {
       badge: t("service.workers.badge"),
       variant: "warm",
     },
-  ];
-
-  // Partners
-  const partners = [
-    t("partners.unos"),
-    t("partners.nkf"),
-    t("partners.ast"),
-    t("partners.community"),
   ];
 
   return (
@@ -165,50 +156,6 @@ export default function About() {
                   </div>
                 </Card>
               ))}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Partners / Joint Research Institutions */}
-      <div className="py-16 md:py-24 bg-white">
-        <div className="container">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-serif font-semibold text-neutral-900 mb-4 text-center">
-              {t("partners.title")}
-            </h2>
-            <p className="text-lg text-neutral-600 text-center mb-12 max-w-2xl mx-auto">
-              {t("partners.intro")}
-            </p>
-            
-            <div
-              ref={partnersRef}
-              className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center"
-            >
-              {partners.map((partner, index) => (
-                <div
-                  key={index}
-                  className="flex items-center justify-center p-6 border border-neutral-200 rounded-lg hover:border-brand-300 hover:shadow-md transition-all duration-300 bg-white"
-                >
-                  <span className="text-neutral-600 font-semibold text-center hover:text-brand-600 transition-colors">
-                    {partner}
-                  </span>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-12 text-center">
-              <p className="text-neutral-600 mb-6">
-                {t("partners.contact") || "Feel free to contact us regarding partnerships, collaborations, or related opportunities."}
-              </p>
-              <Button
-                href="#contact"
-                variant="primary"
-                size="lg"
-                className="font-semibold"
-              >
-                {t("cta.secondary")}
-              </Button>
             </div>
           </div>
         </div>

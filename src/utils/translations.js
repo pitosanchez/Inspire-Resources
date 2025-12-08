@@ -183,7 +183,7 @@ export const translations = {
     'final.cta.button': 'Access Resources',
 
     // Transplant Guide
-    'guide.label': 'Your Complete Guide',
+    'guide.label': 'Your Guide to Kidney Transplant by the American Kidney Fund',
     'guide.title': 'Kidney Transplant Guide',
     'guide.intro': 'Everything you need to know about kidney transplants — from evaluation to recovery. This guide empowers you to navigate your transplant journey with confidence.',
     'guide.cta.start': 'Start Your Journey',
@@ -617,7 +617,7 @@ export const translations = {
     'final.cta.button': 'Acceder a Recursos',
 
     // Transplant Guide
-    'guide.label': 'Tu Guía Completa',
+    'guide.label': 'Tu Guía para Trasplante de Riñón por el Fondo Americano del Riñón',
     'guide.title': 'Guía de Trasplante de Riñón',
     'guide.intro': 'Todo lo que necesitas saber sobre trasplantes de riñón — desde la evaluación hasta la recuperación. Esta guía te empodera para navegar tu viaje de trasplante con confianza.',
     'guide.cta.start': 'Comienza Tu Viaje',

@@ -130,34 +130,6 @@ export default function About() {
                 {t("impact.intro")}
               </p>
             </div>
-
-            {/* Statistics Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-serif font-bold text-brand-600 mb-2">
-                  {t("impact.stat1.number")}
-                </div>
-                <p className="text-neutral-600 font-medium">
-                  {t("impact.stat1.label")}
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-serif font-bold text-brand-600 mb-2">
-                  {t("impact.stat2.number")}
-                </div>
-                <p className="text-neutral-600 font-medium">
-                  {t("impact.stat2.label")}
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-serif font-bold text-brand-600 mb-2">
-                  {t("impact.stat3.number")}
-                </div>
-                <p className="text-neutral-600 font-medium">
-                  {t("impact.stat3.label")}
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </div>

@@ -9,7 +9,7 @@ export default function SEO({
   title = 'Inspire - Kidney Transplant Resources & Education',
   description = 'Comprehensive kidney transplant resources, education, and support for patients and families. Access trusted guides, connect with healthcare professionals, and navigate your transplant journey with confidence.',
   keywords = 'kidney transplant, kidney disease, CKD, renal disease, living donor, transplant resources, kidney health',
-  image = `${import.meta.env.BASE_URL}/images/inspire.svg`,
+  image = `${import.meta.env.BASE_URL}images/inspire.svg`,
   url = 'https://inspirekidney.org/',
 }) {
   // Construct full image URL for social media

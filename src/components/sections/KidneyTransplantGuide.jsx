@@ -111,48 +111,72 @@ export default function KidneyTransplantGuide() {
       className="py-20 bg-gradient-to-br from-neutral-50 via-white to-brand-50"
     >
       <div className="container mx-auto px-6">
-        {/* Hero Header */}
-        <div className="max-w-4xl mx-auto text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-100 text-brand-700 text-sm font-medium rounded-full mb-4">
-            <span>📖</span>
-            <span>{t("guide.label")}</span>
+        {/* Top Section with AKF Background Image */}
+        <div
+          className="relative rounded-3xl overflow-hidden mb-20"
+          style={{
+            backgroundImage: 'url(/images/AKFpic.webp)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+          }}
+        >
+          {/* Backdrop blur overlay - lighter for more image visibility */}
+          <div className="absolute inset-0 backdrop-blur-sm bg-white/25 z-0"></div>
+
+          <div className="relative z-10 p-8 md:p-12">
+            {/* Hero Header */}
+            <div className="max-w-4xl mx-auto text-center mb-16">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/90 backdrop-blur-sm text-brand-700 text-sm font-medium rounded-full mb-4 shadow-md">
+                <span>📖</span>
+                <span>{t("guide.label")}</span>
+              </div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-neutral-900 mb-6 drop-shadow-lg">
+                {t("guide.title")}
+              </h1>
+              <p className="text-xl text-neutral-800 leading-relaxed mb-8 drop-shadow-md font-medium">
+                {t("guide.intro")}
+              </p>
+            </div>
+
+            {/* SECTION 1: KIDNEY TRANSPLANT OVERVIEW - Top portion */}
+            <div id="overview" ref={overviewRef} className="max-w-4xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-serif text-neutral-900 mb-4 drop-shadow-lg">
+                  {t("guide.overview.title") || "Kidney Transplant Overview"}
+                </h2>
+              </div>
+
+              <Card variant="elevated" className="p-8 mb-8 bg-white/98 backdrop-blur-sm shadow-xl">
+                <h3 className="text-2xl font-serif text-neutral-900 mb-4">
+                  {t("guide.overview.what.title") || "What is a kidney transplant?"}
+                </h3>
+                <p className="text-lg text-neutral-700 leading-relaxed mb-6">
+                  {t("guide.overview.what.text") || "A kidney transplant is a treatment option for you if your kidneys are not working well enough on their own. This is called kidney failure, also called end stage kidney disease or end stage renal disease. It is a surgery to give a person with kidney failure (the recipient) a healthy kidney from someone else (the donor)."}
+                </p>
+
+                <h3 className="text-2xl font-serif text-neutral-900 mb-4">
+                  {t("guide.overview.why.title") || "Why should I consider getting a transplant?"}
+                </h3>
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="text-xl font-semibold text-neutral-900 mb-2">
+                      {t("guide.overview.why.quality.title") || "Improve your quality of life"}
+                    </h4>
+                    <p className="text-neutral-700 leading-relaxed">
+                      {t("guide.overview.why.quality.text") || "While a kidney transplant is a major surgery and can seem scary, there can be many positive lifestyle changes. You may be able to return to the life you lived before kidney failure. You will no longer need dialysis and have fewer food and drink limits (restrictions), but it will still be important to keep a healthy weight and eat healthy foods."}
+                    </p>
+                  </div>
+                </div>
+              </Card>
+            </div>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-neutral-900 mb-6">
-            {t("guide.title")}
-          </h1>
-          <p className="text-xl text-neutral-600 leading-relaxed mb-8">
-            {t("guide.intro")}
-          </p>
         </div>
 
-        {/* SECTION 1: KIDNEY TRANSPLANT OVERVIEW */}
-        <div id="overview" ref={overviewRef} className="max-w-4xl mx-auto mb-20">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif text-neutral-900 mb-4">
-              {t("guide.overview.title") || "Kidney Transplant Overview"}
-            </h2>
-          </div>
-
+        {/* Rest of SECTION 1: KIDNEY TRANSPLANT OVERVIEW - Continue below background */}
+        <div className="max-w-4xl mx-auto mb-20">
           <Card variant="elevated" className="p-8 mb-8">
-            <h3 className="text-2xl font-serif text-neutral-900 mb-4">
-              {t("guide.overview.what.title") || "What is a kidney transplant?"}
-            </h3>
-            <p className="text-lg text-neutral-700 leading-relaxed mb-6">
-              {t("guide.overview.what.text") || "A kidney transplant is a treatment option for you if your kidneys are not working well enough on their own. This is called kidney failure, also called end stage kidney disease or end stage renal disease. It is a surgery to give a person with kidney failure (the recipient) a healthy kidney from someone else (the donor)."}
-            </p>
-
-            <h3 className="text-2xl font-serif text-neutral-900 mb-4">
-              {t("guide.overview.why.title") || "Why should I consider getting a transplant?"}
-            </h3>
             <div className="space-y-4 mb-6">
-              <div>
-                <h4 className="text-xl font-semibold text-neutral-900 mb-2">
-                  {t("guide.overview.why.quality.title") || "Improve your quality of life"}
-                </h4>
-                <p className="text-neutral-700 leading-relaxed">
-                  {t("guide.overview.why.quality.text") || "While a kidney transplant is a major surgery and can seem scary, there can be many positive lifestyle changes. You may be able to return to the life you lived before kidney failure. You will no longer need dialysis and have fewer food and drink limits (restrictions), but it will still be important to keep a healthy weight and eat healthy foods."}
-                </p>
-              </div>
               <div>
                 <h4 className="text-xl font-semibold text-neutral-900 mb-2">
                   {t("guide.overview.why.longer.title") || "Increase your chance of living longer"}

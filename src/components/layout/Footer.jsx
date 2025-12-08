@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="flex flex-col items-center justify-center gap-6">
           {/* Logo */}
           <img
-            src={`${import.meta.env.BASE_URL}/images/inspire.svg`}
+            src={`${import.meta.env.BASE_URL}images/inspire.svg`}
             alt="Inspire Logo"
             className="h-12 w-auto opacity-80"
           />

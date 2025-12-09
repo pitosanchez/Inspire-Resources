@@ -97,12 +97,12 @@ export default function Header() {
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-6 lg:gap-8">
+          <div className="hidden lg:flex items-center gap-4 xl:gap-6 flex-nowrap whitespace-nowrap">
             {navItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="text-neutral-700 hover:text-brand-500 font-medium transition-colors duration-200 relative group py-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 rounded-md px-1"
+                className="text-neutral-700 hover:text-brand-500 font-medium transition-colors duration-200 relative group py-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 rounded-md px-1 whitespace-nowrap flex-shrink-0"
                 onClick={() => {
                   setActiveSection(item.href);
                   setIsMobileMenuOpen(false);
@@ -112,10 +112,14 @@ export default function Header() {
                 <span className="absolute bottom-0 left-1 right-1 h-0.5 bg-brand-500 transition-all duration-300 group-hover:w-full w-0" />
               </a>
             ))}
-            <LanguageSwitcher />
-            <Button href="#contact" size="sm">
-              {t("nav.help")}
-            </Button>
+            <div className="flex-shrink-0">
+              <LanguageSwitcher />
+            </div>
+            <div className="flex-shrink-0">
+              <Button href="#contact" size="sm">
+                {t("nav.help")}
+              </Button>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}

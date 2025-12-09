@@ -115,7 +115,7 @@ export default function KidneyTransplantGuide() {
         <div
           className="relative rounded-3xl overflow-hidden mb-20"
           style={{
-            backgroundImage: 'url(/images/AKFpic.webp)',
+            backgroundImage: `url(${import.meta.env.BASE_URL}images/AKFpic.webp)`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',

@@ -19,7 +19,7 @@ export default function Hero() {
         <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
           {/* Hero Logo - Large with White Background */}
           <div className="mb-8 animate-fade-in">
-            <div className="relative inline-block bg-white rounded-3xl p-12 shadow-lg">
+            <div className="relative inline-block bg-transparent p-12">
               <img
                 src={`${import.meta.env.BASE_URL}images/inspire.svg`}
                 alt="INSPIRE - Kidney Transplant Resources"

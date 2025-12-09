@@ -97,46 +97,23 @@ export default function Header() {
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-2 xl:gap-4">
-            {navItems.map((item) => {
-              const isActive = activeSection === item.href;
-              return (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  className={`relative inline-flex items-center px-4 py-2.5 text-sm font-medium rounded-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 ${
-                    isActive
-                      ? "text-brand-600 bg-brand-50"
-                      : "text-neutral-700 hover:text-brand-600 hover:bg-brand-50/50"
-                  }`}
-                  onClick={() => {
-                    setActiveSection(item.href);
-                    setIsMobileMenuOpen(false);
-                  }}
-                >
-                  <span className="relative z-10">{item.label}</span>
-                  {isActive && (
-                    <span
-                      className="absolute inset-0 bg-brand-50 rounded-lg"
-                      aria-hidden="true"
-                    />
-                  )}
-                </a>
-              );
-            })}
-            
-            {/* Language Switcher */}
-            <div className="ml-2 xl:ml-4 pl-2 xl:pl-4 border-l border-neutral-200">
-              <LanguageSwitcher />
-            </div>
-            
-            {/* CTA Button */}
-            <Button
-              href="#contact"
-              size="sm"
-              variant="accent"
-              className="ml-2 xl:ml-4 shadow-sm hover:shadow-md"
-            >
+          <div className="hidden lg:flex items-center gap-6 lg:gap-8">
+            {navItems.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                className="text-neutral-700 hover:text-brand-500 font-medium transition-colors duration-200 relative group py-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 rounded-md px-1"
+                onClick={() => {
+                  setActiveSection(item.href);
+                  setIsMobileMenuOpen(false);
+                }}
+              >
+                {item.label}
+                <span className="absolute bottom-0 left-1 right-1 h-0.5 bg-brand-500 transition-all duration-300 group-hover:w-full w-0" />
+              </a>
+            ))}
+            <LanguageSwitcher />
+            <Button href="#contact" size="sm">
               {t("nav.help")}
             </Button>
           </div>

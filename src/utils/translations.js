@@ -101,7 +101,7 @@ export const translations = {
 
     // Impact Section
     'impact.title': 'The Difference We Make',
-    'impact.intro': 'Numbers tell a story, but behind every statistic is a person—a patient, a family, a community. Since our founding, INSPIRE has helped thousands of individuals navigate the transplant journey with dignity, support, and hope.',
+    'impact.intro': 'Numbers tell a story, but behind every statistic is a person—a patient, a family, a community. INSPIRE helps individuals navigate the transplant journey with dignity, support, and hope.',
     'impact.stat1.number': '5,000+',
     'impact.stat1.label': 'Patients and Families Served',
     'impact.stat2.number': '50+',
@@ -535,7 +535,7 @@ export const translations = {
 
     // Impact Section
     'impact.title': 'La Diferencia que Hacemos',
-    'impact.intro': 'Los números cuentan una historia, pero detrás de cada estadística hay una persona—un paciente, una familia, una comunidad. Desde nuestra fundación, INSPIRE ha ayudado a miles de individuos a navegar el viaje de trasplante con dignidad, apoyo y esperanza.',
+    'impact.intro': 'Los números cuentan una historia, pero detrás de cada estadística hay una persona—un paciente, una familia, una comunidad. INSPIRE ayuda a los individuos a navegar el viaje de trasplante con dignidad, apoyo y esperanza.',
     'impact.stat1.number': '5,000+',
     'impact.stat1.label': 'Pacientes y Familias Atendidos',
     'impact.stat2.number': '50+',

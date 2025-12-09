@@ -61,7 +61,7 @@ export default function About() {
   return (
     <section id="about" className="bg-white">
       {/* About Section - Combined Hero & Content */}
-      <div className="py-16 md:py-24 lg:py-32 bg-white">
+      <div className="pt-20 pb-16 md:pt-20 md:pb-24 lg:pt-20 lg:pb-32 bg-white">
         <div className="container mx-auto px-6 md:px-8 lg:px-12">
           <div ref={aboutRef} className="max-w-5xl mx-auto">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-neutral-900 mb-8 leading-tight uppercase text-center" style={{ fontFamily: 'Impact, "Arial Black", "Helvetica Neue", Arial, sans-serif' }}>
@@ -69,7 +69,7 @@ export default function About() {
             </h1>
             
             <div className="max-w-4xl mx-auto mt-8">
-              <p className="text-base md:text-lg text-neutral-700 leading-relaxed text-justify font-sans mb-0">
+              <p className="text-lg md:text-xl lg:text-2xl text-neutral-700 leading-loose text-justify font-sans mb-0">
                 {t("about.combined.text")}
               </p>
             </div>

@@ -28,6 +28,13 @@
     scroll-behavior: smooth;
   }
 
+  /* Respect user's motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
   body {
     @apply bg-background text-foreground font-sans;
     font-size: 16px; /* Medical readability standard */
@@ -38,7 +45,18 @@
   /* Smooth page transitions */
   section {
     scroll-snap-align: start;
-    scroll-margin-top: 80px;
+    scroll-margin-top: 80px; /* Account for sticky header */
+  }
+
+  /* Ensure smooth scrolling for all anchor links */
+  a[href^="#"] {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    a[href^="#"] {
+      scroll-behavior: auto;
+    }
   }
 
   /* Typography - Medical Professional Standards */

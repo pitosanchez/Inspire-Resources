@@ -73,11 +73,11 @@ export default function About() {
               <div className="backdrop-blur-lg bg-white/95 border border-white/30 rounded-2xl p-8 md:p-10 lg:p-12 shadow-xl" style={{
                 boxShadow: '0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.3)'
               }}>
-                <div className="flex flex-col gap-8 md:gap-10">
-                  <p className="text-lg md:text-xl lg:text-2xl text-neutral-700 leading-relaxed text-justify font-sans mb-0">
+                <div className="flex flex-col gap-6 md:gap-8">
+                  <p className="text-lg md:text-xl lg:text-2xl text-neutral-700 leading-relaxed font-sans text-left md:text-justify mb-0">
                     {t("about.combined.text")}
                   </p>
-                  <p className="text-lg md:text-xl lg:text-2xl text-neutral-700 leading-relaxed text-justify font-sans mb-0">
+                  <p className="text-lg md:text-xl lg:text-2xl text-neutral-700 leading-relaxed font-sans text-left md:text-justify mb-0">
                     {t("about.combined.text2")}
                   </p>
                 </div>

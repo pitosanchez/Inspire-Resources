@@ -15,7 +15,6 @@ import {
 export default function About() {
   const { t } = useLanguage();
   const heroRef = useScrollAnimation();
-  const missionRef = useScrollAnimation();
   const aboutRef = useScrollAnimation();
   const servicesRef = useStaggerAnimation({ stagger: 0.1 });
 
@@ -78,54 +77,17 @@ export default function About() {
         </div>
       </div>
 
-      {/* Mission & Vision Section - Combined */}
-      <div className="py-16 md:py-24 lg:py-32 bg-brand-50">
-        <div className="container mx-auto px-6 md:px-8 lg:px-12">
-          <div ref={missionRef} className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-semibold text-neutral-900 mb-8 text-center">
-              {t("about.mission.title")} & {t("about.vision.title")}
-            </h2>
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-2xl md:text-3xl font-serif font-semibold text-neutral-900 mb-4">
-                  {t("about.mission.title")}
-                </h3>
-                <p className="text-xl md:text-2xl text-neutral-700 leading-relaxed text-justify">
-                  {t("about.mission.text")}
-                </p>
-              </div>
-              <div>
-                <h3 className="text-2xl md:text-3xl font-serif font-semibold text-neutral-900 mb-4">
-                  {t("about.vision.title")}
-                </h3>
-                <p className="text-xl md:text-2xl text-neutral-700 leading-relaxed text-justify">
-                  {t("about.vision.text")}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* About Us - Detailed Narrative */}
+      {/* About Section - Unified Narrative */}
       <div className="py-16 md:py-24 lg:py-32 bg-white">
         <div className="container mx-auto px-6 md:px-8 lg:px-12">
           <div ref={aboutRef} className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-serif font-semibold text-neutral-900 mb-8">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-semibold text-neutral-900 mb-8 text-center">
               {t("about.label")}
             </h2>
             
-            <div className="prose prose-lg max-w-none text-neutral-700 leading-relaxed space-y-6">
+            <div className="prose prose-lg max-w-none text-neutral-700 leading-relaxed">
               <p className="text-lg md:text-xl text-justify">
-                {t("barriers.intro")}
-              </p>
-              
-              <p className="text-lg md:text-xl text-justify">
-                {t("solutions.intro")}
-              </p>
-              
-              <p className="text-lg md:text-xl text-justify">
-                {t("impact.intro")}
+                {t("about.combined.text")}
               </p>
             </div>
           </div>

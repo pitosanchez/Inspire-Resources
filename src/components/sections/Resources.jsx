@@ -76,14 +76,25 @@ export default function Resources() {
                     className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
                     loading="lazy"
                     onError={(e) => {
-                      e.target.style.display = 'none';
-                      const fallback = e.target.parentElement.querySelector('.image-fallback');
-                      if (fallback) fallback.style.display = 'flex';
+                      e.target.style.display = "none";
+                      const fallback =
+                        e.target.parentElement.querySelector(".image-fallback");
+                      if (fallback) fallback.style.display = "flex";
                     }}
                   />
                   <div className="hidden image-fallback w-full h-full items-center justify-center text-neutral-400">
-                    <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    <svg
+                      className="w-16 h-16"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                      />
                     </svg>
                   </div>
                 </div>
@@ -91,7 +102,9 @@ export default function Resources() {
                   <h3 className="text-xl font-serif font-semibold text-neutral-900 mb-3">
                     {resource.title}
                   </h3>
-                  <p className="text-neutral-700 mb-4">{resource.description}</p>
+                  <p className="text-neutral-700 mb-4">
+                    {resource.description}
+                  </p>
                   <div className="inline-flex items-center gap-2 text-brand-600 font-semibold group-hover:gap-3 transition-all duration-300">
                     {t("resources.cta")}
                     <svg

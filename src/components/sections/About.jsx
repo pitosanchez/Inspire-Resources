@@ -60,32 +60,21 @@ export default function About() {
 
   return (
     <section id="about" className="bg-white">
-      {/* Hero Section - Large Statement */}
+      {/* About Section - Combined Hero & Content */}
       <div className="py-16 md:py-24 lg:py-32 bg-white">
         <div className="container mx-auto px-6 md:px-8 lg:px-12">
-          <div ref={heroRef} className="max-w-5xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-neutral-900 mb-6 leading-tight">
-              {t("about.hero.title") || t("about.title")}
+          <div ref={aboutRef} className="max-w-5xl mx-auto text-center">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-neutral-900 mb-6 leading-tight uppercase" style={{ fontFamily: 'Impact, "Arial Black", "Helvetica Neue", Arial, sans-serif' }}>
+              ABOUT US
             </h1>
             <p className="text-2xl md:text-3xl text-neutral-600 font-light mb-4">
               {t("about.hero.subtitle") || t("about.subtitle")}
             </p>
-            <p className="text-lg md:text-xl text-neutral-500 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-neutral-500 max-w-3xl mx-auto mb-8">
               {t("about.hero.supporting")}
             </p>
-          </div>
-        </div>
-      </div>
-
-      {/* About Section - Unified Narrative */}
-      <div className="py-16 md:py-24 lg:py-32 bg-white">
-        <div className="container mx-auto px-6 md:px-8 lg:px-12">
-          <div ref={aboutRef} className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-semibold text-neutral-900 mb-8 text-center">
-              {t("about.label")}
-            </h2>
             
-            <div className="prose prose-lg max-w-none text-neutral-700 leading-relaxed">
+            <div className="prose prose-lg max-w-none text-neutral-700 leading-relaxed text-left mt-12">
               <p className="text-lg md:text-xl text-justify">
                 {t("about.combined.text")}
               </p>

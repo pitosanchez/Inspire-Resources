@@ -22,6 +22,7 @@ export default {
                 sans: ['Inter', 'Source Sans Pro', 'ui-sans-serif', 'system-ui', '-apple-system', 'sans-serif'],
                 serif: ['Source Serif Pro', 'Georgia', 'ui-serif', 'serif'],
                 mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'monospace'],
+                impact: ['Impact', 'Arial Black', 'sans-serif'],
             },
             colors: {
                 // Medical Brand colors - professional & trustworthy (softer blue)

@@ -18,8 +18,8 @@ export default function Hero() {
       <div className="container mx-auto px-6 md:px-8 lg:px-12 relative z-10">
         <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
           {/* Hero Logo - Large with White Background */}
-          <div className="mb-8 animate-fade-in">
-            <div className="relative inline-block bg-transparent p-12">
+          <div className="mb-12 md:mb-16 animate-fade-in">
+            <div className="relative inline-block bg-transparent p-8 md:p-12 lg:p-16">
               <img
                 src={`${import.meta.env.BASE_URL}images/inspire.svg`}
                 alt="INSPIRE - Kidney Transplant Resources"
@@ -32,7 +32,7 @@ export default function Hero() {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
+          <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center animate-fade-in">
             <Button
               href="#resources"
               variant="accent"

@@ -36,27 +36,27 @@ export default function Header() {
         isScrolled ? "bg-white/95 backdrop-blur-md shadow-md" : "bg-white"
       }`}
     >
-      <nav className="container mx-auto px-6 md:px-8 lg:px-12 py-4" aria-label="Main navigation">
+      <nav className="container mx-auto px-6 md:px-8 lg:px-12 py-4 md:py-5" aria-label="Main navigation">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-3 group">
+          <a href="#home" className="flex items-center gap-3 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 rounded-md">
             <img
               src={`${import.meta.env.BASE_URL}images/inspire.svg`}
               alt="Inspire Logo"
-              className="h-10 w-auto transition-transform duration-300 group-hover:scale-105"
+              className="h-10 md:h-12 w-auto transition-transform duration-300 group-hover:scale-105"
             />
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-6 lg:gap-8">
             {navItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="text-neutral-700 hover:text-brand-600 font-medium transition-colors duration-200 relative group"
+                className="text-neutral-700 hover:text-brand-500 font-medium transition-colors duration-200 relative group py-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 rounded-md px-1"
               >
                 {item.label}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-500 transition-all duration-300 group-hover:w-full" />
+                <span className="absolute bottom-0 left-1 right-1 h-0.5 bg-brand-500 transition-all duration-300 group-hover:w-full w-0" />
               </a>
             ))}
             <LanguageSwitcher />
@@ -68,7 +68,7 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 text-neutral-700 hover:bg-neutral-100 rounded-md transition-colors"
+            className="lg:hidden p-2.5 text-neutral-700 hover:bg-neutral-100 rounded-md transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 touch-target"
             aria-label="Toggle mobile menu"
             aria-expanded={isMobileMenuOpen}
           >

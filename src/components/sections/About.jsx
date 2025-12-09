@@ -64,20 +64,20 @@ export default function About() {
       <div className="pt-20 pb-16 md:pt-20 md:pb-24 lg:pt-20 lg:pb-32 bg-gradient-to-br from-white to-accent-50">
         <div className="container mx-auto px-6 md:px-8 lg:px-12">
           <div ref={aboutRef} className="max-w-5xl mx-auto">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-neutral-900 mb-8 leading-tight uppercase text-center" style={{ fontFamily: 'Impact, "Arial Black", "Helvetica Neue", Arial, sans-serif' }}>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-inspire-500 mb-10 md:mb-12 leading-tight uppercase text-center" style={{ fontFamily: 'Impact, "Arial Black", "Helvetica Neue", Arial, sans-serif' }}>
               ABOUT US
             </h1>
             
             {/* Glassmorphism Card */}
-            <div className="max-w-6xl mx-auto mt-8">
+            <div className="max-w-6xl mx-auto mt-8 md:mt-10">
               <div className="backdrop-blur-lg bg-white/95 border border-white/30 rounded-2xl p-8 md:p-10 lg:p-12 shadow-xl" style={{
                 boxShadow: '0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.3)'
               }}>
-                <div className="flex flex-col gap-6 lg:gap-8">
-                  <p className="text-lg md:text-xl lg:text-2xl text-neutral-700 leading-loose text-justify font-sans mb-0">
+                <div className="flex flex-col gap-8 md:gap-10">
+                  <p className="text-lg md:text-xl lg:text-2xl text-neutral-700 leading-relaxed text-justify font-sans mb-0">
                     {t("about.combined.text")}
                   </p>
-                  <p className="text-lg md:text-xl lg:text-2xl text-neutral-700 leading-loose text-justify font-sans mb-0">
+                  <p className="text-lg md:text-xl lg:text-2xl text-neutral-700 leading-relaxed text-justify font-sans mb-0">
                     {t("about.combined.text2")}
                   </p>
                 </div>
@@ -91,28 +91,28 @@ export default function About() {
       <div className="py-16 md:py-24 lg:py-32 bg-neutral-50">
         <div className="container mx-auto px-6 md:px-8 lg:px-12">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-semibold text-neutral-900 mb-8 text-center">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-semibold text-neutral-900 mb-10 md:mb-12 text-center">
               {t("solutions.services.title")}
             </h2>
             <div
               ref={servicesRef}
-              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
             >
               {services.map((service, index) => (
                 <Card
                   key={index}
                   className="group hover:shadow-lg transition-all duration-300"
                 >
-                  <div className="p-6">
-                    <div className="flex justify-between items-start mb-4">
-                      <h3 className="text-xl font-semibold text-neutral-900">
+                  <div className="p-6 md:p-8">
+                    <div className="flex justify-between items-start mb-5">
+                      <h3 className="text-xl md:text-2xl font-semibold text-neutral-900 leading-tight">
                         {service.title}
                       </h3>
                       <Badge variant={service.variant} size="sm">
                         {service.badge}
                       </Badge>
                     </div>
-                    <p className="text-neutral-600 leading-relaxed">
+                    <p className="text-neutral-600 leading-relaxed text-base md:text-lg">
                       {service.desc}
                     </p>
                   </div>

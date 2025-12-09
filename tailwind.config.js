@@ -25,34 +25,49 @@ export default {
                 impact: ['Impact', 'Arial Black', 'sans-serif'],
             },
             colors: {
-                // Medical Brand colors - professional & trustworthy (softer blue)
+                // Inspire Brand Blue - from logo (#3871c1)
                 brand: {
-                    50: '#f0f9ff',
-                    100: '#e0f2fe',
-                    200: '#bae6fd',
-                    300: '#7dd3fc',
-                    400: '#38bdf8',
-                    500: '#0ea5e9',
-                    600: '#0284c7',
-                    700: '#0369a1',
-                    800: '#075985',
-                    900: '#0c4a6e',
-                    DEFAULT: '#0ea5e9',
+                    50: '#eff4ff',
+                    100: '#dde9ff',
+                    200: '#c2d5ff',
+                    300: '#9db8ff',
+                    400: '#6f8fff',
+                    500: '#3871c1', // Primary brand blue from logo
+                    600: '#2d5a9a',
+                    700: '#254778',
+                    800: '#1f3a5f',
+                    900: '#1a2f4d',
+                    DEFAULT: '#3871c1',
                     foreground: '#ffffff',
                 },
-                // Accent colors - success & healing
+                // Inspire Accent Green - from logo (#80cc28)
                 accent: {
-                    50: '#ecfdf5',
-                    100: '#d1fae5',
-                    200: '#a7f3d0',
-                    300: '#6ee7b7',
-                    400: '#34d399',
-                    500: '#10b981',
-                    600: '#059669',
-                    700: '#047857',
-                    800: '#065f46',
-                    900: '#064e3b',
-                    DEFAULT: '#10b981',
+                    50: '#f5fce8',
+                    100: '#e8f7cc',
+                    200: '#d1efa0',
+                    300: '#b3e268',
+                    400: '#9dd43a',
+                    500: '#80cc28', // Primary accent green from logo
+                    600: '#63a01f',
+                    700: '#4c7a1a',
+                    800: '#3f6218',
+                    900: '#365317',
+                    DEFAULT: '#80cc28',
+                    foreground: '#ffffff',
+                },
+                // Inspire Dark Blue - from logo text (#044274)
+                inspire: {
+                    50: '#e6f0f7',
+                    100: '#cce1ef',
+                    200: '#99c3df',
+                    300: '#66a5cf',
+                    400: '#3387bf',
+                    500: '#044274', // Dark blue from logo text
+                    600: '#03355d',
+                    700: '#022846',
+                    800: '#021b2f',
+                    900: '#010e18',
+                    DEFAULT: '#044274',
                     foreground: '#ffffff',
                 },
                 // Warm accent - energy & compassion

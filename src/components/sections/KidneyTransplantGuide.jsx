@@ -108,7 +108,7 @@ export default function KidneyTransplantGuide() {
   return (
     <section
       id="transplant-guide"
-      className="py-16 md:py-24 lg:py-32 bg-gradient-to-br from-neutral-50 via-white to-brand-50"
+      className="py-16 md:py-24 lg:py-32 bg-gradient-to-br from-neutral-50 via-white to-accent-50"
     >
       <div className="container mx-auto px-6 md:px-8 lg:px-12">
         {/* Top Section with AKF Background Image */}
@@ -127,7 +127,7 @@ export default function KidneyTransplantGuide() {
           <div className="relative z-10 p-8 md:p-12">
             {/* Hero Header */}
             <div className="max-w-4xl mx-auto text-center mb-16">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/90 backdrop-blur-sm text-brand-700 text-sm font-medium rounded-full mb-4 shadow-md">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/90 backdrop-blur-sm text-brand-600 text-sm md:text-base font-medium rounded-full mb-5 md:mb-6 shadow-md">
                 <span>📖</span>
                 <span>{t("guide.label")}</span>
               </div>

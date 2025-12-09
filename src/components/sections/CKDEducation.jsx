@@ -55,18 +55,18 @@ export default function CKDEducation() {
   return (
     <section
       id="ckd-education"
-      className="bg-gradient-to-br from-neutral-50 to-brand-50"
+      className="bg-gradient-to-br from-neutral-50 to-accent-50"
     >
-      <div className="container mx-auto px-6 md:px-8 lg:px-12">
+      <div className="container mx-auto px-6 md:px-8 lg:px-12 py-16 md:py-24 lg:py-32">
         {/* Header */}
-        <div className="max-w-3xl mx-auto text-center mb-12">
-          <span className="inline-block px-4 py-2 bg-accent-100 text-accent-700 text-sm font-medium rounded-full mb-4">
+        <div className="max-w-3xl mx-auto text-center mb-12 md:mb-16">
+          <span className="inline-block px-4 py-2 bg-accent-100 text-accent-700 text-sm md:text-base font-medium rounded-full mb-5 md:mb-6">
             {t("ckd.label")}
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-neutral-900 mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-semibold text-neutral-900 mb-6 md:mb-8">
             {t("ckd.title")}
           </h2>
-          <p className="text-lg md:text-xl text-neutral-600 leading-relaxed">
+          <p className="text-lg md:text-xl text-neutral-600 leading-relaxed max-w-2xl mx-auto">
             {t("ckd.intro")}
           </p>
         </div>

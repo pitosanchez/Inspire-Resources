@@ -7,10 +7,10 @@ import { clsx } from "clsx";
 
 const variants = {
   default: "bg-neutral-100 text-neutral-900 hover:bg-neutral-200",
-  brand: "bg-brand-100 text-brand-900 hover:bg-brand-200",
-  accent: "bg-accent-100 text-accent-900 hover:bg-accent-200",
-  warm: "bg-warm-100 text-warm-900 hover:bg-warm-200",
-  success: "bg-green-100 text-green-900 hover:bg-green-200",
+  brand: "bg-brand-100 text-brand-700 hover:bg-brand-200",
+  accent: "bg-accent-100 text-accent-700 hover:bg-accent-200",
+  warm: "bg-warm-100 text-warm-700 hover:bg-warm-200",
+  success: "bg-accent-100 text-accent-700 hover:bg-accent-200",
   destructive: "bg-red-100 text-red-900 hover:bg-red-200",
   outline: "border border-neutral-300 text-neutral-700 hover:bg-neutral-50",
 };

@@ -13,10 +13,10 @@ export default function SpanishResources() {
     <section id="spanish-resources" className="py-16 md:py-24 lg:py-32 bg-accent-50">
       <div className="container mx-auto px-6 md:px-8 lg:px-12">
         {/* Header - Glass Card */}
-        <div className="max-w-2xl mx-auto text-center mb-12">
-          <div className="bg-white/80 backdrop-blur-sm border border-accent-200 rounded-2xl p-6 md:p-8 shadow-lg">
-            <div className="text-4xl mb-3">📚</div>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-neutral-900 mb-4">
+        <div className="max-w-2xl mx-auto text-center mb-12 md:mb-16">
+          <div className="bg-white/80 backdrop-blur-sm border border-accent-200 rounded-2xl p-6 md:p-8 lg:p-10 shadow-lg">
+            <div className="text-4xl mb-4 md:mb-5">📚</div>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-semibold text-neutral-900 mb-5 md:mb-6">
               {t("spanish.title")}
             </h2>
             <p className="text-base md:text-lg text-neutral-700 leading-relaxed">
@@ -26,7 +26,7 @@ export default function SpanishResources() {
         </div>
 
         {/* Videos Grid - Floating Cards */}
-        <div className="max-w-5xl mx-auto mb-10">
+        <div className="max-w-5xl mx-auto mb-12 md:mb-16">
           <h3 className="text-xl md:text-2xl font-serif text-neutral-900 mb-6 flex items-center justify-center gap-2">
             <span>🎥</span>
             <span>{t("spanish.videos")}</span>

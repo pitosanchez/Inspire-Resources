@@ -6,11 +6,11 @@
 import { clsx } from "clsx";
 
 const variants = {
-  default: "bg-white border-neutral-200",
-  brand: "bg-brand-50 border-brand-200",
-  accent: "bg-accent-50 border-accent-200",
-  warm: "bg-warm-50 border-warm-200",
-  elevated: "bg-white shadow-lg border-transparent",
+  default: "bg-white border-neutral-200 shadow-sm",
+  brand: "bg-brand-50 border-brand-200 shadow-sm",
+  accent: "bg-accent-50 border-accent-200 shadow-sm",
+  warm: "bg-warm-50 border-warm-200 shadow-sm",
+  elevated: "bg-white shadow-lg border-neutral-200",
   ghost: "bg-transparent border-transparent",
 };
 

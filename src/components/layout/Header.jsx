@@ -92,7 +92,7 @@ export default function Header() {
             <img
               src={`${import.meta.env.BASE_URL}images/inspire.svg`}
               alt="Inspire Logo"
-              className="h-10 md:h-12 lg:h-14 w-auto transition-transform duration-300 group-hover:scale-105"
+              className="h-12 md:h-14 lg:h-16 w-auto transition-transform duration-300 group-hover:scale-105"
             />
           </a>
 

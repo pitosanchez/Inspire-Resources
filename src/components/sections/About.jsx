@@ -62,8 +62,8 @@ export default function About() {
   return (
     <section id="about" className="bg-white">
       {/* Hero Section - Large Statement */}
-      <div className="py-20 md:py-32 bg-white">
-        <div className="container">
+      <div className="py-16 md:py-24 lg:py-32 bg-white">
+        <div className="container mx-auto px-6 md:px-8 lg:px-12">
           <div ref={heroRef} className="max-w-5xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-neutral-900 mb-6 leading-tight">
               {t("about.hero.title") || t("about.title")}
@@ -79,8 +79,8 @@ export default function About() {
       </div>
 
       {/* Mission & Vision Section - Combined */}
-      <div className="py-16 md:py-24 bg-brand-50">
-        <div className="container">
+      <div className="py-16 md:py-24 lg:py-32 bg-brand-50">
+        <div className="container mx-auto px-6 md:px-8 lg:px-12">
           <div ref={missionRef} className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-semibold text-neutral-900 mb-8 text-center">
               {t("about.mission.title")} & {t("about.vision.title")}
@@ -108,8 +108,8 @@ export default function About() {
       </div>
 
       {/* About Us - Detailed Narrative */}
-      <div className="py-16 md:py-24 bg-white">
-        <div className="container">
+      <div className="py-16 md:py-24 lg:py-32 bg-white">
+        <div className="container mx-auto px-6 md:px-8 lg:px-12">
           <div ref={aboutRef} className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-serif font-semibold text-neutral-900 mb-8">
               {t("about.label")}
@@ -133,10 +133,10 @@ export default function About() {
       </div>
 
       {/* Our Services */}
-      <div className="py-16 md:py-24 bg-neutral-50">
-        <div className="container">
+      <div className="py-16 md:py-24 lg:py-32 bg-neutral-50">
+        <div className="container mx-auto px-6 md:px-8 lg:px-12">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-serif font-semibold text-neutral-900 mb-12 text-center">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-semibold text-neutral-900 mb-8 text-center">
               {t("solutions.services.title")}
             </h2>
             <div
@@ -169,8 +169,8 @@ export default function About() {
       </div>
 
       {/* CTA Section - Recruit Style */}
-      <div className="py-20 md:py-32 bg-gradient-to-br from-brand-300/60 to-brand-400/60 backdrop-blur-md">
-        <div className="container">
+      <div className="py-16 md:py-24 lg:py-32 bg-gradient-to-br from-brand-300/60 to-brand-400/60 backdrop-blur-md">
+        <div className="container mx-auto px-6 md:px-8 lg:px-12">
           <div className="max-w-4xl mx-auto text-center text-white">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 drop-shadow-lg">
               {t("cta.title")}

@@ -10,8 +10,8 @@ export default function SpanishResources() {
   const { t } = useLanguage();
   
   return (
-    <section id="spanish-resources" className="py-16 md:py-20 bg-accent-50">
-      <div className="container mx-auto px-6">
+    <section id="spanish-resources" className="py-16 md:py-24 lg:py-32 bg-accent-50">
+      <div className="container mx-auto px-6 md:px-8 lg:px-12">
         {/* Header - Glass Card */}
         <div className="max-w-2xl mx-auto text-center mb-12">
           <div className="bg-white/80 backdrop-blur-sm border border-accent-200 rounded-2xl p-6 md:p-8 shadow-lg">

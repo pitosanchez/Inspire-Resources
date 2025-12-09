@@ -43,10 +43,10 @@ export default function Resources() {
   ];
 
   return (
-    <section id="resources" className="section-vh bg-white flex items-center">
-      <div className="container">
+    <section id="resources" className="py-16 md:py-24 lg:py-32 bg-white">
+      <div className="container mx-auto px-6 md:px-8 lg:px-12">
         {/* Header */}
-        <div className="max-w-3xl mx-auto text-center mb-16">
+        <div className="max-w-3xl mx-auto text-center mb-12">
           <span className="inline-block px-4 py-2 bg-warm-100 text-warm-700 text-sm font-medium rounded-full mb-4">
             {t("resources.label")}
           </span>
@@ -59,7 +59,7 @@ export default function Resources() {
         </div>
 
         {/* Resources Grid - Floating Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12">
           {resources.map((resource, index) => (
             <a
               key={index}
@@ -116,10 +116,10 @@ export default function Resources() {
 
         {/* Video Section - Glassmorphism Cards */}
         <div className="max-w-6xl mx-auto">
-          <h3 className="text-2xl md:text-3xl font-serif text-neutral-900 mb-8 text-center">
+          <h3 className="text-2xl md:text-3xl lg:text-4xl font-serif font-semibold text-neutral-900 mb-8 text-center">
             {t("resource.videos.title")}
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
                 id: "-f5yuW9bmtY",

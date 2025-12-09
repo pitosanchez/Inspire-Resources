@@ -36,7 +36,7 @@ export default function Header() {
         isScrolled ? "bg-white/95 backdrop-blur-md shadow-md" : "bg-white"
       }`}
     >
-      <nav className="container mx-auto px-6 py-4" aria-label="Main navigation">
+      <nav className="container mx-auto px-6 md:px-8 lg:px-12 py-4" aria-label="Main navigation">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#home" className="flex items-center gap-3 group">

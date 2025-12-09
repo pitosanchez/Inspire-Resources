@@ -15,7 +15,7 @@ export default function Hero() {
       className="relative h-screen flex items-center justify-center bg-white overflow-hidden"
     >
 
-      <div className="container relative z-10 px-6">
+      <div className="container mx-auto px-6 md:px-8 lg:px-12 relative z-10">
         <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
           {/* Hero Logo - Large with White Background */}
           <div className="mb-8 animate-fade-in">

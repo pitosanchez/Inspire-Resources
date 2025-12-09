@@ -108,9 +108,9 @@ export default function KidneyTransplantGuide() {
   return (
     <section
       id="transplant-guide"
-      className="py-20 bg-gradient-to-br from-neutral-50 via-white to-brand-50"
+      className="py-16 md:py-24 lg:py-32 bg-gradient-to-br from-neutral-50 via-white to-brand-50"
     >
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-6 md:px-8 lg:px-12">
         {/* Top Section with AKF Background Image */}
         <div
           className="relative rounded-3xl overflow-hidden mb-20"

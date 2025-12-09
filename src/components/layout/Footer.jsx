@@ -10,7 +10,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-neutral-900 text-neutral-300 py-12">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-6 md:px-8 lg:px-12">
         <div className="flex flex-col items-center justify-center gap-6">
           {/* Logo */}
           <img

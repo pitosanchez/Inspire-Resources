@@ -12,7 +12,6 @@ import CKDEducation from "./components/sections/CKDEducation";
 import KidneyTransplantGuide from "./components/sections/KidneyTransplantGuide";
 import Resources from "./components/sections/Resources";
 import SpanishResources from "./components/sections/SpanishResources";
-import CTASection from "./components/sections/CTASection";
 import ScrollProgress from "./components/shared/ScrollProgress";
 import SEO from "./components/shared/SEO";
 import { LanguageProvider } from "./utils/LanguageContext";
@@ -52,7 +51,6 @@ function App() {
           <CKDEducation />
           <Resources />
           <SpanishResources />
-          <CTASection />
         </main>
 
         {/* Footer - grounded, quiet closure */}

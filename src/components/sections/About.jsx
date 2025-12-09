@@ -61,17 +61,22 @@ export default function About() {
   return (
     <section id="about" className="bg-white">
       {/* About Section - Combined Hero & Content */}
-      <div className="pt-20 pb-16 md:pt-20 md:pb-24 lg:pt-20 lg:pb-32 bg-white">
+      <div className="pt-20 pb-16 md:pt-20 md:pb-24 lg:pt-20 lg:pb-32 bg-gradient-to-br from-white to-accent-50">
         <div className="container mx-auto px-6 md:px-8 lg:px-12">
           <div ref={aboutRef} className="max-w-5xl mx-auto">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-neutral-900 mb-8 leading-tight uppercase text-center" style={{ fontFamily: 'Impact, "Arial Black", "Helvetica Neue", Arial, sans-serif' }}>
               ABOUT US
             </h1>
             
+            {/* Glassmorphism Card */}
             <div className="max-w-4xl mx-auto mt-8">
-              <p className="text-lg md:text-xl lg:text-2xl text-neutral-700 leading-loose text-justify font-sans mb-0">
-                {t("about.combined.text")}
-              </p>
+              <div className="backdrop-blur-lg bg-white/95 border border-white/30 rounded-2xl p-8 md:p-10 lg:p-12 shadow-xl" style={{
+                boxShadow: '0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.3)'
+              }}>
+                <p className="text-lg md:text-xl lg:text-2xl text-neutral-700 leading-loose text-justify font-sans mb-0">
+                  {t("about.combined.text")}
+                </p>
+              </div>
             </div>
           </div>
         </div>

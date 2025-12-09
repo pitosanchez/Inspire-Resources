@@ -131,7 +131,7 @@ export default function KidneyTransplantGuide() {
                 <span>📖</span>
                 <span>{t("guide.label")}</span>
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-neutral-900 mb-6 drop-shadow-lg">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-semibold text-neutral-900 mb-6 md:mb-8">
                 {t("guide.title")}
               </h1>
               <p className="text-xl text-neutral-800 leading-relaxed mb-8 drop-shadow-md font-medium">

@@ -98,20 +98,31 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-4 xl:gap-6 flex-nowrap whitespace-nowrap">
-            {navItems.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                className="text-neutral-700 hover:text-brand-500 font-medium transition-colors duration-200 relative group py-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 rounded-md px-1 whitespace-nowrap flex-shrink-0"
-                onClick={() => {
-                  setActiveSection(item.href);
-                  setIsMobileMenuOpen(false);
-                }}
-              >
-                {item.label}
-                <span className="absolute bottom-0 left-1 right-1 h-0.5 bg-brand-500 transition-all duration-300 group-hover:w-full w-0" />
-              </a>
-            ))}
+            {navItems.map((item) => {
+              const isActive = activeSection === item.href;
+              return (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className={`relative inline-flex items-center px-1 py-2 font-medium transition-all duration-200 whitespace-nowrap flex-shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 rounded-md ${
+                    isActive
+                      ? "text-brand-600"
+                      : "text-neutral-700 hover:text-brand-500"
+                  }`}
+                  onClick={() => {
+                    setActiveSection(item.href);
+                    setIsMobileMenuOpen(false);
+                  }}
+                >
+                  {item.label}
+                  <span
+                    className={`absolute bottom-0 left-1 right-1 h-0.5 bg-brand-500 transition-all duration-300 ${
+                      isActive ? "w-full" : "w-0 group-hover:w-full"
+                    }`}
+                  />
+                </a>
+              );
+            })}
             <div className="flex-shrink-0">
               <LanguageSwitcher />
             </div>

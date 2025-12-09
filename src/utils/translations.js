@@ -190,7 +190,7 @@ export const translations = {
 
     // Transplant Guide
     'guide.label': 'Your Guide to Kidney Transplant by the American Kidney Fund',
-    'guide.title': 'Navigating The Maze of Kidney Transplants Together',
+    'guide.title': 'Transplant Toolkit',
     'guide.intro': 'Everything you need to know about kidney transplants — from evaluation to recovery. This guide empowers you to navigate your transplant journey with confidence.',
     'guide.cta.start': 'Start Your Journey',
     'guide.cta.quiz': 'Test Your Knowledge',
@@ -630,7 +630,7 @@ export const translations = {
 
     // Transplant Guide
     'guide.label': 'Tu Guía para Trasplante de Riñón por el Fondo Americano del Riñón',
-    'guide.title': 'Navegando El Laberinto de Trasplantes de Riñón Juntos',
+    'guide.title': 'Kit de Trasplante',
     'guide.intro': 'Todo lo que necesitas saber sobre trasplantes de riñón — desde la evaluación hasta la recuperación. Esta guía te empodera para navegar tu viaje de trasplante con confianza.',
     'guide.cta.start': 'Comienza Tu Viaje',
     'guide.cta.quiz': 'Pon a Prueba Tu Conocimiento',

@@ -607,12 +607,12 @@ export default function KidneyTransplantGuide() {
         <div className="max-w-4xl mx-auto">
           <Card
             variant="elevated"
-            className="p-8 md:p-12 text-center bg-gradient-to-br from-brand-500 to-brand-600 text-white"
+            className="p-8 md:p-12 text-center bg-gradient-to-br from-brand-100 to-brand-200 text-neutral-900"
           >
-            <h2 className="text-3xl md:text-4xl font-serif mb-4">
+            <h2 className="text-3xl md:text-4xl font-serif mb-4 text-neutral-900">
               {t("guide.final.title")}
             </h2>
-            <p className="text-xl mb-8 opacity-95">
+            <p className="text-xl mb-8 text-neutral-700">
               {t("guide.final.desc")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

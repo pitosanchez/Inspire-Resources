@@ -61,7 +61,7 @@ export default function About() {
   return (
     <section id="about" className="bg-white">
       {/* About Section - Combined Hero & Content */}
-      <div className="pt-20 pb-16 md:pt-20 md:pb-24 lg:pt-20 lg:pb-32 bg-gradient-to-br from-white to-accent-50">
+      <div className="pt-20 pb-16 md:pt-24 md:pb-24 lg:pt-24 lg:pb-32 bg-gradient-to-br from-white to-brand-50">
         <div className="container mx-auto px-6 md:px-8 lg:px-12">
           <div ref={aboutRef} className="max-w-5xl mx-auto">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-inspire-500 mb-10 md:mb-12 leading-tight uppercase text-center" style={{ fontFamily: 'Impact, "Arial Black", "Helvetica Neue", Arial, sans-serif' }}>
@@ -123,17 +123,17 @@ export default function About() {
         </div>
       </div>
 
-      {/* CTA Section - Recruit Style */}
-      <div className="py-16 md:py-24 lg:py-32 bg-gradient-to-br from-brand-300/60 to-brand-400/60 backdrop-blur-md">
+      {/* CTA Section - Inspire Brand Colors */}
+      <div className="py-16 md:py-24 lg:py-32 bg-gradient-to-br from-brand-500 to-accent-500 backdrop-blur-sm">
         <div className="container mx-auto px-6 md:px-8 lg:px-12">
           <div className="max-w-4xl mx-auto text-center text-white">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 drop-shadow-lg">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-8 md:mb-10 drop-shadow-lg">
               {t("cta.title")}
             </h2>
-            <p className="text-xl md:text-2xl mb-8 opacity-90 leading-relaxed drop-shadow-md">
+            <p className="text-xl md:text-2xl mb-10 md:mb-12 opacity-95 leading-relaxed drop-shadow-md">
               {t("cta.text")}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center items-center">
               <Button
                 href="#resources"
                 variant="orange"

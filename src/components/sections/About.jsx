@@ -78,23 +78,30 @@ export default function About() {
         </div>
       </div>
 
-      {/* Mission Section - Prominent Display */}
+      {/* Mission & Vision Section - Combined */}
       <div className="py-16 md:py-24 bg-brand-50">
         <div className="container">
-          <div ref={missionRef} className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-semibold text-neutral-900 mb-8">
-              {t("about.mission.title")}
+          <div ref={missionRef} className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-semibold text-neutral-900 mb-8 text-center">
+              {t("about.mission.title")} & {t("about.vision.title")}
             </h2>
-            <p className="text-xl md:text-2xl text-neutral-700 leading-relaxed mb-6">
-              {t("about.mission.text")}
-            </p>
-            <div className="mt-12 pt-12 border-t border-neutral-200">
-              <h3 className="text-2xl md:text-3xl font-serif font-semibold text-neutral-900 mb-6">
-                {t("about.vision.title")}
-              </h3>
-              <p className="text-xl md:text-2xl text-neutral-700 leading-relaxed">
-                {t("about.vision.text")}
-              </p>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-2xl md:text-3xl font-serif font-semibold text-neutral-900 mb-4">
+                  {t("about.mission.title")}
+                </h3>
+                <p className="text-xl md:text-2xl text-neutral-700 leading-relaxed text-justify">
+                  {t("about.mission.text")}
+                </p>
+              </div>
+              <div>
+                <h3 className="text-2xl md:text-3xl font-serif font-semibold text-neutral-900 mb-4">
+                  {t("about.vision.title")}
+                </h3>
+                <p className="text-xl md:text-2xl text-neutral-700 leading-relaxed text-justify">
+                  {t("about.vision.text")}
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -109,15 +116,15 @@ export default function About() {
             </h2>
             
             <div className="prose prose-lg max-w-none text-neutral-700 leading-relaxed space-y-6">
-              <p className="text-lg md:text-xl">
+              <p className="text-lg md:text-xl text-justify">
                 {t("barriers.intro")}
               </p>
               
-              <p className="text-lg md:text-xl">
+              <p className="text-lg md:text-xl text-justify">
                 {t("solutions.intro")}
               </p>
               
-              <p className="text-lg md:text-xl">
+              <p className="text-lg md:text-xl text-justify">
                 {t("impact.intro")}
               </p>
             </div>

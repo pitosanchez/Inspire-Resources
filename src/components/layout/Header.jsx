@@ -104,7 +104,7 @@ export default function Header() {
                 <a
                   key={item.href}
                   href={item.href}
-                  className={`relative px-4 py-2.5 text-sm font-medium rounded-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 ${
+                  className={`relative inline-flex items-center px-4 py-2.5 text-sm font-medium rounded-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 ${
                     isActive
                       ? "text-brand-600 bg-brand-50"
                       : "text-neutral-700 hover:text-brand-600 hover:bg-brand-50/50"
@@ -201,7 +201,7 @@ export default function Header() {
                       setActiveSection(item.href);
                       setIsMobileMenuOpen(false);
                     }}
-                    className={`px-4 py-3.5 text-base font-medium rounded-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 touch-target ${
+                    className={`inline-flex items-center px-4 py-3.5 text-base font-medium rounded-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 touch-target ${
                       isActive
                         ? "text-brand-600 bg-brand-50 border-l-4 border-brand-500"
                         : "text-neutral-700 hover:text-brand-600 hover:bg-brand-50/50"

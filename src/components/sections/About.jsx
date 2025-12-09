@@ -64,8 +64,8 @@ export default function About() {
       <div className="pt-20 pb-16 md:pt-24 md:pb-24 lg:pt-24 lg:pb-32 bg-gradient-to-br from-white to-brand-50">
         <div className="container mx-auto px-6 md:px-8 lg:px-12">
           <div ref={aboutRef} className="max-w-5xl mx-auto">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-inspire-500 mb-10 md:mb-12 leading-tight uppercase text-center" style={{ fontFamily: 'Impact, "Arial Black", "Helvetica Neue", Arial, sans-serif' }}>
-              ABOUT US
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-semibold text-neutral-900 mb-10 md:mb-12 text-center">
+              {t("about.label")}
             </h1>
             
             {/* Glassmorphism Card */}

@@ -52,6 +52,9 @@ export default function Hero() {
           </div>
         </div>
       </div>
+
+      {/* Separator Bar */}
+      <div className="absolute bottom-0 left-0 right-0 w-full h-1 bg-neutral-200"></div>
     </section>
   );
 }

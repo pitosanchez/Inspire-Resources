@@ -123,33 +123,36 @@ export default function About() {
         </div>
       </div>
 
-      {/* CTA Section - Inspire Brand Colors */}
-      <div className="py-16 md:py-24 lg:py-32 bg-gradient-to-br from-brand-500 to-accent-500 backdrop-blur-sm">
+      {/* CTA Section - Card on Matching Background */}
+      <div className="py-16 md:py-24 lg:py-32 bg-gradient-to-br from-neutral-50 via-white to-brand-50">
         <div className="container mx-auto px-6 md:px-8 lg:px-12">
-          <div className="max-w-4xl mx-auto text-center text-white">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-8 md:mb-10 drop-shadow-lg">
-              {t("cta.title")}
-            </h2>
-            <p className="text-xl md:text-2xl mb-10 md:mb-12 opacity-95 leading-relaxed drop-shadow-md">
-              {t("cta.text")}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center items-center">
-              <Button
-                href="#resources"
-                variant="orange"
-                size="lg"
-                className="shadow-xl hover:shadow-2xl hover:scale-105 font-semibold"
-              >
-                {t("cta.primary")}
-              </Button>
-              <Button
-                href="#contact"
-                size="lg"
-                className="bg-accent-600 text-white shadow-xl hover:shadow-2xl hover:scale-105 font-semibold hover:bg-accent-700"
-              >
-                {t("cta.secondary")}
-              </Button>
-            </div>
+          <div className="max-w-4xl mx-auto">
+            <Card variant="elevated" className="p-8 md:p-10 lg:p-12 text-center shadow-xl hover:shadow-2xl transition-shadow duration-300">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-8 md:mb-10 text-neutral-900">
+                {t("cta.title")}
+              </h2>
+              <p className="text-xl md:text-2xl mb-10 md:mb-12 text-neutral-700 leading-relaxed">
+                {t("cta.text")}
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center items-center">
+                <Button
+                  href="#resources"
+                  variant="orange"
+                  size="lg"
+                  className="shadow-xl hover:shadow-2xl hover:scale-105 font-semibold"
+                >
+                  {t("cta.primary")}
+                </Button>
+                <Button
+                  href="#contact"
+                  variant="accent"
+                  size="lg"
+                  className="shadow-xl hover:shadow-2xl hover:scale-105 font-semibold"
+                >
+                  {t("cta.secondary")}
+                </Button>
+              </div>
+            </Card>
           </div>
         </div>
       </div>

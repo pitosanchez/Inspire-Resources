@@ -177,6 +177,10 @@ export const translations = {
 
     // Footer
     'footer.copyright': '© 2025 Inspire Kidney Transplant Resources. Empowering communities.',
+    'footer.quickLinks': 'Quick Links',
+    'footer.resources': 'Resources',
+    'footer.support': 'Support',
+    'footer.tagline': 'Empowering communities through knowledge, support, and advocacy for kidney transplant care.',
 
     // Final CTA
     'final.cta.title': 'Ready to Get Started?',
@@ -612,6 +616,10 @@ export const translations = {
 
     // Footer
     'footer.copyright': '© 2025 Inspire Recursos de Trasplante de Riñón. Empoderando comunidades.',
+    'footer.quickLinks': 'Enlaces Rápidos',
+    'footer.resources': 'Recursos',
+    'footer.support': 'Apoyo',
+    'footer.tagline': 'Empoderando comunidades a través del conocimiento, apoyo y defensa para el cuidado del trasplante de riñón.',
 
     // Final CTA
     'final.cta.title': '¿Listo para Comenzar?',

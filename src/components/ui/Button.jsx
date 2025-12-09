@@ -50,6 +50,7 @@ const Button = forwardRef(
       "inline-flex items-center justify-center",
       "font-medium leading-none",
       "transition-all duration-200 ease-out",
+      "hover:shadow-md hover:scale-[1.02]",
       "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2",
       "disabled:pointer-events-none disabled:opacity-50",
       "active:scale-[0.98]",

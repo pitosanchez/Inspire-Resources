@@ -63,19 +63,13 @@ export default function About() {
       {/* About Section - Combined Hero & Content */}
       <div className="py-16 md:py-24 lg:py-32 bg-white">
         <div className="container mx-auto px-6 md:px-8 lg:px-12">
-          <div ref={aboutRef} className="max-w-5xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-neutral-900 mb-6 leading-tight uppercase" style={{ fontFamily: 'Impact, "Arial Black", "Helvetica Neue", Arial, sans-serif' }}>
+          <div ref={aboutRef} className="max-w-5xl mx-auto">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-neutral-900 mb-8 leading-tight uppercase text-center" style={{ fontFamily: 'Impact, "Arial Black", "Helvetica Neue", Arial, sans-serif' }}>
               ABOUT US
             </h1>
-            <p className="text-2xl md:text-3xl text-neutral-600 font-light mb-4">
-              {t("about.hero.subtitle") || t("about.subtitle")}
-            </p>
-            <p className="text-lg md:text-xl text-neutral-500 max-w-3xl mx-auto mb-8">
-              {t("about.hero.supporting")}
-            </p>
             
-            <div className="prose prose-lg max-w-none text-neutral-700 leading-relaxed text-left mt-12">
-              <p className="text-lg md:text-xl text-justify">
+            <div className="max-w-4xl mx-auto mt-8">
+              <p className="text-base md:text-lg text-neutral-700 leading-relaxed text-justify font-sans mb-0">
                 {t("about.combined.text")}
               </p>
             </div>

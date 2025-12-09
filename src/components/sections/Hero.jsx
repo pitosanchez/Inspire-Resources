@@ -12,27 +12,27 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative h-screen flex items-center justify-center bg-white overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center bg-white overflow-hidden py-14 sm:py-16 md:py-20"
     >
 
       <div className="container mx-auto px-6 md:px-8 lg:px-12 relative z-10">
-        <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
+        <div className="flex flex-col items-center text-center max-w-5xl mx-auto gap-10 md:gap-12">
           {/* Hero Logo - Large with White Background */}
-          <div className="mb-12 md:mb-16 animate-fade-in w-full flex justify-center">
-            <div className="relative inline-block bg-transparent p-8 md:p-12 lg:p-16">
+          <div className="animate-fade-in w-full flex justify-center">
+            <div className="relative inline-block bg-transparent p-6 sm:p-8 md:p-12 lg:p-16">
               <img
                 src={`${import.meta.env.BASE_URL}images/inspire.svg`}
                 alt="INSPIRE - Kidney Transplant Resources"
-                className="w-auto mx-auto block"
+                className="mx-auto block w-full max-w-[280px] sm:max-w-[340px] md:max-w-[440px] lg:max-w-[520px]"
                 style={{
-                  height: "min(40vh, 400px)",
+                  height: "auto",
                 }}
               />
             </div>
           </div>
 
           {/* CTA Buttons - Centered underneath logo */}
-          <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center items-center animate-fade-in w-full">
+          <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center items-center animate-fade-in w-full px-2">
             <Button
               href="#resources"
               variant="accent"
